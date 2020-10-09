@@ -1,7 +1,6 @@
-import torch
-
 from torch import nn
-from src.helpers.helpers import calc_dsc
+from src.helpers.calc_dsc import calc_dsc
+
 
 class DiceLoss(nn.Module):
     """ https://github.com/mateuszbuda/brain-segmentation-pytorch/blob/master/loss.py """
@@ -9,9 +8,8 @@ class DiceLoss(nn.Module):
 
     def __init__(self):
         super(DiceLoss, self).__init__()
-        self.smooth = 1.0
+        self.smooth = 1e-6
 
     def forward(self, y_pred, y_true):
         assert y_pred.size() == y_true.size()
         return 1. - calc_dsc(y_true, y_pred, self.smooth)
-    

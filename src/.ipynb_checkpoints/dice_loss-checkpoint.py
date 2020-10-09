@@ -1,7 +1,5 @@
-import torch
-
 from torch import nn
-from src.helpers.helpers import calc_dsc
+from src.helpers.calc_dsc import calc_dsc
 
 class DiceLoss(nn.Module):
     """ https://github.com/mateuszbuda/brain-segmentation-pytorch/blob/master/loss.py """

@@ -1,19 +1,11 @@
 import sys
 import numpy as np
 import torch
-import datetime
 
-from datetime import timedelta
-from time import time
 from contextlib import nullcontext
 from pathlib import Path
-from torch.utils.data import Dataset, DataLoader
-from torch.utils.tensorboard import SummaryWriter
 
-from src.helpers.helpers import calc_dsc
-from src.dice_loss import DiceLoss
-from src.unet_architecture import UNet
-from src.unet_architecture_v2 import UNetV2
+from src.helpers.calc_dsc import calc_dsc
 
 IN_COLAB = 'google.colab' in sys.modules
 

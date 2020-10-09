@@ -1,19 +1,12 @@
 import sys
 import numpy as np
 import torch
-import datetime
 
-from datetime import timedelta
-from time import time
 from contextlib import nullcontext
 from pathlib import Path
-from torch.utils.data import Dataset, DataLoader
-from torch.utils.tensorboard import SummaryWriter
+from torchsummary import summary
 
-from src.helpers.helpers import calc_dsc
-from src.dice_loss import DiceLoss
-from src.unet_architecture import UNet
-from src.unet_architecture_v2 import UNetV2
+from src.helpers.calc_dsc import calc_dsc
 
 IN_COLAB = 'google.colab' in sys.modules
 
@@ -70,12 +63,8 @@ def checkpoint_model(model_name, epoch, model, optimizer):
     torch.save(state, f'{folder_path}/checkpoint_{model_name}_epoch_{epoch}.pkl')
 
 
-def show_model_info(model, max_padding_slices):
-    if (IN_COLAB):
-        summary(model, (1, max_padding_slices, 128, 128), batch_size=1)
+def show_model_info(model_info, max_padding_slices):
+    if IN_COLAB:
+        summary(model_info["model"], (1, max_padding_slices, 128, 128), batch_size=1)
 
-    unet_total_params = sum(p.numel() for p in model.parameters())
-    unet_total_params_trainable = sum(p.numel() for p in model.parameters() if p.requires_grad)
-    print(f'Model number of params: {unet_total_params}, trainable {unet_total_params_trainable}')
-
-
+    print(f'Model number of params: {model_info["model_total_params"]}, trainable {model_info["model_total_trainable_params"]}')
