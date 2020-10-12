@@ -1,10 +1,15 @@
 #!/bin/bash
+cd "$(dirname "${BASH_SOURCE[0]}")" || exit
+cd "../"
 
 # jupyter and basics
 pip install jupyterlab numpy pandas matplotlib ipywidgets
+# matplotlib 3d
+pip install ipympl
 
 # jupyter widgets
 jupyter labextension install @jupyter-widgets/jupyterlab-manager @jupyterlab/toc
+jupyter lab build
 
 # opencv
 # pip install opencv-python

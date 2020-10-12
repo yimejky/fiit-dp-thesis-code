@@ -1,4 +1,4 @@
-**/**/*.pyc
+src/**/*.pyc
 .idea
 .vscode
 venv

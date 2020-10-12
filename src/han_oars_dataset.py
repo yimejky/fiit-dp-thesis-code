@@ -71,6 +71,7 @@ class HaNOarsDataset(Dataset):
         return self
 
     def data_normalize(self):
+        print('normalizing dataset')
         for i in range(self.size):
             data = self.data_list[i]
 
@@ -107,6 +108,7 @@ class HaNOarsDataset(Dataset):
         return self
 
     def to_sitk(self):
+        print('parsing dataset to simple itk')
         for i in range(self.size):
             data_np = self.data_list[i]
             label_np = self.label_list[i]
@@ -120,6 +122,7 @@ class HaNOarsDataset(Dataset):
         return self
 
     def to_numpy(self):
+        print('parsing dataset to numpy')
         for i in range(self.size):
             data = self.data_list[i]
             label = self.label_list[i]

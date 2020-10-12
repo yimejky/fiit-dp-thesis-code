@@ -9,11 +9,8 @@ import src.helpers.oars_labels_consts as OARS_LABELS
 IN_COLAB = 'google.colab' in sys.modules
 
 
-def get_dataloaders(dataset):
+def get_dataloaders(dataset, train_size=40, valid_size=5, test_size=5):
     # splitting 40:5:5
-    train_size = 40
-    valid_size = 5
-    test_size = 5
     sizes_list = [train_size, valid_size, test_size]
     train_dataset, valid_dataset, test_dataset = torch.utils.data.random_split(dataset, sizes_list)
 
@@ -28,11 +25,11 @@ def get_dataloaders(dataset):
 
 
 def get_dataset(dataset_size=50,
-                 dataset_folder_name='HaN_OAR',
-                 filter_labels=None,
-                 shrink_factor=None):
-    if filter_labels is None:
-        filter_labels = [OARS_LABELS.EYE_L, OARS_LABELS.EYE_R, OARS_LABELS.LENS_L, OARS_LABELS.LENS_R]
+                dataset_folder_name='HaN_OAR',
+                filter_labels=None,
+                shrink_factor=None):
+    # if filter_labels is None:
+    #     filter_labels = [OARS_LABELS.EYE_L, OARS_LABELS.EYE_R, OARS_LABELS.LENS_L, OARS_LABELS.LENS_R]
 
     if IN_COLAB:
         dataset_shrink = 4 if shrink_factor is None else shrink_factor
@@ -52,6 +49,7 @@ def get_dataset(dataset_size=50,
 
     # processing
     dataset.data_normalize()
-    dataset.filter_labels(filter_labels)
+    if filter_labels is not None:
+        dataset.filter_labels(filter_labels)
 
     return dataset

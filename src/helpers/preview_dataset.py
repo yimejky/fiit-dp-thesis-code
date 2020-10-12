@@ -5,19 +5,17 @@ from ipywidgets import widgets
 
 
 def preview_dataset(dataset, preview_index=2, show_hist=False, max_padding_slices=160):
-    aSlider = widgets.IntSlider(min=0, max=max_padding_slices - 1, step=1, value=101)
-    ui = widgets.VBox([widgets.HBox([aSlider])])
     data, label = dataset[preview_index]
 
     print(f'data max {data.max()}, min {data.min()}')
     print(f'label max {label.max()}, min {label.min()}')
 
-    def f(a):
+    def f(slice_index):
         plt.figure(figsize=(20, 10))
         plt.subplot(1, 2, 1)
-        plt.imshow(data[0][a], cmap="gray")
+        plt.imshow(data[0][slice_index], cmap="gray")
         plt.subplot(1, 2, 2)
-        plt.imshow(label[a])
+        plt.imshow(label[slice_index])
         plt.show()
 
         if show_hist:
@@ -28,6 +26,8 @@ def preview_dataset(dataset, preview_index=2, show_hist=False, max_padding_slice
             plt.hist(label.flatten(), 128)
             plt.show()
 
-    out = widgets.interactive_output(f, {'a': aSlider})
+    sliceSlider = widgets.IntSlider(min=0, max=max_padding_slices - 1, step=1, value=101)
+    ui = widgets.VBox([widgets.HBox([sliceSlider])])
+    out = widgets.interactive_output(f, {'slice_index': sliceSlider})
     # noinspection PyTypeChecker
     display(ui, out)
