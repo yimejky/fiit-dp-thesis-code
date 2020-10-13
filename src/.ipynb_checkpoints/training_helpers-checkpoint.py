@@ -1,13 +1,13 @@
-import sys
 import numpy as np
 import torch
 
 from contextlib import nullcontext
 from pathlib import Path
 
-from src.helpers.calc_dsc import calc_dsc
+from torchsummary import summary
 
-IN_COLAB = 'google.colab' in sys.modules
+from src.consts import MAX_PADDING_SLICES, IN_COLAB
+from src.helpers.calc_dsc import calc_dsc
 
 
 def loss_batch(model, optimizer, loss_func, xb, yb, calc_backward=False):
@@ -62,9 +62,9 @@ def checkpoint_model(model_name, epoch, model, optimizer):
     torch.save(state, f'{folder_path}/checkpoint_{model_name}_epoch_{epoch}.pkl')
 
 
-def show_model_info(model, max_padding_slices):
+def show_model_info(model):
     if (IN_COLAB):
-        summary(model, (1, max_padding_slices, 128, 128), batch_size=1)
+        summary(model, (1, MAX_PADDING_SLICES, 128, 128), batch_size=1)
 
     unet_total_params = sum(p.numel() for p in model.parameters())
     unet_total_params_trainable = sum(p.numel() for p in model.parameters() if p.requires_grad)

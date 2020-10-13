@@ -1,13 +1,12 @@
 import matplotlib.pyplot as plt
 
-from IPython.display import display, Markdown
-from ipywidgets import interact, IntSlider
+from IPython.display import display
 from ipywidgets import widgets
+from src.consts import MAX_PADDING_SLICES
 
 
-
-def preview_datasets(datasets_obj, preview_index=2, show_hist=False, max_padding_slices=160):
-    aSlider = widgets.IntSlider(min=0, max=max_padding_slices-1, step=1, value=101)
+def preview_datasets(datasets_obj, preview_index=2, show_hist=False):
+    aSlider = widgets.IntSlider(min=0, max=MAX_PADDING_SLICES-1, step=1, value=101)
     ui = widgets.VBox([widgets.HBox([aSlider])])
     data, label = datasets_obj["dataset"][preview_index]
 
@@ -30,5 +29,5 @@ def preview_datasets(datasets_obj, preview_index=2, show_hist=False, max_padding
             plt.hist(label.flatten(), 128)
             plt.show()
 
-    out = widgets.interactive_output(f, {'a': aSlider })
+    out = widgets.interactive_output(f, {'a': aSlider})
     display(ui, out)

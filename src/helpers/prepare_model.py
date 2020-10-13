@@ -1,19 +1,17 @@
 import os
-import sys
 import torch
 import datetime
 
 from torch.utils.data import DataLoader
 from torch.utils.tensorboard import SummaryWriter
 
+from src.consts import IN_COLAB
 from src.dice_loss import DiceLoss
 from src.unet_architecture import UNet
 from src.unet_architecture_v2 import UNetV2
 
-IN_COLAB = 'google.colab' in sys.modules
 
-
-def prepare_model(epochs=30,  # 50 x train_size = number of steps, 200 with lr=5e-3 is enough
+def prepare_model(epochs=30,  # 30 x train_size = number of steps
                   learning_rate=5e-4,
                   in_channels=16,
                   train_dataset=None, valid_dataset=None, test_dataset=None):

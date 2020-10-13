@@ -3,8 +3,10 @@ import matplotlib.pyplot as plt
 from IPython.display import display
 from ipywidgets import widgets
 
+from src.consts import MAX_PADDING_SLICES
 
-def preview_dataset(dataset, preview_index=2, show_hist=False, max_padding_slices=160):
+
+def preview_dataset(dataset, preview_index=2, show_hist=False, max_slices=MAX_PADDING_SLICES):
     data, label = dataset[preview_index]
 
     print(f'data max {data.max()}, min {data.min()}')
@@ -26,7 +28,7 @@ def preview_dataset(dataset, preview_index=2, show_hist=False, max_padding_slice
             plt.hist(label.flatten(), 128)
             plt.show()
 
-    sliceSlider = widgets.IntSlider(min=0, max=max_padding_slices - 1, step=1, value=101)
+    sliceSlider = widgets.IntSlider(min=0, max=max_slices - 1, step=1, value=(max_slices - 1) / 2)
     ui = widgets.VBox([widgets.HBox([sliceSlider])])
     out = widgets.interactive_output(f, {'slice_index': sliceSlider})
     # noinspection PyTypeChecker
