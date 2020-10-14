@@ -45,8 +45,7 @@ def iterate_model(dataloader, model, optimizer, loss_func, device, is_eval=False
             losses.append(item_loss)
             dices.append(item_dsc)
             nums.append(inputs_len)
-            if is_eval:
-                print(f'Batch {info_text} [%i] loss %.5f, dsc %.5f' % (i+1, item_loss, item_dsc))
+            print(f'Batch {info_text} [%i] loss %.5f, dsc %.5f' % (i+1, item_loss, item_dsc))
 
         num_sums = np.sum(nums)
         final_loss = np.sum(np.multiply(losses, nums)) / num_sums
