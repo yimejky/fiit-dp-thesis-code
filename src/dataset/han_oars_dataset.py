@@ -1,7 +1,7 @@
 import SimpleITK as sitk
 import numpy as np
 
-import src.helpers.oars_labels_consts as OARS_LABELS
+import src.dataset.oars_labels_consts as OARS_LABELS
 
 from scipy import ndimage
 from torch.utils.data import Dataset

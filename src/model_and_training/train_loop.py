@@ -1,7 +1,8 @@
 from datetime import timedelta
 from time import time
 
-from src.training_helpers import iterate_model, checkpoint_model
+from src.model_and_training.iterate_model import iterate_model
+from src.model_and_training.training_helpers import checkpoint_model
 
 
 def train_loop(model, model_name, optimizer, criterion, epochs, device,

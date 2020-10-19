@@ -5,6 +5,7 @@ import torch
 from IPython.display import display
 from ipywidgets import widgets
 
+from src.consts import DESIRE_BOUNDING_BOX_SIZE
 from src.helpers.get_bounding_box import get_bounding_box_3D, get_bounding_box_3D_size, get_final_bounding_box_slice
 
 
@@ -78,8 +79,11 @@ def get_full_res_cut(
     model_output_img = low_res_model(torch.from_numpy(exp_low_res_data_img).float())
     model_output_img = model_output_img.cpu().detach().numpy()
 
+    # normalizing model output
+    model_output_img = model_output_img - model_output_img.min()
+    model_output_img = model_output_img / model_output_img.max()
+
     # parsing low res float to int mask
-    # half_threshold = ( model_output_img.max() - model_output_img.min()) / 2 + model_output_img.min()
     model_output_img = (model_output_img > low_res_mask_threshold) * 1  # shape (1, 1, 160, 32, 32)
 
     # expanding low res int mask to high res
@@ -116,3 +120,21 @@ def get_full_res_cut(
         debug_preview_cuts(exp_model_output_img, new_bounding_box, data_cut, label_cut)
 
     return data_cut, label_cut, new_bounding_box
+
+
+def get_cut_lists(low_res_model, low_res_dataset, full_res_dataset, cut_full_res_dataset, low_res_mask_threshold=0.5):
+    for i in range(len(full_res_dataset)):
+        print(f'getting cut index {i}')
+        low_res_data_img = low_res_dataset.data_list[i]
+        full_res_data_img = full_res_dataset.data_list[i]
+        full_res_label_img = full_res_dataset.label_list[i]
+
+        data_cut, label_cut, new_bounding_box = get_full_res_cut(low_res_model, low_res_data_img,
+                                                                 full_res_data_img, full_res_label_img,
+                                                                 low_res_mask_threshold,
+                                                                 DESIRE_BOUNDING_BOX_SIZE,
+                                                                 show_debug=False)
+        cut_full_res_dataset.data_list[i] = data_cut
+        cut_full_res_dataset.label_list[i] = label_cut
+
+    return cut_full_res_dataset
