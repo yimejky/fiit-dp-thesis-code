@@ -13,6 +13,7 @@ from src.model_and_training.unet_architecture_v2 import UNetV2
 def prepare_model(epochs=30,  # 30 x train_size = number of steps
                   learning_rate=5e-4,
                   in_channels=16,
+                  batch_size=1,
                   train_dataset=None, valid_dataset=None, test_dataset=None):
     # Params
     log_date = datetime.datetime.now().strftime("%Y%m%d-%H%M%S")
@@ -34,7 +35,7 @@ def prepare_model(epochs=30,  # 30 x train_size = number of steps
 
     # Data loaders
     num_workers = os.cpu_count() if IN_COLAB else 0
-    train_dataloader = DataLoader(train_dataset, batch_size=1, shuffle=True, num_workers=num_workers)
+    train_dataloader = DataLoader(train_dataset, batch_size=batch_size, shuffle=True, num_workers=num_workers)
     valid_dataloader = DataLoader(valid_dataset, batch_size=1, shuffle=False, num_workers=num_workers)
     test_dataloader = DataLoader(test_dataset, batch_size=1, shuffle=False, num_workers=num_workers)
 

@@ -1,7 +1,10 @@
+import concurrent.futures
+
 import SimpleITK as sitk
 import numpy as np
 
 import src.dataset.oars_labels_consts as OARS_LABELS
+from src.consts import CPU_COUNT
 
 from scipy import ndimage
 from torch.utils.data import Dataset
@@ -97,30 +100,27 @@ class HaNOarsDataset(Dataset):
 
         return self
 
-    def filter_labels(self, wanted_labels):
+    def filter_labels(self, wanted_labels, unify_labels):
         print('filtering labels')
-        for i in range(self.size):
-            label = self.label_list[i]
-            self.label_list[i] = reduce(lambda a, b: a | (label == b), wanted_labels, False)
 
-        return self
-
-    def filter_labels2(self, wanted_labels, unify_labels):
-        print('filtering labels')
-        for i in range(self.size):
+        def filter_label(input_label, index):
             USE_NUMPY = True
             if USE_NUMPY:
-                label = sitk.GetArrayFromImage(self.label_list[i]).astype(np.int8)
+                label = sitk.GetArrayFromImage(input_label).astype(np.int8)
                 label_idx = reduce(lambda a, b: a | (label == b), wanted_labels, False)
                 new_label = np.zeros(label.shape)
                 if unify_labels:
                     new_label[label_idx] = 1
                 else:
                     new_label[label_idx] = label[label_idx]
-                self.label_list[i] = sitk.GetImageFromArray(new_label.astype(np.int8))
+                self.label_list[index] = sitk.GetImageFromArray(new_label.astype(np.int8))
             else:
-                label = self.label_list[i]
-                self.label_list[i] = reduce(lambda a, b: a | (label == b), wanted_labels, 0)
+                label = input_label
+                self.label_list[index] = reduce(lambda a, b: a | (label == b), wanted_labels, 0)
+
+        with concurrent.futures.ThreadPoolExecutor(max_workers=CPU_COUNT) as executor:
+            [executor.submit(filter_label, self.label_list[i], i) for i in range(self.size)]
+        print('filtering labels done')
 
         return self
 
@@ -139,20 +139,21 @@ class HaNOarsDataset(Dataset):
 
     def data_normalize(self):
         print('normalizing dataset')
-        for i in range(self.size):
-            data = self.data_list[i]
 
+        def normalize(data, index):
             USE_NUMPY = True
             if USE_NUMPY:
                 data_np = sitk.GetArrayFromImage(data)
-
                 data_np = (data_np - data_np.mean()) / data_np.std()
                 # data_np = (data_np - data_np.min()) / (data_np.max() - data_np.min())
-
-                self.data_list[i] = sitk.GetImageFromArray(data_np)
+                self.data_list[index] = sitk.GetImageFromArray(data_np)
             else:  # simple itk
                 norm_filter = sitk.NormalizeImageFilter()
-                self.data_list[i] = norm_filter.Execute(data)
+                self.data_list[index] = norm_filter.Execute(data)
+
+        with concurrent.futures.ThreadPoolExecutor(max_workers=CPU_COUNT) as executor:
+            [executor.submit(normalize, self.data_list[i], i) for i in range(self.size)]
+        print("normalizing done")
 
         return self
 
@@ -193,16 +194,20 @@ class HaNOarsDataset(Dataset):
     def to_numpy(self):
         self.is_numpy = True
         print('parsing dataset to numpy')
-        for i in range(self.size):
-            data = self.data_list[i]
-            label = self.label_list[i]
 
+        def parse_data(data, index):
             data_np = sitk.GetArrayFromImage(data)
-            label_np = sitk.GetArrayFromImage(label)
+            # adding channel dimension, because conv3d takes: channel, slices, height, width
+            self.data_list[index] = np.expand_dims(data_np, axis=0)
 
-            # adding channel dimension, because conv3d => channel, slices, height, width
-            self.data_list[i] = np.expand_dims(data_np, axis=0)
-            self.label_list[i] = label_np.astype(np.int8)
+        def parse_label(label, index):
+            label_np = sitk.GetArrayFromImage(label)
+            self.label_list[index] = label_np.astype(np.int8)
+
+        with concurrent.futures.ThreadPoolExecutor(max_workers=CPU_COUNT) as executor:
+            [executor.submit(parse_data, self.data_list[i], i) for i in range(self.size)]
+            [executor.submit(parse_label, self.label_list[i], i) for i in range(self.size)]
+        print("numpy parsing done")
 
         return self
 
@@ -210,21 +215,33 @@ class HaNOarsDataset(Dataset):
 if __name__ == "__main__":
     import matplotlib.pyplot as plt
 
-    dataset = HaNOarsDataset(f'./data/{"HaN_OAR"}_shrink{16}x_padded160', 5)
+    slice_n = 99
+
+    dataset = HaNOarsDataset(f'./data/{"HaN_OAR"}_shrink{2}x_padded160', 50)
     dataset.data_normalize()
-    dataset.filter_labels([OARS_LABELS.EYE_L, OARS_LABELS.EYE_R, OARS_LABELS.LENS_L, OARS_LABELS.LENS_R])
+    dataset.filter_labels([OARS_LABELS.EYE_L, OARS_LABELS.EYE_R, OARS_LABELS.LENS_L, OARS_LABELS.LENS_R], False)
+    dataset.to_numpy()
 
+    tmp_data = dataset.data_list[0]
     tmp_label = dataset.label_list[0]
+    print(tmp_data.shape, tmp_data.min(), tmp_data.max())
+    print(tmp_label.shape, tmp_label.min(), tmp_label.max())
 
-    tmp_img = (tmp_label == 1) + (tmp_label == 2) * 2
-    tmp_img_np = sitk.GetArrayFromImage(tmp_img)
-    print(np.unique(tmp_img))
-    plt.imshow(tmp_img_np[100])
+    plt.figure(figsize=(20, 20))
+    plt.subplot(1, 2, 1)
+    plt.imshow(tmp_data[0, slice_n], cmap="gray")
+    plt.subplot(1, 2, 2)
+    plt.imshow(tmp_label[slice_n], cmap="gray")
     plt.show()
 
+    # tmp_img = (tmp_label == 1) + (tmp_label == 2) * 2
+    # tmp_img_np = sitk.GetArrayFromImage(tmp_img)
+    # print(np.unique(tmp_img))
+    # plt.imshow(tmp_img_np[100])
+    # plt.show()
+    #
     # tmp_data = dataset.data_list[0]
     # tmp_label = dataset.label_list[0]
-    # slice_n = 99
     #
     # print(tmp_data.shape, tmp_data.min()data_normalize, tmp_data.max())
     # plt.imshow(tmp_data[0, slice_n], cmap="gray")
@@ -232,9 +249,4 @@ if __name__ == "__main__":
     #
     # print(tmp_label.shape, tmp_label.min(), tmp_label.max(), tmp_label[tmp_label > 0].shape[0])
     # plt.imshow(tmp_label[slice_n], cmap="gray")
-    # plt.show()
-    #
-    # tmp = ndimage.binary_dilation(tmp_label).astype(tmp_label.dtype)
-    # print(tmp.shape, tmp.min(), tmp.max())
-    # plt.imshow(tmp[slice_n], cmap="gray")
     # plt.show()

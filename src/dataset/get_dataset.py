@@ -31,6 +31,6 @@ def get_dataset(dataset_size=50,
     # processing
     dataset.data_normalize()
     if filter_labels is not None:
-        dataset.filter_labels2(filter_labels, unify_labels=unify_labels)
+        dataset.filter_labels(filter_labels, unify_labels=unify_labels)
 
     return dataset
