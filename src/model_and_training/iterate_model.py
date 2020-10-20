@@ -1,3 +1,5 @@
+import logging
+
 import numpy as np
 import torch
 
@@ -32,7 +34,9 @@ def iterate_model(dataloader, model, optimizer, loss_func, device, is_eval=False
             nums.append(inputs_len)
 
             # batch done
-            print(f'Batch {info_text} [%i] loss %.5f, dsc %.5f' % (i + 1, item_loss, item_dsc))
+            msg = f'Batch {info_text} [%i] loss %.5f, dsc %.5f' % (i + 1, item_loss, item_dsc)
+            print(msg)
+            logging.debug(f'iterate_model {msg}')
 
             # clearing
             del data

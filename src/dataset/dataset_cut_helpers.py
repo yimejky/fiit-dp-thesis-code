@@ -7,11 +7,7 @@ from ipywidgets import widgets
 
 from src.consts import DESIRE_BOUNDING_BOX_SIZE
 from src.helpers.get_bounding_box import get_bounding_box_3D, get_bounding_box_3D_size, get_final_bounding_box_slice
-
-
-def expand_image(input_img, expand_factor=16):  # input numpy shape (1, 1, MAX_PADDING_SLICES, x, x)
-    expanded_input_img = np.repeat(np.repeat(input_img, expand_factor, axis=3), expand_factor, axis=4)
-    return expanded_input_img
+from src.helpers.get_img_outliers_pixels import get_img_outliers_pixels
 
 
 def debug_preview_low_expand(model_output_img, exp_model_output_img):
@@ -20,7 +16,7 @@ def debug_preview_low_expand(model_output_img, exp_model_output_img):
         model_output_img_percents = model_output_img[0, 0, slice_index].sum() / model_output_img[0, 0, slice_index].size
         exp_model_output_img_percents = exp_model_output_img[0, 0, slice_index].sum() / exp_model_output_img[
             0, 0, slice_index].size
-        print(model_output_img_percents, exp_model_output_img_percents)
+        print('norm and expanded pixels percents', model_output_img_percents, exp_model_output_img_percents)
 
         plt.figure(figsize=(12, 12))
 
@@ -66,14 +62,12 @@ def debug_preview_cuts(exp_model_output_img, new_bounding_box, data_cut, label_c
     display(ui, out)
 
 
-def get_full_res_cut(
-        low_res_model,
-        low_res_data_img,
-        full_res_data_img,
-        full_res_label_img,
-        low_res_mask_threshold,
-        desire_bounding_box_size,
-        show_debug=False):
+def expand_image(input_img, expand_factor=16):  # input numpy shape (1, 1, MAX_PADDING_SLICES, x, x)
+    expanded_input_img = np.repeat(np.repeat(input_img, expand_factor, axis=3), expand_factor, axis=4)
+    return expanded_input_img
+
+
+def insert_to_model(low_res_model, low_res_data_img, low_res_mask_threshold, show_debug=False):
     # getting low res segmentation
     exp_low_res_data_img = np.expand_dims(low_res_data_img, axis=0)
     model_output_img = low_res_model(torch.from_numpy(exp_low_res_data_img).float())
@@ -85,6 +79,26 @@ def get_full_res_cut(
 
     # parsing low res float to int mask
     model_output_img = (model_output_img > low_res_mask_threshold) * 1  # shape (1, 1, 160, 32, 32)
+    model_output_img = model_output_img.astype(np.int8)
+
+    return model_output_img
+
+
+def get_full_res_cut(
+        low_res_model,
+        low_res_data_img,
+        full_res_data_img,
+        full_res_label_img,
+        low_res_mask_threshold,
+        desire_bounding_box_size,
+        show_debug=False):
+    model_output_img = insert_to_model(low_res_model, low_res_data_img, low_res_mask_threshold, show_debug=show_debug)
+    positive_pixels_count = np.sum(model_output_img > 0)
+
+    remove_pixel_idx = get_img_outliers_pixels(model_output_img[0, 0])
+    for x in remove_pixel_idx:
+        model_output_img[tuple([0, 0, *x])] = 0
+    print('debug removing', len(remove_pixel_idx), 'outlier pixels from', positive_pixels_count)
 
     # expanding low res int mask to high res
     exp_model_output_img = expand_image(model_output_img, expand_factor=16)  # shape (1, 1, 160, 512, 512)
@@ -106,7 +120,7 @@ def get_full_res_cut(
 
     cut_sum = label_cut.sum()
     full_res_sum = full_res_label_img.sum()
-    print('debug, does cut and original label contain the same amount of pixels?', cut_sum == full_res_sum, cut_sum,
+    print('debug, Does cut and original label contain the same amount of pixels?', cut_sum == full_res_sum, cut_sum,
           full_res_sum)
     # assert cut_sum == full_res_sum
 

@@ -1,3 +1,5 @@
+import logging
+
 from torch import nn
 from src.helpers.calc_dsc import calc_dsc
 
@@ -12,4 +14,9 @@ class DiceLoss(nn.Module):
 
     def forward(self, y_pred, y_true):
         assert y_pred.size() == y_true.size()
-        return 1. - calc_dsc(y_true, y_pred, self.smooth)
+        dsc = calc_dsc(y_true, y_pred, self.smooth)
+
+        logging.debug(f'DiceLoss1 y_true {y_true.shape} y_pred, {y_pred.shape}')
+        logging.debug(f'DiceLoss2 smooth {self.smooth}, dsc {dsc}, 1-dsc {1 - dsc}')
+
+        return 1. - dsc

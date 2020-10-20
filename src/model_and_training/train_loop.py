@@ -1,3 +1,4 @@
+import logging
 from datetime import timedelta
 from time import time
 
@@ -20,8 +21,9 @@ def train_loop(model, model_name, optimizer, criterion, epochs, device,
         delta_start_time = time() - start_time
         delta_last_time = time() - last_time
         print_epochs = (epoch_i + 1, delta_start_time, delta_last_time, train_loss, valid_loss, train_dsc, valid_dsc)
-        print(
-            'Epoch [%d] T %.2fs, deltaT %.2fs, loss: train %.5f, valid %.5f, dsc: train %.5f, valid %.5f' % print_epochs)
+        msg = 'Epoch [%d] T %.2fs, deltaT %.2fs, loss: train %.5f, valid %.5f, dsc: train %.5f, valid %.5f' % print_epochs
+        print(msg)
+        logging.debug(f'train_loop {msg}')
         last_time = time()
 
         checkpoint_model(model_name, epoch_i + 1, model, optimizer)
