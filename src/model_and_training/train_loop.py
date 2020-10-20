@@ -25,12 +25,9 @@ def train_loop(model, model_name, optimizer, criterion, epochs, device,
         last_time = time()
 
         checkpoint_model(model_name, epoch_i + 1, model, optimizer)
-        tensorboard_writer.add_scalars('loss',
-                                       {"train": train_loss, "valid": valid_loss},
-                                       (epoch_i + 1) * len(train_dataloader))
-        tensorboard_writer.add_scalars('dsc',
-                                       {"train": train_dsc, "valid": valid_dsc},
-                                       (epoch_i + 1) * len(train_dataloader))
+        tensorboard_step_value = (epoch_i + 1) * len(train_dataloader) * train_dataloader.batch_size
+        tensorboard_writer.add_scalars('loss', {"train": train_loss, "valid": valid_loss}, tensorboard_step_value)
+        tensorboard_writer.add_scalars('dsc', {"train": train_dsc, "valid": valid_dsc}, tensorboard_step_value)
 
     # TODO prevent using test
     # test_loss, test_dsc = iterate_model(test_dataloader, model, optimizer, criterion, device, is_eval=True)

@@ -11,5 +11,5 @@ IN_COLAB = 'google.colab' in sys.modules
 # [56 177 156] is bounding box size without spinal cord in dataset, so we get bounding box which can be divided
 # by pooling/unpooling layers and in the end still persist size
 DESIRE_BOUNDING_BOX_SIZE = get_dividable_bounding_box(DATASET_MAX_BOUNDING_BOX, pooling_layers=3, offset=12)
-CPU_COUNT = cpu_count()
+CPU_COUNT = cpu_count() - 1
 

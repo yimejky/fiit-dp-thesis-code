@@ -21,7 +21,12 @@ def get_rescaled_preds(model, dataset, device):
         preds.append(prediction)
         rescaled_preds.append(rescaled_pred)
 
-    return preds, rescaled_preds,
+        del data_input
+        del prediction
+        del rescaled_pred
+        torch.cuda.empty_cache()
+
+    return preds, rescaled_preds
 
 
 def get_dataset_threshold_info(dataset, preds, rescaled_preds, index, info_list, is_train=False, is_valid=False,

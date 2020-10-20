@@ -3,7 +3,7 @@ import torch
 
 from contextlib import nullcontext
 
-from src.model_and_training.training_helpers import loss_batch
+from src.model_and_training.loss_batch import loss_batch
 
 
 def iterate_model(dataloader, model, optimizer, loss_func, device, is_eval=False):
@@ -14,6 +14,7 @@ def iterate_model(dataloader, model, optimizer, loss_func, device, is_eval=False
     else:
         info_text = 'train'
         model.train()
+        optimizer.zero_grad()
         grad_context = nullcontext()
 
     with grad_context:
@@ -29,7 +30,17 @@ def iterate_model(dataloader, model, optimizer, loss_func, device, is_eval=False
             losses.append(item_loss)
             dices.append(item_dsc)
             nums.append(inputs_len)
-            print(f'Batch {info_text} [%i] loss %.5f, dsc %.5f' % (i+1, item_loss, item_dsc))
+
+            # batch done
+            print(f'Batch {info_text} [%i] loss %.5f, dsc %.5f' % (i + 1, item_loss, item_dsc))
+
+            # clearing
+            del data
+            del inputs
+            del labels
+            del item_loss
+            del item_dsc
+            torch.cuda.empty_cache()
 
         num_sums = np.sum(nums)
         final_loss = np.sum(np.multiply(losses, nums)) / num_sums
