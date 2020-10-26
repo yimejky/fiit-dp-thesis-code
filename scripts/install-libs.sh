@@ -4,6 +4,10 @@ cd "../"
 
 # jupyter and basics
 pip install jupyterlab numpy pandas matplotlib ipywidgets
+
+# saving jupyter state
+pip install dill
+
 # matplotlib 3d
 pip install ipympl
 
@@ -22,7 +26,7 @@ pip install scikit-learn scikit-image scipy
 pip install SimpleITK
 
 # PyTorch
-pip install torch torchvision torchsummary
+pip install torch torchvision torchsummary torchio
 
 # Tensorboard
 pip install tensorboard

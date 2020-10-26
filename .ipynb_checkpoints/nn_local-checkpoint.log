@@ -1,0 +1,1907 @@
+DEBUG:matplotlib.font_manager:findfont: Matching sans\-serif:style=normal:variant=normal:weight=normal:stretch=normal:size=10.0.
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'cmss10' (cmss10.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'DejaVu Sans' (DejaVuSans-Oblique.ttf) oblique normal 400 normal>) = 1.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'STIXGeneral' (STIXGeneralItalic.ttf) italic normal 400 normal>) = 11.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'DejaVu Sans Display' (DejaVuSansDisplay.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'cmtt10' (cmtt10.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'STIXGeneral' (STIXGeneralBol.ttf) normal normal 700 normal>) = 10.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'STIXSizeFourSym' (STIXSizFourSymReg.ttf) normal normal regular normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'STIXSizeOneSym' (STIXSizOneSymReg.ttf) normal normal regular normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'cmr10' (cmr10.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'DejaVu Sans' (DejaVuSans-BoldOblique.ttf) oblique normal 700 normal>) = 1.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'STIXNonUnicode' (STIXNonUni.ttf) normal normal regular normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'STIXNonUnicode' (STIXNonUniBol.ttf) normal normal 700 normal>) = 10.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'DejaVu Serif Display' (DejaVuSerifDisplay.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'DejaVu Serif' (DejaVuSerif.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'STIXGeneral' (STIXGeneral.ttf) normal normal regular normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'DejaVu Serif' (DejaVuSerif-BoldItalic.ttf) italic normal 700 normal>) = 11.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'DejaVu Serif' (DejaVuSerif-Italic.ttf) italic normal 400 normal>) = 11.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'STIXSizeThreeSym' (STIXSizThreeSymReg.ttf) normal normal regular normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'DejaVu Sans Mono' (DejaVuSansMono-Oblique.ttf) oblique normal 400 normal>) = 11.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'DejaVu Sans' (DejaVuSans.ttf) normal normal 400 normal>) = 0.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'cmmi10' (cmmi10.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'STIXNonUnicode' (STIXNonUniIta.ttf) italic normal 400 normal>) = 11.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'STIXGeneral' (STIXGeneralBolIta.ttf) italic normal 700 normal>) = 11.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'STIXSizeTwoSym' (STIXSizTwoSymBol.ttf) normal normal 700 normal>) = 10.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'DejaVu Sans Mono' (DejaVuSansMono-Bold.ttf) normal normal 700 normal>) = 10.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'DejaVu Sans Mono' (DejaVuSansMono-BoldOblique.ttf) oblique normal 700 normal>) = 11.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'STIXSizeTwoSym' (STIXSizTwoSymReg.ttf) normal normal regular normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'STIXSizeFourSym' (STIXSizFourSymBol.ttf) normal normal 700 normal>) = 10.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'STIXSizeOneSym' (STIXSizOneSymBol.ttf) normal normal 700 normal>) = 10.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'DejaVu Sans' (DejaVuSans-Bold.ttf) normal normal 700 normal>) = 0.33499999999999996
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'STIXSizeFiveSym' (STIXSizFiveSymReg.ttf) normal normal regular normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'STIXNonUnicode' (STIXNonUniBolIta.ttf) italic normal 700 normal>) = 11.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'DejaVu Serif' (DejaVuSerif-Bold.ttf) normal normal 700 normal>) = 10.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'STIXSizeThreeSym' (STIXSizThreeSymBol.ttf) normal normal 700 normal>) = 10.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'cmex10' (cmex10.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'cmsy10' (cmsy10.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'cmb10' (cmb10.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'DejaVu Sans Mono' (DejaVuSansMono.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Tlwg Mono' (TlwgMono-BoldOblique.ttf) oblique normal 700 normal>) = 11.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'DejaVu Sans Mono' (DejaVuSansMono-Oblique.ttf) oblique normal 400 normal>) = 11.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Umpush' (Umpush.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Umpush' (Umpush-Light.ttf) normal normal light normal>) = 10.24
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Liberation Sans' (LiberationSans-Regular.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Gubbi' (Gubbi.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Suruma' (Suruma.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Liberation Mono' (LiberationMono-Italic.ttf) italic normal 400 normal>) = 11.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Sawasdee' (Sawasdee-BoldOblique.ttf) oblique normal 700 normal>) = 11.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'URW Bookman' (URWBookman-LightItalic.otf) italic normal light normal>) = 11.24
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Tlwg Typewriter' (TlwgTypewriter-Oblique.ttf) oblique normal 400 normal>) = 11.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Nimbus Roman' (NimbusRoman-Bold.otf) normal normal 700 normal>) = 10.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Lohit Bengali' (Lohit-Bengali.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'URW Bookman' (URWBookman-DemiItalic.otf) italic normal book normal>) = 11.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'URW Gothic' (URWGothic-DemiOblique.otf) oblique normal demi normal>) = 11.24
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Garuda' (Garuda-Bold.ttf) normal normal 700 normal>) = 10.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'FreeMono' (FreeMonoBoldOblique.ttf) oblique normal 700 normal>) = 11.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Umpush' (Umpush-LightOblique.ttf) oblique normal light normal>) = 11.24
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Waree' (Waree-Bold.ttf) normal normal 700 normal>) = 10.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Quicksand Medium' (Quicksand-Medium.ttf) normal normal medium normal>) = 10.145
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'DejaVu Sans' (DejaVuSans-ExtraLight.ttf) normal normal light normal>) = 0.24
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'URW Bookman' (URWBookman-Demi.otf) normal normal book normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Rachana' (Rachana-Regular.ttf) normal normal regular normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Liberation Mono' (LiberationMono-BoldItalic.ttf) italic normal 700 normal>) = 11.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'DejaVu Serif' (DejaVuSerifCondensed-Bold.ttf) normal normal 700 condensed>) = 10.535
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Kinnari' (Kinnari.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'KacstDecorative' (KacstDecorative.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'DejaVu Sans' (DejaVuSans-Bold.ttf) normal normal 700 normal>) = 0.33499999999999996
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'DejaVu Sans Mono' (DejaVuSansMono-Bold.ttf) normal normal 700 normal>) = 10.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Liberation Sans' (LiberationSans-BoldItalic.ttf) italic normal 700 normal>) = 11.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Quicksand Light' (Quicksand-Light.ttf) normal normal light normal>) = 10.24
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Tlwg Typo' (TlwgTypo.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Gayathri' (Gayathri-Bold.otf) normal normal 700 normal>) = 10.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Padauk' (Padauk-Regular.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Keraleeyam' (Keraleeyam-Regular.ttf) normal normal regular normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Lohit Devanagari' (Lohit-Devanagari.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'KacstTitle' (KacstTitle.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Purisa' (Purisa.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Liberation Sans' (LiberationSans-Bold.ttf) normal normal 700 normal>) = 10.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Waree' (Waree.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Lohit Gurmukhi' (Lohit-Gurmukhi.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Ubuntu Mono' (UbuntuMono-RI.ttf) italic normal 400 normal>) = 11.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Rekha' (Rekha.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Liberation Sans Narrow' (LiberationSansNarrow-BoldItalic.ttf) italic normal 700 condensed>) = 11.535
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'URW Gothic' (URWGothic-Book.otf) normal normal book normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'KacstOffice' (KacstOffice.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'DejaVu Sans Mono' (DejaVuSansMono.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'FreeSerif' (FreeSerifBoldItalic.ttf) italic normal 700 normal>) = 11.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'DejaVu Serif' (DejaVuSerif-Bold.ttf) normal normal 700 normal>) = 10.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Gargi' (Gargi.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'C059' (C059-Italic.otf) italic normal 400 normal>) = 11.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Dyuthi' (Dyuthi-Regular.ttf) normal normal regular normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'FreeSans' (FreeSansBoldOblique.ttf) oblique normal 700 normal>) = 11.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Liberation Serif' (LiberationSerif-Italic.ttf) italic normal 400 normal>) = 11.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'AnjaliOldLipi' (AnjaliOldLipi-Regular.ttf) normal normal regular normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Tlwg Mono' (TlwgMono-Bold.ttf) normal normal 700 normal>) = 10.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'KacstDigital' (KacstDigital.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Tlwg Typo' (TlwgTypo-Oblique.ttf) oblique normal 400 normal>) = 11.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'DejaVu Sans' (DejaVuSans.ttf) normal normal 400 normal>) = 0.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Nimbus Roman' (NimbusRoman-Italic.otf) italic normal roman normal>) = 11.145
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'C059' (C059-Bold.otf) normal normal 700 normal>) = 10.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Ubuntu' (Ubuntu-R.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Nimbus Sans' (NimbusSans-Bold.otf) normal normal 700 normal>) = 10.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'DejaVu Serif' (DejaVuSerifCondensed-Italic.ttf) italic normal 400 condensed>) = 11.25
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Sarai' (Sarai.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Samyak Gujarati' (Samyak-Gujarati.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Mukti Narrow' (MuktiNarrow.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Karumbi' (Karumbi-Regular.ttf) normal normal regular normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Liberation Sans' (LiberationSans-Italic.ttf) italic normal 400 normal>) = 11.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Ubuntu Mono' (UbuntuMono-R.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Liberation Sans' (LiberationSans-BoldItalic.ttf) italic normal 700 normal>) = 11.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'padmaa' (padmaa-Medium-0.5.ttf) normal normal normal normal>) = 10.0
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Padauk' (Padauk-Bold.ttf) normal normal 700 normal>) = 10.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Liberation Serif' (LiberationSerif-Bold.ttf) normal normal 700 normal>) = 10.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Tlwg Typist' (TlwgTypist-Oblique.ttf) oblique normal 400 normal>) = 11.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'FreeSans' (FreeSans.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Navilu' (Navilu.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'KacstArt' (KacstArt.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Tlwg Typewriter' (TlwgTypewriter-BoldOblique.ttf) oblique normal 700 normal>) = 11.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Norasi' (Norasi-BoldItalic.ttf) italic normal 700 normal>) = 11.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Purisa' (Purisa-BoldOblique.ttf) oblique normal 700 normal>) = 11.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'FreeSerif' (FreeSerifItalic.ttf) italic normal 400 normal>) = 11.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Standard Symbols PS' (StandardSymbolsPS.otf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'FreeMono' (FreeMonoBold.ttf) normal normal 700 normal>) = 10.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Nimbus Mono PS' (NimbusMonoPS-Italic.otf) italic normal 400 normal>) = 11.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Tlwg Mono' (TlwgMono-Oblique.ttf) oblique normal 400 normal>) = 11.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Liberation Sans Narrow' (LiberationSansNarrow-Bold.ttf) normal normal 700 condensed>) = 10.535
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Liberation Mono' (LiberationMono-Bold.ttf) normal normal 700 normal>) = 10.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Quicksand' (Quicksand-Regular.ttf) normal normal regular normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'C059' (C059-BdIta.otf) italic normal 700 normal>) = 11.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Sawasdee' (Sawasdee-Oblique.ttf) oblique normal 400 normal>) = 11.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Lohit Telugu' (Lohit-Telugu.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Nimbus Mono PS' (NimbusMonoPS-BoldItalic.otf) italic normal 700 normal>) = 11.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Umpush' (Umpush-Oblique.ttf) oblique normal 400 normal>) = 11.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'URW Gothic' (URWGothic-BookOblique.otf) oblique normal book normal>) = 11.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Pothana2000' (Pothana2000.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Ubuntu Mono' (UbuntuMono-BI.ttf) italic normal 700 normal>) = 11.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'P052' (P052-BoldItalic.otf) italic normal 700 normal>) = 11.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Yrsa' (Yrsa-Bold.ttf) normal normal 700 normal>) = 10.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'KacstOne' (KacstOne.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Yrsa' (Yrsa-Light.ttf) normal normal light normal>) = 10.24
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'KacstNaskh' (KacstNaskh.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Garuda' (Garuda.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'OpenSymbol' (opens___.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'DejaVu Sans Mono' (DejaVuSansMono-BoldOblique.ttf) oblique normal 700 normal>) = 11.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Loma' (Loma-Oblique.ttf) oblique normal 400 normal>) = 11.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Waree' (Waree-Oblique.ttf) oblique normal 400 normal>) = 11.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Purisa' (Purisa-Bold.ttf) normal normal 700 normal>) = 10.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Phetsarath OT' (Phetsarath_OT.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Nimbus Roman' (NimbusRoman-BoldItalic.otf) italic normal 700 normal>) = 11.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'FreeSerif' (FreeSerif.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Noto Serif CJK JP' (NotoSerifCJK-Regular.ttc) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Nakula' (nakula.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Pagul' (Pagul.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Kinnari' (Kinnari-Oblique.ttf) oblique normal 400 normal>) = 11.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Liberation Mono' (LiberationMono-BoldItalic.ttf) italic normal 700 normal>) = 11.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Ubuntu' (Ubuntu-LI.ttf) italic normal light normal>) = 11.24
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Z003' (Z003-MediumItalic.otf) italic normal medium normal>) = 11.145
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Norasi' (Norasi-BoldOblique.ttf) oblique normal 700 normal>) = 11.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Purisa' (Purisa-Oblique.ttf) oblique normal 400 normal>) = 11.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Liberation Mono' (LiberationMono-Regular.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Ubuntu' (Ubuntu-M.ttf) normal normal 700 normal>) = 10.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Lohit Odia' (Lohit-Odia.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Ubuntu' (Ubuntu-BI.ttf) italic normal 700 normal>) = 11.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Kinnari' (Kinnari-BoldItalic.ttf) italic normal 700 normal>) = 11.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'mry_KacstQurn' (mry_KacstQurn.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Nimbus Roman' (NimbusRoman-Regular.otf) normal normal roman normal>) = 10.145
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'P052' (P052-Italic.otf) italic normal 400 normal>) = 11.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Laksaman' (Laksaman-Italic.ttf) italic normal 400 normal>) = 11.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Umpush' (Umpush-Bold.ttf) normal normal 700 normal>) = 10.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Manjari' (Manjari-Regular.otf) normal normal regular normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'DejaVu Serif' (DejaVuSerif-Italic.ttf) italic normal 400 normal>) = 11.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Tlwg Typo' (TlwgTypo-Bold.ttf) normal normal 700 normal>) = 10.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Liberation Serif' (LiberationSerif-Italic.ttf) italic normal 400 normal>) = 11.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Yrsa' (Yrsa-Regular.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Nimbus Sans' (NimbusSans-Regular.otf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Ani' (ani.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Manjari' (Manjari-Thin.otf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Rachana' (Rachana-Bold.ttf) normal normal 700 normal>) = 10.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Ubuntu' (Ubuntu-RI.ttf) italic normal 400 normal>) = 11.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Ubuntu Mono' (UbuntuMono-B.ttf) normal normal 700 normal>) = 10.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Garuda' (Garuda-Oblique.ttf) oblique normal 400 normal>) = 11.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Loma' (Loma.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'KacstTitleL' (KacstTitleL.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Norasi' (Norasi-Oblique.ttf) oblique normal 400 normal>) = 11.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'padmaa' (padmaa.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'D050000L' (D050000L.otf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Mitra Mono' (mitra.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Laksaman' (Laksaman.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Liberation Serif' (LiberationSerif-Bold.ttf) normal normal 700 normal>) = 10.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Padauk Book' (PadaukBook-Bold.ttf) normal normal 700 normal>) = 10.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Tlwg Typewriter' (TlwgTypewriter.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'DejaVu Serif' (DejaVuSerif.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Laksaman' (Laksaman-BoldItalic.ttf) italic normal 700 normal>) = 11.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'ori1Uni' (utkal.ttf) normal normal medium normal>) = 10.145
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Sawasdee' (Sawasdee-Bold.ttf) normal normal 700 normal>) = 10.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'DejaVu Sans' (DejaVuSansCondensed-Bold.ttf) normal normal 700 condensed>) = 0.5349999999999999
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Garuda' (Garuda-BoldOblique.ttf) oblique normal 700 normal>) = 11.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'KacstOne' (KacstOne-Bold.ttf) normal normal 700 normal>) = 10.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Loma' (Loma-BoldOblique.ttf) oblique normal 700 normal>) = 11.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Liberation Serif' (LiberationSerif-Regular.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Samyak Tamil' (Samyak-Tamil.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Rasa' (Rasa-Light.ttf) normal normal light normal>) = 10.24
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Quicksand' (Quicksand-Bold.ttf) normal normal 700 normal>) = 10.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Kinnari' (Kinnari-BoldOblique.ttf) oblique normal 700 normal>) = 11.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Lohit Gujarati' (Lohit-Gujarati.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Samyak Devanagari' (Samyak-Devanagari.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'KacstPoster' (KacstPoster.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Lohit Assamese' (Lohit-Assamese.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Kalimati' (kalimati.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Loma' (Loma-Bold.ttf) normal normal 700 normal>) = 10.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Gayathri' (Gayathri-Regular.otf) normal normal regular normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Ubuntu Condensed' (Ubuntu-C.ttf) normal normal 400 condensed>) = 10.25
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'FreeSerif' (FreeSerifBold.ttf) normal normal 700 normal>) = 10.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'FreeSans' (FreeSansBold.ttf) normal normal 700 normal>) = 10.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'P052' (P052-Roman.otf) normal normal roman normal>) = 10.145
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Nimbus Mono PS' (NimbusMonoPS-Regular.otf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Laksaman' (Laksaman-Bold.ttf) normal normal 700 normal>) = 10.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Samyak Malayalam' (Samyak-Malayalam.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Ubuntu' (Ubuntu-MI.ttf) italic normal 700 normal>) = 11.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Norasi' (Norasi-Bold.ttf) normal normal 700 normal>) = 10.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Liberation Sans Narrow' (LiberationSansNarrow-Italic.ttf) italic normal 400 condensed>) = 11.25
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Tibetan Machine Uni' (TibetanMachineUni.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Abyssinica SIL' (AbyssinicaSIL-Regular.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Norasi' (Norasi-Italic.ttf) italic normal 400 normal>) = 11.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Chandas' (chandas1-2.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Ubuntu' (Ubuntu-Th.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'URW Bookman' (URWBookman-Light.otf) normal normal light normal>) = 10.24
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'FreeMono' (FreeMonoOblique.ttf) oblique normal 400 normal>) = 11.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Gayathri' (Gayathri-Thin.otf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Rasa' (Rasa-Bold.ttf) normal normal 700 normal>) = 10.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'DejaVu Sans' (DejaVuSansCondensed-Oblique.ttf) oblique normal 400 condensed>) = 1.25
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Lohit Malayalam' (Lohit-Malayalam.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Yrsa' (Yrsa-Medium.ttf) normal normal medium normal>) = 10.145
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Yrsa' (Yrsa-SemiBold.ttf) normal normal semibold normal>) = 10.24
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'KacstLetter' (KacstLetter.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Waree' (Waree-BoldOblique.ttf) oblique normal 700 normal>) = 11.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Umpush' (Umpush-BoldOblique.ttf) oblique normal 700 normal>) = 11.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'KacstScreen' (KacstScreen.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Meera' (Meera-Regular.ttf) normal normal regular normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Nimbus Sans Narrow' (NimbusSansNarrow-Oblique.otf) oblique normal 400 condensed>) = 11.25
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Tlwg Typist' (TlwgTypist-BoldOblique.ttf) oblique normal 700 normal>) = 11.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Ubuntu' (Ubuntu-B.ttf) normal normal 700 normal>) = 10.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'C059' (C059-Roman.otf) normal normal roman normal>) = 10.145
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Noto Sans CJK JP' (NotoSansCJK-Regular.ttc) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Tlwg Typist' (TlwgTypist-Bold.ttf) normal normal 700 normal>) = 10.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'KacstFarsi' (KacstFarsi.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Saab' (Saab.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Rasa' (Rasa-Medium.ttf) normal normal medium normal>) = 10.145
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Chilanka' (Chilanka-Regular.otf) normal normal regular normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Khmer OS System' (KhmerOSsys.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Tlwg Typo' (TlwgTypo-BoldOblique.ttf) oblique normal 700 normal>) = 11.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Manjari' (Manjari-Bold.otf) normal normal 700 normal>) = 10.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Padauk Book' (PadaukBook-Regular.ttf) normal normal book normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Liberation Mono' (LiberationMono-Regular.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Kinnari' (Kinnari-Bold.ttf) normal normal 700 normal>) = 10.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Khmer OS' (KhmerOS.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'DejaVu Sans' (DejaVuSans-BoldOblique.ttf) oblique normal 700 normal>) = 1.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'DejaVu Sans' (DejaVuSansCondensed.ttf) normal normal 400 condensed>) = 0.25
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'DejaVu Serif' (DejaVuSerifCondensed.ttf) normal normal 400 condensed>) = 10.25
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Nimbus Sans' (NimbusSans-Italic.otf) italic normal 400 normal>) = 11.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Ubuntu' (Ubuntu-L.ttf) normal normal light normal>) = 10.24
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'RaghuMalayalamSans' (RaghuMalayalamSans-Regular.ttf) normal normal regular normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Lohit Tamil Classical' (Lohit-Tamil-Classical.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Likhan' (LikhanNormal.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Tlwg Typewriter' (TlwgTypewriter-Bold.ttf) normal normal 700 normal>) = 10.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Vemana2000' (vemana2000.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Liberation Sans Narrow' (LiberationSansNarrow-Regular.ttf) normal normal 400 condensed>) = 10.25
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Rasa' (Rasa-Regular.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Kinnari' (Kinnari-Italic.ttf) italic normal 400 normal>) = 11.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Nimbus Sans Narrow' (NimbusSansNarrow-Regular.otf) normal normal 400 condensed>) = 10.25
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Tlwg Typist' (TlwgTypist.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'DejaVu Math TeX Gyre' (DejaVuMathTeXGyre.ttf) normal normal regular normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Liberation Sans' (LiberationSans-Regular.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'KacstBook' (KacstBook.ttf) normal normal book normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Mukti Narrow' (MuktiNarrowBold.ttf) normal normal 700 normal>) = 10.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Liberation Mono' (LiberationMono-Bold.ttf) normal normal 700 normal>) = 10.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'P052' (P052-Bold.otf) normal normal 700 normal>) = 10.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Liberation Serif' (LiberationSerif-BoldItalic.ttf) italic normal 700 normal>) = 11.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Liberation Sans' (LiberationSans-Italic.ttf) italic normal 400 normal>) = 11.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'KacstQurn' (KacstQurn.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Nimbus Sans Narrow' (NimbusSansNarrow-BoldOblique.otf) oblique normal 700 condensed>) = 11.535
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'DejaVu Sans' (DejaVuSans-Oblique.ttf) oblique normal 400 normal>) = 1.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Droid Sans Fallback' (DroidSansFallbackFull.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Rasa' (Rasa-SemiBold.ttf) normal normal semibold normal>) = 10.24
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Lohit Tamil' (Lohit-Tamil.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'LKLUG' (lklug.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'DejaVu Serif' (DejaVuSerifCondensed-BoldItalic.ttf) italic normal 700 condensed>) = 11.535
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'DejaVu Sans' (DejaVuSansCondensed-BoldOblique.ttf) oblique normal 700 condensed>) = 1.535
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'aakar' (aakar-medium.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Tlwg Mono' (TlwgMono.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Sawasdee' (Sawasdee.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'URW Gothic' (URWGothic-Demi.otf) normal normal demi normal>) = 10.24
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'padmaa-Bold.1.1' (padmaa-Bold.1.1.ttf) normal normal 700 normal>) = 10.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'KacstPen' (KacstPen.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Lohit Kannada' (Lohit-Kannada.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'FreeSans' (FreeSansOblique.ttf) oblique normal 400 normal>) = 11.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Nimbus Mono PS' (NimbusMonoPS-Bold.otf) normal normal 700 normal>) = 10.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Liberation Mono' (LiberationMono-Italic.ttf) italic normal 400 normal>) = 11.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Noto Sans CJK JP' (NotoSansCJK-Bold.ttc) normal normal 700 normal>) = 10.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'DejaVu Serif' (DejaVuSerif-BoldItalic.ttf) italic normal 700 normal>) = 11.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Liberation Sans' (LiberationSans-Bold.ttf) normal normal 700 normal>) = 10.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Jamrul' (JamrulNormal.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'FreeMono' (FreeMono.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Nimbus Sans' (NimbusSans-BoldItalic.otf) italic normal 700 normal>) = 11.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Liberation Serif' (LiberationSerif-Regular.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Kalapi' (Kalapi.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Samanata' (samanata.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Uroob' (Uroob-Regular.ttf) normal normal regular normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Noto Mono' (NotoMono-Regular.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Liberation Serif' (LiberationSerif-BoldItalic.ttf) italic normal 700 normal>) = 11.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Noto Serif CJK JP' (NotoSerifCJK-Bold.ttc) normal normal 700 normal>) = 10.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Nimbus Sans Narrow' (NimbusSansNarrow-Bold.otf) normal normal 700 condensed>) = 10.535
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Sahadeva' (sahadeva.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Norasi' (Norasi.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: Matching sans\-serif:style=normal:variant=normal:weight=normal:stretch=normal:size=10.0 to DejaVu Sans ('/home/nikolas/fiit-dp-thesis-code/venv/lib/python3.8/site-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSans.ttf') with score of 0.050000.
+DEBUG:root:calc_dsc1 y_true torch.Size([1, 160, 32, 32]), y_pred torch.Size([1, 1, 160, 32, 32])
+DEBUG:root:calc_dsc2 smooth 1e-06, lower 81646.1953125, upper 1935.390869140625, dsc 0.02370460517704487
+DEBUG:root:calc_dsc1 y_true torch.Size([1, 160, 32, 32]), y_pred torch.Size([1, 160, 32, 32])
+DEBUG:root:calc_dsc2 smooth 1e-06, lower 81646.1953125, upper 1935.390869140625, dsc 0.02370460517704487
+DEBUG:root:DiceLoss1 y_true torch.Size([1, 160, 32, 32]) y_pred, torch.Size([1, 160, 32, 32])
+DEBUG:root:DiceLoss2 smooth 1e-06, dsc 0.02370460517704487, 1-dsc 0.9762954115867615
+DEBUG:root:loss_batch1 true_output torch.Size([1, 160, 32, 32]), pred torch.Size([1, 1, 160, 32, 32])
+DEBUG:root:loss_batch2 dsc 0.02370460517704487, loss 0.9762954115867615, model_input len 1
+DEBUG:root:calc_dsc1 y_true torch.Size([1, 160, 32, 32]), y_pred torch.Size([1, 1, 160, 32, 32])
+DEBUG:root:calc_dsc2 smooth 1e-06, lower 79541.0, upper 2253.356689453125, dsc 0.028329499065876007
+DEBUG:root:calc_dsc1 y_true torch.Size([1, 160, 32, 32]), y_pred torch.Size([1, 160, 32, 32])
+DEBUG:root:calc_dsc2 smooth 1e-06, lower 79541.0, upper 2253.356689453125, dsc 0.028329499065876007
+DEBUG:root:DiceLoss1 y_true torch.Size([1, 160, 32, 32]) y_pred, torch.Size([1, 160, 32, 32])
+DEBUG:root:DiceLoss2 smooth 1e-06, dsc 0.028329499065876007, 1-dsc 0.9716705083847046
+DEBUG:root:loss_batch1 true_output torch.Size([1, 160, 32, 32]), pred torch.Size([1, 1, 160, 32, 32])
+DEBUG:root:loss_batch2 dsc 0.028329499065876007, loss 0.9716705083847046, model_input len 1
+DEBUG:root:calc_dsc1 y_true torch.Size([1, 160, 32, 32]), y_pred torch.Size([1, 1, 160, 32, 32])
+DEBUG:root:calc_dsc2 smooth 1e-06, lower 78663.234375, upper 2157.6845703125, dsc 0.02742939069867134
+DEBUG:root:calc_dsc1 y_true torch.Size([1, 160, 32, 32]), y_pred torch.Size([1, 160, 32, 32])
+DEBUG:root:calc_dsc2 smooth 1e-06, lower 78663.234375, upper 2157.6845703125, dsc 0.02742939069867134
+DEBUG:root:DiceLoss1 y_true torch.Size([1, 160, 32, 32]) y_pred, torch.Size([1, 160, 32, 32])
+DEBUG:root:DiceLoss2 smooth 1e-06, dsc 0.02742939069867134, 1-dsc 0.9725705981254578
+DEBUG:root:loss_batch1 true_output torch.Size([1, 160, 32, 32]), pred torch.Size([1, 1, 160, 32, 32])
+DEBUG:root:loss_batch2 dsc 0.02742939069867134, loss 0.9725705981254578, model_input len 1
+DEBUG:root:calc_dsc1 y_true torch.Size([1, 160, 32, 32]), y_pred torch.Size([1, 1, 160, 32, 32])
+DEBUG:root:calc_dsc2 smooth 1e-06, lower 78106.5234375, upper 2368.194580078125, dsc 0.0303200613707304
+DEBUG:root:calc_dsc1 y_true torch.Size([1, 160, 32, 32]), y_pred torch.Size([1, 160, 32, 32])
+DEBUG:root:calc_dsc2 smooth 1e-06, lower 78106.5234375, upper 2368.194580078125, dsc 0.0303200613707304
+DEBUG:root:DiceLoss1 y_true torch.Size([1, 160, 32, 32]) y_pred, torch.Size([1, 160, 32, 32])
+DEBUG:root:DiceLoss2 smooth 1e-06, dsc 0.0303200613707304, 1-dsc 0.9696799516677856
+DEBUG:root:loss_batch1 true_output torch.Size([1, 160, 32, 32]), pred torch.Size([1, 1, 160, 32, 32])
+DEBUG:root:loss_batch2 dsc 0.0303200613707304, loss 0.9696799516677856, model_input len 1
+DEBUG:root:calc_dsc1 y_true torch.Size([1, 160, 32, 32]), y_pred torch.Size([1, 1, 160, 32, 32])
+DEBUG:root:calc_dsc2 smooth 1e-06, lower 77131.8515625, upper 2033.22509765625, dsc 0.02636038325726986
+DEBUG:root:calc_dsc1 y_true torch.Size([1, 160, 32, 32]), y_pred torch.Size([1, 160, 32, 32])
+DEBUG:root:calc_dsc2 smooth 1e-06, lower 77131.8515625, upper 2033.22509765625, dsc 0.02636038325726986
+DEBUG:root:DiceLoss1 y_true torch.Size([1, 160, 32, 32]) y_pred, torch.Size([1, 160, 32, 32])
+DEBUG:root:DiceLoss2 smooth 1e-06, dsc 0.02636038325726986, 1-dsc 0.9736396074295044
+DEBUG:root:loss_batch1 true_output torch.Size([1, 160, 32, 32]), pred torch.Size([1, 1, 160, 32, 32])
+DEBUG:root:loss_batch2 dsc 0.02636038325726986, loss 0.9736396074295044, model_input len 1
+DEBUG:root:calc_dsc1 y_true torch.Size([1, 160, 32, 32]), y_pred torch.Size([1, 1, 160, 32, 32])
+DEBUG:root:calc_dsc2 smooth 1e-06, lower 77246.921875, upper 2580.47900390625, dsc 0.03340559080243111
+DEBUG:root:calc_dsc1 y_true torch.Size([1, 160, 32, 32]), y_pred torch.Size([1, 160, 32, 32])
+DEBUG:root:calc_dsc2 smooth 1e-06, lower 77246.921875, upper 2580.47900390625, dsc 0.03340559080243111
+DEBUG:root:DiceLoss1 y_true torch.Size([1, 160, 32, 32]) y_pred, torch.Size([1, 160, 32, 32])
+DEBUG:root:DiceLoss2 smooth 1e-06, dsc 0.03340559080243111, 1-dsc 0.966594398021698
+DEBUG:root:loss_batch1 true_output torch.Size([1, 160, 32, 32]), pred torch.Size([1, 1, 160, 32, 32])
+DEBUG:root:loss_batch2 dsc 0.03340559080243111, loss 0.966594398021698, model_input len 1
+DEBUG:root:calc_dsc1 y_true torch.Size([1, 160, 32, 32]), y_pred torch.Size([1, 1, 160, 32, 32])
+DEBUG:root:calc_dsc2 smooth 1e-06, lower 76916.2421875, upper 3659.793212890625, dsc 0.04758153855800629
+DEBUG:root:calc_dsc1 y_true torch.Size([1, 160, 32, 32]), y_pred torch.Size([1, 160, 32, 32])
+DEBUG:root:calc_dsc2 smooth 1e-06, lower 76916.2421875, upper 3659.793212890625, dsc 0.04758153855800629
+DEBUG:root:DiceLoss1 y_true torch.Size([1, 160, 32, 32]) y_pred, torch.Size([1, 160, 32, 32])
+DEBUG:root:DiceLoss2 smooth 1e-06, dsc 0.04758153855800629, 1-dsc 0.9524184465408325
+DEBUG:root:loss_batch1 true_output torch.Size([1, 160, 32, 32]), pred torch.Size([1, 1, 160, 32, 32])
+DEBUG:root:loss_batch2 dsc 0.04758153855800629, loss 0.9524184465408325, model_input len 1
+DEBUG:root:calc_dsc1 y_true torch.Size([1, 160, 32, 32]), y_pred torch.Size([1, 1, 160, 32, 32])
+DEBUG:root:calc_dsc2 smooth 1e-06, lower 75474.265625, upper 2605.5322265625, dsc 0.034522127360105515
+DEBUG:root:calc_dsc1 y_true torch.Size([1, 160, 32, 32]), y_pred torch.Size([1, 160, 32, 32])
+DEBUG:root:calc_dsc2 smooth 1e-06, lower 75474.265625, upper 2605.5322265625, dsc 0.034522127360105515
+DEBUG:root:DiceLoss1 y_true torch.Size([1, 160, 32, 32]) y_pred, torch.Size([1, 160, 32, 32])
+DEBUG:root:DiceLoss2 smooth 1e-06, dsc 0.034522127360105515, 1-dsc 0.9654778838157654
+DEBUG:root:loss_batch1 true_output torch.Size([1, 160, 32, 32]), pred torch.Size([1, 1, 160, 32, 32])
+DEBUG:root:loss_batch2 dsc 0.034522127360105515, loss 0.9654778838157654, model_input len 1
+DEBUG:root:calc_dsc1 y_true torch.Size([1, 160, 32, 32]), y_pred torch.Size([1, 1, 160, 32, 32])
+DEBUG:root:calc_dsc2 smooth 1e-06, lower 74813.671875, upper 2316.62158203125, dsc 0.03096521645784378
+DEBUG:root:calc_dsc1 y_true torch.Size([1, 160, 32, 32]), y_pred torch.Size([1, 160, 32, 32])
+DEBUG:root:calc_dsc2 smooth 1e-06, lower 74813.671875, upper 2316.62158203125, dsc 0.03096521645784378
+DEBUG:root:DiceLoss1 y_true torch.Size([1, 160, 32, 32]) y_pred, torch.Size([1, 160, 32, 32])
+DEBUG:root:DiceLoss2 smooth 1e-06, dsc 0.03096521645784378, 1-dsc 0.9690347909927368
+DEBUG:root:loss_batch1 true_output torch.Size([1, 160, 32, 32]), pred torch.Size([1, 1, 160, 32, 32])
+DEBUG:root:loss_batch2 dsc 0.03096521645784378, loss 0.9690347909927368, model_input len 1
+DEBUG:root:calc_dsc1 y_true torch.Size([1, 160, 32, 32]), y_pred torch.Size([1, 1, 160, 32, 32])
+DEBUG:root:calc_dsc2 smooth 1e-06, lower 74645.5234375, upper 2468.765625, dsc 0.03307319059967995
+DEBUG:root:calc_dsc1 y_true torch.Size([1, 160, 32, 32]), y_pred torch.Size([1, 160, 32, 32])
+DEBUG:root:calc_dsc2 smooth 1e-06, lower 74645.5234375, upper 2468.765625, dsc 0.03307319059967995
+DEBUG:root:DiceLoss1 y_true torch.Size([1, 160, 32, 32]) y_pred, torch.Size([1, 160, 32, 32])
+DEBUG:root:DiceLoss2 smooth 1e-06, dsc 0.03307319059967995, 1-dsc 0.9669268131256104
+DEBUG:root:loss_batch1 true_output torch.Size([1, 160, 32, 32]), pred torch.Size([1, 1, 160, 32, 32])
+DEBUG:root:loss_batch2 dsc 0.03307319059967995, loss 0.9669268131256104, model_input len 1
+DEBUG:root:calc_dsc1 y_true torch.Size([1, 160, 32, 32]), y_pred torch.Size([1, 1, 160, 32, 32])
+DEBUG:root:calc_dsc2 smooth 1e-06, lower 74426.296875, upper 2599.9462890625, dsc 0.034933168441057205
+DEBUG:root:calc_dsc1 y_true torch.Size([1, 160, 32, 32]), y_pred torch.Size([1, 160, 32, 32])
+DEBUG:root:calc_dsc2 smooth 1e-06, lower 74426.296875, upper 2599.9462890625, dsc 0.034933168441057205
+DEBUG:root:DiceLoss1 y_true torch.Size([1, 160, 32, 32]) y_pred, torch.Size([1, 160, 32, 32])
+DEBUG:root:DiceLoss2 smooth 1e-06, dsc 0.034933168441057205, 1-dsc 0.9650668501853943
+DEBUG:root:loss_batch1 true_output torch.Size([1, 160, 32, 32]), pred torch.Size([1, 1, 160, 32, 32])
+DEBUG:root:loss_batch2 dsc 0.034933168441057205, loss 0.9650668501853943, model_input len 1
+DEBUG:root:calc_dsc1 y_true torch.Size([1, 160, 32, 32]), y_pred torch.Size([1, 1, 160, 32, 32])
+DEBUG:root:calc_dsc2 smooth 1e-06, lower 73071.90625, upper 1827.1937255859375, dsc 0.025005420669913292
+DEBUG:root:calc_dsc1 y_true torch.Size([1, 160, 32, 32]), y_pred torch.Size([1, 160, 32, 32])
+DEBUG:root:calc_dsc2 smooth 1e-06, lower 73071.90625, upper 1827.1937255859375, dsc 0.025005420669913292
+DEBUG:root:DiceLoss1 y_true torch.Size([1, 160, 32, 32]) y_pred, torch.Size([1, 160, 32, 32])
+DEBUG:root:DiceLoss2 smooth 1e-06, dsc 0.025005420669913292, 1-dsc 0.9749945998191833
+DEBUG:root:loss_batch1 true_output torch.Size([1, 160, 32, 32]), pred torch.Size([1, 1, 160, 32, 32])
+DEBUG:root:loss_batch2 dsc 0.025005420669913292, loss 0.9749945998191833, model_input len 1
+DEBUG:root:calc_dsc1 y_true torch.Size([1, 160, 32, 32]), y_pred torch.Size([1, 1, 160, 32, 32])
+DEBUG:root:calc_dsc2 smooth 1e-06, lower 74122.84375, upper 3421.714599609375, dsc 0.04616275429725647
+DEBUG:root:calc_dsc1 y_true torch.Size([1, 160, 32, 32]), y_pred torch.Size([1, 160, 32, 32])
+DEBUG:root:calc_dsc2 smooth 1e-06, lower 74122.84375, upper 3421.714599609375, dsc 0.04616275429725647
+DEBUG:root:DiceLoss1 y_true torch.Size([1, 160, 32, 32]) y_pred, torch.Size([1, 160, 32, 32])
+DEBUG:root:DiceLoss2 smooth 1e-06, dsc 0.04616275429725647, 1-dsc 0.9538372755050659
+DEBUG:root:loss_batch1 true_output torch.Size([1, 160, 32, 32]), pred torch.Size([1, 1, 160, 32, 32])
+DEBUG:root:loss_batch2 dsc 0.04616275429725647, loss 0.9538372755050659, model_input len 1
+DEBUG:root:calc_dsc1 y_true torch.Size([1, 160, 32, 32]), y_pred torch.Size([1, 1, 160, 32, 32])
+DEBUG:root:calc_dsc2 smooth 1e-06, lower 73485.765625, upper 3196.15966796875, dsc 0.04349358752369881
+DEBUG:root:calc_dsc1 y_true torch.Size([1, 160, 32, 32]), y_pred torch.Size([1, 160, 32, 32])
+DEBUG:root:calc_dsc2 smooth 1e-06, lower 73485.765625, upper 3196.15966796875, dsc 0.04349358752369881
+DEBUG:root:DiceLoss1 y_true torch.Size([1, 160, 32, 32]) y_pred, torch.Size([1, 160, 32, 32])
+DEBUG:root:DiceLoss2 smooth 1e-06, dsc 0.04349358752369881, 1-dsc 0.9565064311027527
+DEBUG:root:loss_batch1 true_output torch.Size([1, 160, 32, 32]), pred torch.Size([1, 1, 160, 32, 32])
+DEBUG:root:loss_batch2 dsc 0.04349358752369881, loss 0.9565064311027527, model_input len 1
+DEBUG:root:calc_dsc1 y_true torch.Size([1, 160, 32, 32]), y_pred torch.Size([1, 1, 160, 32, 32])
+DEBUG:root:calc_dsc2 smooth 1e-06, lower 73331.796875, upper 3323.56982421875, dsc 0.04532235488295555
+DEBUG:root:calc_dsc1 y_true torch.Size([1, 160, 32, 32]), y_pred torch.Size([1, 160, 32, 32])
+DEBUG:root:calc_dsc2 smooth 1e-06, lower 73331.796875, upper 3323.56982421875, dsc 0.04532235488295555
+DEBUG:root:DiceLoss1 y_true torch.Size([1, 160, 32, 32]) y_pred, torch.Size([1, 160, 32, 32])
+DEBUG:root:DiceLoss2 smooth 1e-06, dsc 0.04532235488295555, 1-dsc 0.9546776413917542
+DEBUG:root:loss_batch1 true_output torch.Size([1, 160, 32, 32]), pred torch.Size([1, 1, 160, 32, 32])
+DEBUG:root:loss_batch2 dsc 0.04532235488295555, loss 0.9546776413917542, model_input len 1
+DEBUG:root:calc_dsc1 y_true torch.Size([1, 160, 32, 32]), y_pred torch.Size([1, 1, 160, 32, 32])
+DEBUG:root:calc_dsc2 smooth 1e-06, lower 72261.46875, upper 2787.06787109375, dsc 0.03856921195983887
+DEBUG:root:calc_dsc1 y_true torch.Size([1, 160, 32, 32]), y_pred torch.Size([1, 160, 32, 32])
+DEBUG:root:calc_dsc2 smooth 1e-06, lower 72261.46875, upper 2787.06787109375, dsc 0.03856921195983887
+DEBUG:root:DiceLoss1 y_true torch.Size([1, 160, 32, 32]) y_pred, torch.Size([1, 160, 32, 32])
+DEBUG:root:DiceLoss2 smooth 1e-06, dsc 0.03856921195983887, 1-dsc 0.9614307880401611
+DEBUG:root:loss_batch1 true_output torch.Size([1, 160, 32, 32]), pred torch.Size([1, 1, 160, 32, 32])
+DEBUG:root:loss_batch2 dsc 0.03856921195983887, loss 0.9614307880401611, model_input len 1
+DEBUG:root:calc_dsc1 y_true torch.Size([1, 160, 32, 32]), y_pred torch.Size([1, 1, 160, 32, 32])
+DEBUG:root:calc_dsc2 smooth 1e-06, lower 71837.859375, upper 2492.956787109375, dsc 0.034702546894550323
+DEBUG:root:calc_dsc1 y_true torch.Size([1, 160, 32, 32]), y_pred torch.Size([1, 160, 32, 32])
+DEBUG:root:calc_dsc2 smooth 1e-06, lower 71837.859375, upper 2492.956787109375, dsc 0.034702546894550323
+DEBUG:root:DiceLoss1 y_true torch.Size([1, 160, 32, 32]) y_pred, torch.Size([1, 160, 32, 32])
+DEBUG:root:DiceLoss2 smooth 1e-06, dsc 0.034702546894550323, 1-dsc 0.9652974605560303
+DEBUG:root:loss_batch1 true_output torch.Size([1, 160, 32, 32]), pred torch.Size([1, 1, 160, 32, 32])
+DEBUG:root:loss_batch2 dsc 0.034702546894550323, loss 0.9652974605560303, model_input len 1
+DEBUG:root:calc_dsc1 y_true torch.Size([1, 160, 32, 32]), y_pred torch.Size([1, 1, 160, 32, 32])
+DEBUG:root:calc_dsc2 smooth 1e-06, lower 70345.9140625, upper 2171.03369140625, dsc 0.03086225688457489
+DEBUG:root:calc_dsc1 y_true torch.Size([1, 160, 32, 32]), y_pred torch.Size([1, 160, 32, 32])
+DEBUG:root:calc_dsc2 smooth 1e-06, lower 70345.9140625, upper 2171.03369140625, dsc 0.03086225688457489
+DEBUG:root:DiceLoss1 y_true torch.Size([1, 160, 32, 32]) y_pred, torch.Size([1, 160, 32, 32])
+DEBUG:root:DiceLoss2 smooth 1e-06, dsc 0.03086225688457489, 1-dsc 0.9691377282142639
+DEBUG:root:loss_batch1 true_output torch.Size([1, 160, 32, 32]), pred torch.Size([1, 1, 160, 32, 32])
+DEBUG:root:loss_batch2 dsc 0.03086225688457489, loss 0.9691377282142639, model_input len 1
+DEBUG:root:calc_dsc1 y_true torch.Size([1, 160, 32, 32]), y_pred torch.Size([1, 1, 160, 32, 32])
+DEBUG:root:calc_dsc2 smooth 1e-06, lower 70579.34375, upper 2773.55029296875, dsc 0.039296913892030716
+DEBUG:root:calc_dsc1 y_true torch.Size([1, 160, 32, 32]), y_pred torch.Size([1, 160, 32, 32])
+DEBUG:root:calc_dsc2 smooth 1e-06, lower 70579.34375, upper 2773.55029296875, dsc 0.039296913892030716
+DEBUG:root:DiceLoss1 y_true torch.Size([1, 160, 32, 32]) y_pred, torch.Size([1, 160, 32, 32])
+DEBUG:root:DiceLoss2 smooth 1e-06, dsc 0.039296913892030716, 1-dsc 0.9607030749320984
+DEBUG:root:loss_batch1 true_output torch.Size([1, 160, 32, 32]), pred torch.Size([1, 1, 160, 32, 32])
+DEBUG:root:loss_batch2 dsc 0.039296913892030716, loss 0.9607030749320984, model_input len 1
+DEBUG:root:calc_dsc1 y_true torch.Size([1, 160, 32, 32]), y_pred torch.Size([1, 1, 160, 32, 32])
+DEBUG:root:calc_dsc2 smooth 1e-06, lower 69662.1796875, upper 2688.698486328125, dsc 0.03859624266624451
+DEBUG:root:calc_dsc1 y_true torch.Size([1, 160, 32, 32]), y_pred torch.Size([1, 160, 32, 32])
+DEBUG:root:calc_dsc2 smooth 1e-06, lower 69662.1796875, upper 2688.698486328125, dsc 0.03859624266624451
+DEBUG:root:DiceLoss1 y_true torch.Size([1, 160, 32, 32]) y_pred, torch.Size([1, 160, 32, 32])
+DEBUG:root:DiceLoss2 smooth 1e-06, dsc 0.03859624266624451, 1-dsc 0.9614037275314331
+DEBUG:root:loss_batch1 true_output torch.Size([1, 160, 32, 32]), pred torch.Size([1, 1, 160, 32, 32])
+DEBUG:root:loss_batch2 dsc 0.03859624266624451, loss 0.9614037275314331, model_input len 1
+DEBUG:root:calc_dsc1 y_true torch.Size([1, 160, 32, 32]), y_pred torch.Size([1, 1, 160, 32, 32])
+DEBUG:root:calc_dsc2 smooth 1e-06, lower 69003.8359375, upper 2870.741455078125, dsc 0.041602637618780136
+DEBUG:root:calc_dsc1 y_true torch.Size([1, 160, 32, 32]), y_pred torch.Size([1, 160, 32, 32])
+DEBUG:root:calc_dsc2 smooth 1e-06, lower 69003.8359375, upper 2870.741455078125, dsc 0.041602637618780136
+DEBUG:root:DiceLoss1 y_true torch.Size([1, 160, 32, 32]) y_pred, torch.Size([1, 160, 32, 32])
+DEBUG:root:DiceLoss2 smooth 1e-06, dsc 0.041602637618780136, 1-dsc 0.958397388458252
+DEBUG:root:loss_batch1 true_output torch.Size([1, 160, 32, 32]), pred torch.Size([1, 1, 160, 32, 32])
+DEBUG:root:loss_batch2 dsc 0.041602637618780136, loss 0.958397388458252, model_input len 1
+DEBUG:root:calc_dsc1 y_true torch.Size([1, 160, 32, 32]), y_pred torch.Size([1, 1, 160, 32, 32])
+DEBUG:root:calc_dsc2 smooth 1e-06, lower 68172.2265625, upper 1893.6307373046875, dsc 0.027777157723903656
+DEBUG:root:calc_dsc1 y_true torch.Size([1, 160, 32, 32]), y_pred torch.Size([1, 160, 32, 32])
+DEBUG:root:calc_dsc2 smooth 1e-06, lower 68172.2265625, upper 1893.6307373046875, dsc 0.027777157723903656
+DEBUG:root:DiceLoss1 y_true torch.Size([1, 160, 32, 32]) y_pred, torch.Size([1, 160, 32, 32])
+DEBUG:root:DiceLoss2 smooth 1e-06, dsc 0.027777157723903656, 1-dsc 0.9722228646278381
+DEBUG:root:loss_batch1 true_output torch.Size([1, 160, 32, 32]), pred torch.Size([1, 1, 160, 32, 32])
+DEBUG:root:loss_batch2 dsc 0.027777157723903656, loss 0.9722228646278381, model_input len 1
+DEBUG:root:calc_dsc1 y_true torch.Size([1, 160, 32, 32]), y_pred torch.Size([1, 1, 160, 32, 32])
+DEBUG:root:calc_dsc2 smooth 1e-06, lower 68034.109375, upper 2829.153076171875, dsc 0.041584331542253494
+DEBUG:root:calc_dsc1 y_true torch.Size([1, 160, 32, 32]), y_pred torch.Size([1, 160, 32, 32])
+DEBUG:root:calc_dsc2 smooth 1e-06, lower 68034.109375, upper 2829.153076171875, dsc 0.041584331542253494
+DEBUG:root:DiceLoss1 y_true torch.Size([1, 160, 32, 32]) y_pred, torch.Size([1, 160, 32, 32])
+DEBUG:root:DiceLoss2 smooth 1e-06, dsc 0.041584331542253494, 1-dsc 0.958415687084198
+DEBUG:root:loss_batch1 true_output torch.Size([1, 160, 32, 32]), pred torch.Size([1, 1, 160, 32, 32])
+DEBUG:root:loss_batch2 dsc 0.041584331542253494, loss 0.958415687084198, model_input len 1
+DEBUG:root:calc_dsc1 y_true torch.Size([1, 160, 32, 32]), y_pred torch.Size([1, 1, 160, 32, 32])
+DEBUG:root:calc_dsc2 smooth 1e-06, lower 67437.6640625, upper 2657.71240234375, dsc 0.03940991312265396
+DEBUG:root:calc_dsc1 y_true torch.Size([1, 160, 32, 32]), y_pred torch.Size([1, 160, 32, 32])
+DEBUG:root:calc_dsc2 smooth 1e-06, lower 67437.6640625, upper 2657.71240234375, dsc 0.03940991312265396
+DEBUG:root:DiceLoss1 y_true torch.Size([1, 160, 32, 32]) y_pred, torch.Size([1, 160, 32, 32])
+DEBUG:root:DiceLoss2 smooth 1e-06, dsc 0.03940991312265396, 1-dsc 0.9605900645256042
+DEBUG:root:loss_batch1 true_output torch.Size([1, 160, 32, 32]), pred torch.Size([1, 1, 160, 32, 32])
+DEBUG:root:loss_batch2 dsc 0.03940991312265396, loss 0.9605900645256042, model_input len 1
+DEBUG:root:calc_dsc1 y_true torch.Size([1, 160, 32, 32]), y_pred torch.Size([1, 1, 160, 32, 32])
+DEBUG:root:calc_dsc2 smooth 1e-06, lower 67588.3984375, upper 3001.822265625, dsc 0.04441327601671219
+DEBUG:root:calc_dsc1 y_true torch.Size([1, 160, 32, 32]), y_pred torch.Size([1, 160, 32, 32])
+DEBUG:root:calc_dsc2 smooth 1e-06, lower 67588.3984375, upper 3001.822265625, dsc 0.04441327601671219
+DEBUG:root:DiceLoss1 y_true torch.Size([1, 160, 32, 32]) y_pred, torch.Size([1, 160, 32, 32])
+DEBUG:root:DiceLoss2 smooth 1e-06, dsc 0.04441327601671219, 1-dsc 0.9555867314338684
+DEBUG:root:loss_batch1 true_output torch.Size([1, 160, 32, 32]), pred torch.Size([1, 1, 160, 32, 32])
+DEBUG:root:loss_batch2 dsc 0.04441327601671219, loss 0.9555867314338684, model_input len 1
+DEBUG:root:calc_dsc1 y_true torch.Size([1, 160, 32, 32]), y_pred torch.Size([1, 1, 160, 32, 32])
+DEBUG:root:calc_dsc2 smooth 1e-06, lower 67507.484375, upper 3246.859130859375, dsc 0.04809628427028656
+DEBUG:root:calc_dsc1 y_true torch.Size([1, 160, 32, 32]), y_pred torch.Size([1, 160, 32, 32])
+DEBUG:root:calc_dsc2 smooth 1e-06, lower 67507.484375, upper 3246.859130859375, dsc 0.04809628427028656
+DEBUG:root:DiceLoss1 y_true torch.Size([1, 160, 32, 32]) y_pred, torch.Size([1, 160, 32, 32])
+DEBUG:root:DiceLoss2 smooth 1e-06, dsc 0.04809628427028656, 1-dsc 0.9519037008285522
+DEBUG:root:loss_batch1 true_output torch.Size([1, 160, 32, 32]), pred torch.Size([1, 1, 160, 32, 32])
+DEBUG:root:loss_batch2 dsc 0.04809628427028656, loss 0.9519037008285522, model_input len 1
+DEBUG:root:calc_dsc1 y_true torch.Size([1, 160, 32, 32]), y_pred torch.Size([1, 1, 160, 32, 32])
+DEBUG:root:calc_dsc2 smooth 1e-06, lower 66143.203125, upper 2288.82470703125, dsc 0.03460408002138138
+DEBUG:root:calc_dsc1 y_true torch.Size([1, 160, 32, 32]), y_pred torch.Size([1, 160, 32, 32])
+DEBUG:root:calc_dsc2 smooth 1e-06, lower 66143.203125, upper 2288.82470703125, dsc 0.03460408002138138
+DEBUG:root:DiceLoss1 y_true torch.Size([1, 160, 32, 32]) y_pred, torch.Size([1, 160, 32, 32])
+DEBUG:root:DiceLoss2 smooth 1e-06, dsc 0.03460408002138138, 1-dsc 0.9653959274291992
+DEBUG:root:loss_batch1 true_output torch.Size([1, 160, 32, 32]), pred torch.Size([1, 1, 160, 32, 32])
+DEBUG:root:loss_batch2 dsc 0.03460408002138138, loss 0.9653959274291992, model_input len 1
+DEBUG:root:calc_dsc1 y_true torch.Size([1, 160, 32, 32]), y_pred torch.Size([1, 1, 160, 32, 32])
+DEBUG:root:calc_dsc2 smooth 1e-06, lower 66147.078125, upper 2990.84130859375, dsc 0.04521501809358597
+DEBUG:root:calc_dsc1 y_true torch.Size([1, 160, 32, 32]), y_pred torch.Size([1, 160, 32, 32])
+DEBUG:root:calc_dsc2 smooth 1e-06, lower 66147.078125, upper 2990.84130859375, dsc 0.04521501809358597
+DEBUG:root:DiceLoss1 y_true torch.Size([1, 160, 32, 32]) y_pred, torch.Size([1, 160, 32, 32])
+DEBUG:root:DiceLoss2 smooth 1e-06, dsc 0.04521501809358597, 1-dsc 0.9547849893569946
+DEBUG:root:loss_batch1 true_output torch.Size([1, 160, 32, 32]), pred torch.Size([1, 1, 160, 32, 32])
+DEBUG:root:loss_batch2 dsc 0.04521501809358597, loss 0.9547849893569946, model_input len 1
+DEBUG:root:calc_dsc1 y_true torch.Size([1, 160, 32, 32]), y_pred torch.Size([1, 1, 160, 32, 32])
+DEBUG:root:calc_dsc2 smooth 1e-06, lower 65767.78125, upper 2229.26416015625, dsc 0.03389599174261093
+DEBUG:root:calc_dsc1 y_true torch.Size([1, 160, 32, 32]), y_pred torch.Size([1, 160, 32, 32])
+DEBUG:root:calc_dsc2 smooth 1e-06, lower 65767.78125, upper 2229.26416015625, dsc 0.03389599174261093
+DEBUG:root:DiceLoss1 y_true torch.Size([1, 160, 32, 32]) y_pred, torch.Size([1, 160, 32, 32])
+DEBUG:root:DiceLoss2 smooth 1e-06, dsc 0.03389599174261093, 1-dsc 0.9661040306091309
+DEBUG:root:loss_batch1 true_output torch.Size([1, 160, 32, 32]), pred torch.Size([1, 1, 160, 32, 32])
+DEBUG:root:loss_batch2 dsc 0.03389599174261093, loss 0.9661040306091309, model_input len 1
+DEBUG:root:calc_dsc1 y_true torch.Size([1, 160, 32, 32]), y_pred torch.Size([1, 1, 160, 32, 32])
+DEBUG:root:calc_dsc2 smooth 1e-06, lower 66176.71875, upper 2901.1904296875, dsc 0.04384004697203636
+DEBUG:root:calc_dsc1 y_true torch.Size([1, 160, 32, 32]), y_pred torch.Size([1, 160, 32, 32])
+DEBUG:root:calc_dsc2 smooth 1e-06, lower 66176.71875, upper 2901.1904296875, dsc 0.04384004697203636
+DEBUG:root:DiceLoss1 y_true torch.Size([1, 160, 32, 32]) y_pred, torch.Size([1, 160, 32, 32])
+DEBUG:root:DiceLoss2 smooth 1e-06, dsc 0.04384004697203636, 1-dsc 0.9561599493026733
+DEBUG:root:loss_batch1 true_output torch.Size([1, 160, 32, 32]), pred torch.Size([1, 1, 160, 32, 32])
+DEBUG:root:loss_batch2 dsc 0.04384004697203636, loss 0.9561599493026733, model_input len 1
+DEBUG:root:calc_dsc1 y_true torch.Size([1, 160, 32, 32]), y_pred torch.Size([1, 1, 160, 32, 32])
+DEBUG:root:calc_dsc2 smooth 1e-06, lower 65736.765625, upper 3363.871826171875, dsc 0.05117185041308403
+DEBUG:root:calc_dsc1 y_true torch.Size([1, 160, 32, 32]), y_pred torch.Size([1, 160, 32, 32])
+DEBUG:root:calc_dsc2 smooth 1e-06, lower 65736.765625, upper 3363.871826171875, dsc 0.05117185041308403
+DEBUG:root:DiceLoss1 y_true torch.Size([1, 160, 32, 32]) y_pred, torch.Size([1, 160, 32, 32])
+DEBUG:root:DiceLoss2 smooth 1e-06, dsc 0.05117185041308403, 1-dsc 0.9488281607627869
+DEBUG:root:loss_batch1 true_output torch.Size([1, 160, 32, 32]), pred torch.Size([1, 1, 160, 32, 32])
+DEBUG:root:loss_batch2 dsc 0.05117185041308403, loss 0.9488281607627869, model_input len 1
+DEBUG:root:calc_dsc1 y_true torch.Size([1, 160, 32, 32]), y_pred torch.Size([1, 1, 160, 32, 32])
+DEBUG:root:calc_dsc2 smooth 1e-06, lower 65538.1875, upper 2922.683837890625, dsc 0.04459512606263161
+DEBUG:root:calc_dsc1 y_true torch.Size([1, 160, 32, 32]), y_pred torch.Size([1, 160, 32, 32])
+DEBUG:root:calc_dsc2 smooth 1e-06, lower 65538.1875, upper 2922.683837890625, dsc 0.04459512606263161
+DEBUG:root:DiceLoss1 y_true torch.Size([1, 160, 32, 32]) y_pred, torch.Size([1, 160, 32, 32])
+DEBUG:root:DiceLoss2 smooth 1e-06, dsc 0.04459512606263161, 1-dsc 0.9554048776626587
+DEBUG:root:loss_batch1 true_output torch.Size([1, 160, 32, 32]), pred torch.Size([1, 1, 160, 32, 32])
+DEBUG:root:loss_batch2 dsc 0.04459512606263161, loss 0.9554048776626587, model_input len 1
+DEBUG:root:calc_dsc1 y_true torch.Size([1, 160, 32, 32]), y_pred torch.Size([1, 1, 160, 32, 32])
+DEBUG:root:calc_dsc2 smooth 1e-06, lower 65886.34375, upper 3583.40869140625, dsc 0.05438772961497307
+DEBUG:root:calc_dsc1 y_true torch.Size([1, 160, 32, 32]), y_pred torch.Size([1, 160, 32, 32])
+DEBUG:root:calc_dsc2 smooth 1e-06, lower 65886.34375, upper 3583.40869140625, dsc 0.05438772961497307
+DEBUG:root:DiceLoss1 y_true torch.Size([1, 160, 32, 32]) y_pred, torch.Size([1, 160, 32, 32])
+DEBUG:root:DiceLoss2 smooth 1e-06, dsc 0.05438772961497307, 1-dsc 0.9456122517585754
+DEBUG:root:loss_batch1 true_output torch.Size([1, 160, 32, 32]), pred torch.Size([1, 1, 160, 32, 32])
+DEBUG:root:loss_batch2 dsc 0.05438772961497307, loss 0.9456122517585754, model_input len 1
+DEBUG:root:calc_dsc1 y_true torch.Size([1, 160, 32, 32]), y_pred torch.Size([1, 1, 160, 32, 32])
+DEBUG:root:calc_dsc2 smooth 1e-06, lower 65039.94921875, upper 2862.609619140625, dsc 0.04401309788227081
+DEBUG:root:calc_dsc1 y_true torch.Size([1, 160, 32, 32]), y_pred torch.Size([1, 160, 32, 32])
+DEBUG:root:calc_dsc2 smooth 1e-06, lower 65039.94921875, upper 2862.609619140625, dsc 0.04401309788227081
+DEBUG:root:DiceLoss1 y_true torch.Size([1, 160, 32, 32]) y_pred, torch.Size([1, 160, 32, 32])
+DEBUG:root:DiceLoss2 smooth 1e-06, dsc 0.04401309788227081, 1-dsc 0.9559869170188904
+DEBUG:root:loss_batch1 true_output torch.Size([1, 160, 32, 32]), pred torch.Size([1, 1, 160, 32, 32])
+DEBUG:root:loss_batch2 dsc 0.04401309788227081, loss 0.9559869170188904, model_input len 1
+DEBUG:root:calc_dsc1 y_true torch.Size([1, 160, 32, 32]), y_pred torch.Size([1, 1, 160, 32, 32])
+DEBUG:root:calc_dsc2 smooth 1e-06, lower 65451.1875, upper 3763.99609375, dsc 0.0575084462761879
+DEBUG:root:calc_dsc1 y_true torch.Size([1, 160, 32, 32]), y_pred torch.Size([1, 160, 32, 32])
+DEBUG:root:calc_dsc2 smooth 1e-06, lower 65451.1875, upper 3763.99609375, dsc 0.0575084462761879
+DEBUG:root:DiceLoss1 y_true torch.Size([1, 160, 32, 32]) y_pred, torch.Size([1, 160, 32, 32])
+DEBUG:root:DiceLoss2 smooth 1e-06, dsc 0.0575084462761879, 1-dsc 0.9424915313720703
+DEBUG:root:loss_batch1 true_output torch.Size([1, 160, 32, 32]), pred torch.Size([1, 1, 160, 32, 32])
+DEBUG:root:loss_batch2 dsc 0.0575084462761879, loss 0.9424915313720703, model_input len 1
+DEBUG:root:calc_dsc1 y_true torch.Size([1, 160, 32, 32]), y_pred torch.Size([1, 1, 160, 32, 32])
+DEBUG:root:calc_dsc2 smooth 1e-06, lower 64875.8359375, upper 2937.970458984375, dsc 0.04528605192899704
+DEBUG:root:calc_dsc1 y_true torch.Size([1, 160, 32, 32]), y_pred torch.Size([1, 160, 32, 32])
+DEBUG:root:calc_dsc2 smooth 1e-06, lower 64875.8359375, upper 2937.970458984375, dsc 0.04528605192899704
+DEBUG:root:DiceLoss1 y_true torch.Size([1, 160, 32, 32]) y_pred, torch.Size([1, 160, 32, 32])
+DEBUG:root:DiceLoss2 smooth 1e-06, dsc 0.04528605192899704, 1-dsc 0.9547139406204224
+DEBUG:root:loss_batch1 true_output torch.Size([1, 160, 32, 32]), pred torch.Size([1, 1, 160, 32, 32])
+DEBUG:root:loss_batch2 dsc 0.04528605192899704, loss 0.9547139406204224, model_input len 1
+DEBUG:root:calc_dsc1 y_true torch.Size([1, 160, 32, 32]), y_pred torch.Size([1, 1, 160, 32, 32])
+DEBUG:root:calc_dsc2 smooth 1e-06, lower 64978.05859375, upper 2875.585693359375, dsc 0.04425472021102905
+DEBUG:root:calc_dsc1 y_true torch.Size([1, 160, 32, 32]), y_pred torch.Size([1, 160, 32, 32])
+DEBUG:root:calc_dsc2 smooth 1e-06, lower 64978.05859375, upper 2875.585693359375, dsc 0.04425472021102905
+DEBUG:root:DiceLoss1 y_true torch.Size([1, 160, 32, 32]) y_pred, torch.Size([1, 160, 32, 32])
+DEBUG:root:DiceLoss2 smooth 1e-06, dsc 0.04425472021102905, 1-dsc 0.955745279788971
+DEBUG:root:loss_batch1 true_output torch.Size([1, 160, 32, 32]), pred torch.Size([1, 1, 160, 32, 32])
+DEBUG:root:loss_batch2 dsc 0.04425472021102905, loss 0.955745279788971, model_input len 1
+DEBUG:root:calc_dsc1 y_true torch.Size([1, 160, 32, 32]), y_pred torch.Size([1, 1, 160, 32, 32])
+DEBUG:root:calc_dsc2 smooth 1e-06, lower 63875.0234375, upper 2143.951416015625, dsc 0.03356478363275528
+DEBUG:root:calc_dsc1 y_true torch.Size([1, 160, 32, 32]), y_pred torch.Size([1, 160, 32, 32])
+DEBUG:root:calc_dsc2 smooth 1e-06, lower 63875.0234375, upper 2143.951416015625, dsc 0.03356478363275528
+DEBUG:root:DiceLoss1 y_true torch.Size([1, 160, 32, 32]) y_pred, torch.Size([1, 160, 32, 32])
+DEBUG:root:DiceLoss2 smooth 1e-06, dsc 0.03356478363275528, 1-dsc 0.9664351940155029
+DEBUG:root:loss_batch1 true_output torch.Size([1, 160, 32, 32]), pred torch.Size([1, 1, 160, 32, 32])
+DEBUG:root:loss_batch2 dsc 0.03356478363275528, loss 0.9664351940155029, model_input len 1
+DEBUG:root:calc_dsc1 y_true torch.Size([1, 160, 32, 32]), y_pred torch.Size([1, 1, 160, 32, 32])
+DEBUG:root:calc_dsc2 smooth 1e-06, lower 64221.625, upper 2650.627197265625, dsc 0.041273124516010284
+DEBUG:root:calc_dsc1 y_true torch.Size([1, 160, 32, 32]), y_pred torch.Size([1, 160, 32, 32])
+DEBUG:root:calc_dsc2 smooth 1e-06, lower 64221.625, upper 2650.627197265625, dsc 0.041273124516010284
+DEBUG:root:DiceLoss1 y_true torch.Size([1, 160, 32, 32]) y_pred, torch.Size([1, 160, 32, 32])
+DEBUG:root:DiceLoss2 smooth 1e-06, dsc 0.041273124516010284, 1-dsc 0.9587268829345703
+DEBUG:root:loss_batch1 true_output torch.Size([1, 160, 32, 32]), pred torch.Size([1, 1, 160, 32, 32])
+DEBUG:root:loss_batch2 dsc 0.041273124516010284, loss 0.9587268829345703, model_input len 1
+DEBUG:root:calc_dsc1 y_true torch.Size([1, 160, 32, 32]), y_pred torch.Size([1, 1, 160, 32, 32])
+DEBUG:root:calc_dsc2 smooth 1e-06, lower 63903.890625, upper 2685.387939453125, dsc 0.04202229157090187
+DEBUG:root:calc_dsc1 y_true torch.Size([1, 160, 32, 32]), y_pred torch.Size([1, 160, 32, 32])
+DEBUG:root:calc_dsc2 smooth 1e-06, lower 63903.890625, upper 2685.387939453125, dsc 0.04202229157090187
+DEBUG:root:DiceLoss1 y_true torch.Size([1, 160, 32, 32]) y_pred, torch.Size([1, 160, 32, 32])
+DEBUG:root:DiceLoss2 smooth 1e-06, dsc 0.04202229157090187, 1-dsc 0.9579777121543884
+DEBUG:root:loss_batch1 true_output torch.Size([1, 160, 32, 32]), pred torch.Size([1, 1, 160, 32, 32])
+DEBUG:root:loss_batch2 dsc 0.04202229157090187, loss 0.9579777121543884, model_input len 1
+DEBUG:root:calc_dsc1 y_true torch.Size([1, 160, 32, 32]), y_pred torch.Size([1, 1, 160, 32, 32])
+DEBUG:root:calc_dsc2 smooth 1e-06, lower 61308.7265625, upper 3137.47802734375, dsc 0.0511750653386116
+DEBUG:root:calc_dsc1 y_true torch.Size([1, 160, 32, 32]), y_pred torch.Size([1, 160, 32, 32])
+DEBUG:root:calc_dsc2 smooth 1e-06, lower 61308.7265625, upper 3137.47802734375, dsc 0.0511750653386116
+DEBUG:root:DiceLoss1 y_true torch.Size([1, 160, 32, 32]) y_pred, torch.Size([1, 160, 32, 32])
+DEBUG:root:DiceLoss2 smooth 1e-06, dsc 0.0511750653386116, 1-dsc 0.948824942111969
+DEBUG:root:loss_batch1 true_output torch.Size([1, 160, 32, 32]), pred torch.Size([1, 1, 160, 32, 32])
+DEBUG:root:loss_batch2 dsc 0.0511750653386116, loss 0.948824942111969, model_input len 1
+DEBUG:root:calc_dsc1 y_true torch.Size([1, 160, 32, 32]), y_pred torch.Size([1, 1, 160, 32, 32])
+DEBUG:root:calc_dsc2 smooth 1e-06, lower 60883.859375, upper 2585.572509765625, dsc 0.04246728867292404
+DEBUG:root:calc_dsc1 y_true torch.Size([1, 160, 32, 32]), y_pred torch.Size([1, 160, 32, 32])
+DEBUG:root:calc_dsc2 smooth 1e-06, lower 60883.859375, upper 2585.572509765625, dsc 0.04246728867292404
+DEBUG:root:DiceLoss1 y_true torch.Size([1, 160, 32, 32]) y_pred, torch.Size([1, 160, 32, 32])
+DEBUG:root:DiceLoss2 smooth 1e-06, dsc 0.04246728867292404, 1-dsc 0.9575327038764954
+DEBUG:root:loss_batch1 true_output torch.Size([1, 160, 32, 32]), pred torch.Size([1, 1, 160, 32, 32])
+DEBUG:root:loss_batch2 dsc 0.04246728867292404, loss 0.9575327038764954, model_input len 1
+DEBUG:root:calc_dsc1 y_true torch.Size([1, 160, 32, 32]), y_pred torch.Size([1, 1, 160, 32, 32])
+DEBUG:root:calc_dsc2 smooth 1e-06, lower 60682.98828125, upper 2809.69384765625, dsc 0.04630117863416672
+DEBUG:root:calc_dsc1 y_true torch.Size([1, 160, 32, 32]), y_pred torch.Size([1, 160, 32, 32])
+DEBUG:root:calc_dsc2 smooth 1e-06, lower 60682.98828125, upper 2809.69384765625, dsc 0.04630117863416672
+DEBUG:root:DiceLoss1 y_true torch.Size([1, 160, 32, 32]) y_pred, torch.Size([1, 160, 32, 32])
+DEBUG:root:DiceLoss2 smooth 1e-06, dsc 0.04630117863416672, 1-dsc 0.9536988139152527
+DEBUG:root:loss_batch1 true_output torch.Size([1, 160, 32, 32]), pred torch.Size([1, 1, 160, 32, 32])
+DEBUG:root:loss_batch2 dsc 0.04630117863416672, loss 0.9536988139152527, model_input len 1
+DEBUG:root:calc_dsc1 y_true torch.Size([1, 160, 32, 32]), y_pred torch.Size([1, 1, 160, 32, 32])
+DEBUG:root:calc_dsc2 smooth 1e-06, lower 60563.9765625, upper 2398.74560546875, dsc 0.03960680589079857
+DEBUG:root:calc_dsc1 y_true torch.Size([1, 160, 32, 32]), y_pred torch.Size([1, 160, 32, 32])
+DEBUG:root:calc_dsc2 smooth 1e-06, lower 60563.9765625, upper 2398.74560546875, dsc 0.03960680589079857
+DEBUG:root:DiceLoss1 y_true torch.Size([1, 160, 32, 32]) y_pred, torch.Size([1, 160, 32, 32])
+DEBUG:root:DiceLoss2 smooth 1e-06, dsc 0.03960680589079857, 1-dsc 0.9603931903839111
+DEBUG:root:loss_batch1 true_output torch.Size([1, 160, 32, 32]), pred torch.Size([1, 1, 160, 32, 32])
+DEBUG:root:loss_batch2 dsc 0.03960680589079857, loss 0.9603931903839111, model_input len 1
+DEBUG:root:calc_dsc1 y_true torch.Size([1, 160, 32, 32]), y_pred torch.Size([1, 1, 160, 32, 32])
+DEBUG:root:calc_dsc2 smooth 1e-06, lower 61639.03125, upper 2965.25927734375, dsc 0.0481068454682827
+DEBUG:root:calc_dsc1 y_true torch.Size([1, 160, 32, 32]), y_pred torch.Size([1, 160, 32, 32])
+DEBUG:root:calc_dsc2 smooth 1e-06, lower 61639.03125, upper 2965.25927734375, dsc 0.0481068454682827
+DEBUG:root:DiceLoss1 y_true torch.Size([1, 160, 32, 32]) y_pred, torch.Size([1, 160, 32, 32])
+DEBUG:root:DiceLoss2 smooth 1e-06, dsc 0.0481068454682827, 1-dsc 0.951893150806427
+DEBUG:root:loss_batch1 true_output torch.Size([1, 160, 32, 32]), pred torch.Size([1, 1, 160, 32, 32])
+DEBUG:root:loss_batch2 dsc 0.0481068454682827, loss 0.951893150806427, model_input len 1
+DEBUG:root:calc_dsc1 y_true torch.Size([1, 160, 32, 32]), y_pred torch.Size([1, 1, 160, 32, 32])
+DEBUG:root:calc_dsc2 smooth 1e-06, lower 64126.984375, upper 3342.605712890625, dsc 0.05212479084730148
+DEBUG:root:calc_dsc1 y_true torch.Size([1, 160, 32, 32]), y_pred torch.Size([1, 160, 32, 32])
+DEBUG:root:calc_dsc2 smooth 1e-06, lower 64126.984375, upper 3342.605712890625, dsc 0.05212479084730148
+DEBUG:root:DiceLoss1 y_true torch.Size([1, 160, 32, 32]) y_pred, torch.Size([1, 160, 32, 32])
+DEBUG:root:DiceLoss2 smooth 1e-06, dsc 0.05212479084730148, 1-dsc 0.9478752017021179
+DEBUG:root:loss_batch1 true_output torch.Size([1, 160, 32, 32]), pred torch.Size([1, 1, 160, 32, 32])
+DEBUG:root:loss_batch2 dsc 0.05212479084730148, loss 0.9478752017021179, model_input len 1
+DEBUG:root:calc_dsc1 y_true torch.Size([1, 160, 32, 32]), y_pred torch.Size([1, 1, 160, 32, 32])
+DEBUG:root:calc_dsc2 smooth 1e-06, lower 63742.56640625, upper 2871.057373046875, dsc 0.04504144564270973
+DEBUG:root:calc_dsc1 y_true torch.Size([1, 160, 32, 32]), y_pred torch.Size([1, 160, 32, 32])
+DEBUG:root:calc_dsc2 smooth 1e-06, lower 63742.56640625, upper 2871.057373046875, dsc 0.04504144564270973
+DEBUG:root:DiceLoss1 y_true torch.Size([1, 160, 32, 32]) y_pred, torch.Size([1, 160, 32, 32])
+DEBUG:root:DiceLoss2 smooth 1e-06, dsc 0.04504144564270973, 1-dsc 0.9549585580825806
+DEBUG:root:loss_batch1 true_output torch.Size([1, 160, 32, 32]), pred torch.Size([1, 1, 160, 32, 32])
+DEBUG:root:loss_batch2 dsc 0.04504144564270973, loss 0.9549585580825806, model_input len 1
+DEBUG:root:calc_dsc1 y_true torch.Size([1, 160, 32, 32]), y_pred torch.Size([1, 1, 160, 32, 32])
+DEBUG:root:calc_dsc2 smooth 1e-06, lower 63183.5390625, upper 2361.095703125, dsc 0.03736884146928787
+DEBUG:root:calc_dsc1 y_true torch.Size([1, 160, 32, 32]), y_pred torch.Size([1, 160, 32, 32])
+DEBUG:root:calc_dsc2 smooth 1e-06, lower 63183.5390625, upper 2361.095703125, dsc 0.03736884146928787
+DEBUG:root:DiceLoss1 y_true torch.Size([1, 160, 32, 32]) y_pred, torch.Size([1, 160, 32, 32])
+DEBUG:root:DiceLoss2 smooth 1e-06, dsc 0.03736884146928787, 1-dsc 0.9626311659812927
+DEBUG:root:loss_batch1 true_output torch.Size([1, 160, 32, 32]), pred torch.Size([1, 1, 160, 32, 32])
+DEBUG:root:loss_batch2 dsc 0.03736884146928787, loss 0.9626311659812927, model_input len 1
+DEBUG:root:calc_dsc1 y_true torch.Size([1, 160, 32, 32]), y_pred torch.Size([1, 1, 160, 32, 32])
+DEBUG:root:calc_dsc2 smooth 1e-06, lower 62848.390625, upper 1833.061279296875, dsc 0.02916640043258667
+DEBUG:root:calc_dsc1 y_true torch.Size([1, 160, 32, 32]), y_pred torch.Size([1, 160, 32, 32])
+DEBUG:root:calc_dsc2 smooth 1e-06, lower 62848.390625, upper 1833.061279296875, dsc 0.02916640043258667
+DEBUG:root:DiceLoss1 y_true torch.Size([1, 160, 32, 32]) y_pred, torch.Size([1, 160, 32, 32])
+DEBUG:root:DiceLoss2 smooth 1e-06, dsc 0.02916640043258667, 1-dsc 0.9708335995674133
+DEBUG:root:loss_batch1 true_output torch.Size([1, 160, 32, 32]), pred torch.Size([1, 1, 160, 32, 32])
+DEBUG:root:loss_batch2 dsc 0.02916640043258667, loss 0.9708335995674133, model_input len 1
+DEBUG:root:calc_dsc1 y_true torch.Size([1, 160, 32, 32]), y_pred torch.Size([1, 1, 160, 32, 32])
+DEBUG:root:calc_dsc2 smooth 1e-06, lower 63412.80859375, upper 2653.857421875, dsc 0.041850496083498
+DEBUG:root:calc_dsc1 y_true torch.Size([1, 160, 32, 32]), y_pred torch.Size([1, 160, 32, 32])
+DEBUG:root:calc_dsc2 smooth 1e-06, lower 63412.80859375, upper 2653.857421875, dsc 0.041850496083498
+DEBUG:root:DiceLoss1 y_true torch.Size([1, 160, 32, 32]) y_pred, torch.Size([1, 160, 32, 32])
+DEBUG:root:DiceLoss2 smooth 1e-06, dsc 0.041850496083498, 1-dsc 0.9581494927406311
+DEBUG:root:loss_batch1 true_output torch.Size([1, 160, 32, 32]), pred torch.Size([1, 1, 160, 32, 32])
+DEBUG:root:loss_batch2 dsc 0.041850496083498, loss 0.9581494927406311, model_input len 1
+DEBUG:root:calc_dsc1 y_true torch.Size([1, 160, 32, 32]), y_pred torch.Size([1, 1, 160, 32, 32])
+DEBUG:root:calc_dsc2 smooth 1e-06, lower 63480.0546875, upper 2907.98486328125, dsc 0.04580942541360855
+DEBUG:root:calc_dsc1 y_true torch.Size([1, 160, 32, 32]), y_pred torch.Size([1, 160, 32, 32])
+DEBUG:root:calc_dsc2 smooth 1e-06, lower 63480.0546875, upper 2907.98486328125, dsc 0.04580942541360855
+DEBUG:root:DiceLoss1 y_true torch.Size([1, 160, 32, 32]) y_pred, torch.Size([1, 160, 32, 32])
+DEBUG:root:DiceLoss2 smooth 1e-06, dsc 0.04580942541360855, 1-dsc 0.9541905522346497
+DEBUG:root:loss_batch1 true_output torch.Size([1, 160, 32, 32]), pred torch.Size([1, 1, 160, 32, 32])
+DEBUG:root:loss_batch2 dsc 0.04580942541360855, loss 0.9541905522346497, model_input len 1
+DEBUG:root:calc_dsc1 y_true torch.Size([1, 160, 32, 32]), y_pred torch.Size([1, 1, 160, 32, 32])
+DEBUG:root:calc_dsc2 smooth 1e-06, lower 62322.42578125, upper 2287.837890625, dsc 0.036709707230329514
+DEBUG:root:calc_dsc1 y_true torch.Size([1, 160, 32, 32]), y_pred torch.Size([1, 160, 32, 32])
+DEBUG:root:calc_dsc2 smooth 1e-06, lower 62322.42578125, upper 2287.837890625, dsc 0.036709707230329514
+DEBUG:root:DiceLoss1 y_true torch.Size([1, 160, 32, 32]) y_pred, torch.Size([1, 160, 32, 32])
+DEBUG:root:DiceLoss2 smooth 1e-06, dsc 0.036709707230329514, 1-dsc 0.963290274143219
+DEBUG:root:loss_batch1 true_output torch.Size([1, 160, 32, 32]), pred torch.Size([1, 1, 160, 32, 32])
+DEBUG:root:loss_batch2 dsc 0.036709707230329514, loss 0.963290274143219, model_input len 1
+DEBUG:root:calc_dsc1 y_true torch.Size([1, 160, 32, 32]), y_pred torch.Size([1, 1, 160, 32, 32])
+DEBUG:root:calc_dsc2 smooth 1e-06, lower 62043.33984375, upper 2230.72119140625, dsc 0.03595424070954323
+DEBUG:root:calc_dsc1 y_true torch.Size([1, 160, 32, 32]), y_pred torch.Size([1, 160, 32, 32])
+DEBUG:root:calc_dsc2 smooth 1e-06, lower 62043.33984375, upper 2230.72119140625, dsc 0.03595424070954323
+DEBUG:root:DiceLoss1 y_true torch.Size([1, 160, 32, 32]) y_pred, torch.Size([1, 160, 32, 32])
+DEBUG:root:DiceLoss2 smooth 1e-06, dsc 0.03595424070954323, 1-dsc 0.9640457630157471
+DEBUG:root:loss_batch1 true_output torch.Size([1, 160, 32, 32]), pred torch.Size([1, 1, 160, 32, 32])
+DEBUG:root:loss_batch2 dsc 0.03595424070954323, loss 0.9640457630157471, model_input len 1
+DEBUG:root:calc_dsc1 y_true torch.Size([1, 160, 32, 32]), y_pred torch.Size([1, 1, 160, 32, 32])
+DEBUG:root:calc_dsc2 smooth 1e-06, lower 63202.4453125, upper 3571.09521484375, dsc 0.056502483785152435
+DEBUG:root:calc_dsc1 y_true torch.Size([1, 160, 32, 32]), y_pred torch.Size([1, 160, 32, 32])
+DEBUG:root:calc_dsc2 smooth 1e-06, lower 63202.4453125, upper 3571.09521484375, dsc 0.056502483785152435
+DEBUG:root:DiceLoss1 y_true torch.Size([1, 160, 32, 32]) y_pred, torch.Size([1, 160, 32, 32])
+DEBUG:root:DiceLoss2 smooth 1e-06, dsc 0.056502483785152435, 1-dsc 0.9434975385665894
+DEBUG:root:loss_batch1 true_output torch.Size([1, 160, 32, 32]), pred torch.Size([1, 1, 160, 32, 32])
+DEBUG:root:loss_batch2 dsc 0.056502483785152435, loss 0.9434975385665894, model_input len 1
+DEBUG:root:calc_dsc1 y_true torch.Size([1, 160, 32, 32]), y_pred torch.Size([1, 1, 160, 32, 32])
+DEBUG:root:calc_dsc2 smooth 1e-06, lower 62561.7578125, upper 3264.3544921875, dsc 0.05217811465263367
+DEBUG:root:calc_dsc1 y_true torch.Size([1, 160, 32, 32]), y_pred torch.Size([1, 160, 32, 32])
+DEBUG:root:calc_dsc2 smooth 1e-06, lower 62561.7578125, upper 3264.3544921875, dsc 0.05217811465263367
+DEBUG:root:DiceLoss1 y_true torch.Size([1, 160, 32, 32]) y_pred, torch.Size([1, 160, 32, 32])
+DEBUG:root:DiceLoss2 smooth 1e-06, dsc 0.05217811465263367, 1-dsc 0.947821855545044
+DEBUG:root:loss_batch1 true_output torch.Size([1, 160, 32, 32]), pred torch.Size([1, 1, 160, 32, 32])
+DEBUG:root:loss_batch2 dsc 0.05217811465263367, loss 0.947821855545044, model_input len 1
+DEBUG:root:calc_dsc1 y_true torch.Size([1, 160, 32, 32]), y_pred torch.Size([1, 1, 160, 32, 32])
+DEBUG:root:calc_dsc2 smooth 1e-06, lower 61890.22265625, upper 2503.029052734375, dsc 0.040443044155836105
+DEBUG:root:calc_dsc1 y_true torch.Size([1, 160, 32, 32]), y_pred torch.Size([1, 160, 32, 32])
+DEBUG:root:calc_dsc2 smooth 1e-06, lower 61890.22265625, upper 2503.029052734375, dsc 0.040443044155836105
+DEBUG:root:DiceLoss1 y_true torch.Size([1, 160, 32, 32]) y_pred, torch.Size([1, 160, 32, 32])
+DEBUG:root:DiceLoss2 smooth 1e-06, dsc 0.040443044155836105, 1-dsc 0.9595569372177124
+DEBUG:root:loss_batch1 true_output torch.Size([1, 160, 32, 32]), pred torch.Size([1, 1, 160, 32, 32])
+DEBUG:root:loss_batch2 dsc 0.040443044155836105, loss 0.9595569372177124, model_input len 1
+DEBUG:root:calc_dsc1 y_true torch.Size([1, 160, 32, 32]), y_pred torch.Size([1, 1, 160, 32, 32])
+DEBUG:root:calc_dsc2 smooth 1e-06, lower 61393.5, upper 2138.321044921875, dsc 0.0348297618329525
+DEBUG:root:calc_dsc1 y_true torch.Size([1, 160, 32, 32]), y_pred torch.Size([1, 160, 32, 32])
+DEBUG:root:calc_dsc2 smooth 1e-06, lower 61393.5, upper 2138.321044921875, dsc 0.0348297618329525
+DEBUG:root:DiceLoss1 y_true torch.Size([1, 160, 32, 32]) y_pred, torch.Size([1, 160, 32, 32])
+DEBUG:root:DiceLoss2 smooth 1e-06, dsc 0.0348297618329525, 1-dsc 0.9651702642440796
+DEBUG:root:loss_batch1 true_output torch.Size([1, 160, 32, 32]), pred torch.Size([1, 1, 160, 32, 32])
+DEBUG:root:loss_batch2 dsc 0.0348297618329525, loss 0.9651702642440796, model_input len 1
+DEBUG:root:calc_dsc1 y_true torch.Size([1, 160, 32, 32]), y_pred torch.Size([1, 1, 160, 32, 32])
+DEBUG:root:calc_dsc2 smooth 1e-06, lower 62245.2265625, upper 3029.88623046875, dsc 0.04867660254240036
+DEBUG:root:calc_dsc1 y_true torch.Size([1, 160, 32, 32]), y_pred torch.Size([1, 160, 32, 32])
+DEBUG:root:calc_dsc2 smooth 1e-06, lower 62245.2265625, upper 3029.88623046875, dsc 0.04867660254240036
+DEBUG:root:DiceLoss1 y_true torch.Size([1, 160, 32, 32]) y_pred, torch.Size([1, 160, 32, 32])
+DEBUG:root:DiceLoss2 smooth 1e-06, dsc 0.04867660254240036, 1-dsc 0.951323390007019
+DEBUG:root:loss_batch1 true_output torch.Size([1, 160, 32, 32]), pred torch.Size([1, 1, 160, 32, 32])
+DEBUG:root:loss_batch2 dsc 0.04867660254240036, loss 0.951323390007019, model_input len 1
+DEBUG:root:calc_dsc1 y_true torch.Size([1, 160, 32, 32]), y_pred torch.Size([1, 1, 160, 32, 32])
+DEBUG:root:calc_dsc2 smooth 1e-06, lower 62143.8125, upper 2649.545166015625, dsc 0.042635705322027206
+DEBUG:root:calc_dsc1 y_true torch.Size([1, 160, 32, 32]), y_pred torch.Size([1, 160, 32, 32])
+DEBUG:root:calc_dsc2 smooth 1e-06, lower 62143.8125, upper 2649.545166015625, dsc 0.042635705322027206
+DEBUG:root:DiceLoss1 y_true torch.Size([1, 160, 32, 32]) y_pred, torch.Size([1, 160, 32, 32])
+DEBUG:root:DiceLoss2 smooth 1e-06, dsc 0.042635705322027206, 1-dsc 0.9573643207550049
+DEBUG:root:loss_batch1 true_output torch.Size([1, 160, 32, 32]), pred torch.Size([1, 1, 160, 32, 32])
+DEBUG:root:loss_batch2 dsc 0.042635705322027206, loss 0.9573643207550049, model_input len 1
+DEBUG:root:calc_dsc1 y_true torch.Size([1, 160, 32, 32]), y_pred torch.Size([1, 1, 160, 32, 32])
+DEBUG:root:calc_dsc2 smooth 1e-06, lower 62076.6328125, upper 2837.19775390625, dsc 0.045704763382673264
+DEBUG:root:calc_dsc1 y_true torch.Size([1, 160, 32, 32]), y_pred torch.Size([1, 160, 32, 32])
+DEBUG:root:calc_dsc2 smooth 1e-06, lower 62076.6328125, upper 2837.19775390625, dsc 0.045704763382673264
+DEBUG:root:DiceLoss1 y_true torch.Size([1, 160, 32, 32]) y_pred, torch.Size([1, 160, 32, 32])
+DEBUG:root:DiceLoss2 smooth 1e-06, dsc 0.045704763382673264, 1-dsc 0.9542952179908752
+DEBUG:root:loss_batch1 true_output torch.Size([1, 160, 32, 32]), pred torch.Size([1, 1, 160, 32, 32])
+DEBUG:root:loss_batch2 dsc 0.045704763382673264, loss 0.9542952179908752, model_input len 1
+DEBUG:root:calc_dsc1 y_true torch.Size([1, 160, 32, 32]), y_pred torch.Size([1, 1, 160, 32, 32])
+DEBUG:root:calc_dsc2 smooth 1e-06, lower 61807.6328125, upper 2684.767578125, dsc 0.04343747720122337
+DEBUG:root:calc_dsc1 y_true torch.Size([1, 160, 32, 32]), y_pred torch.Size([1, 160, 32, 32])
+DEBUG:root:calc_dsc2 smooth 1e-06, lower 61807.6328125, upper 2684.767578125, dsc 0.04343747720122337
+DEBUG:root:DiceLoss1 y_true torch.Size([1, 160, 32, 32]) y_pred, torch.Size([1, 160, 32, 32])
+DEBUG:root:DiceLoss2 smooth 1e-06, dsc 0.04343747720122337, 1-dsc 0.9565625190734863
+DEBUG:root:loss_batch1 true_output torch.Size([1, 160, 32, 32]), pred torch.Size([1, 1, 160, 32, 32])
+DEBUG:root:loss_batch2 dsc 0.04343747720122337, loss 0.9565625190734863, model_input len 1
+DEBUG:root:calc_dsc1 y_true torch.Size([1, 160, 32, 32]), y_pred torch.Size([1, 1, 160, 32, 32])
+DEBUG:root:calc_dsc2 smooth 1e-06, lower 61945.51171875, upper 2977.91162109375, dsc 0.04807308316230774
+DEBUG:root:calc_dsc1 y_true torch.Size([1, 160, 32, 32]), y_pred torch.Size([1, 160, 32, 32])
+DEBUG:root:calc_dsc2 smooth 1e-06, lower 61945.51171875, upper 2977.91162109375, dsc 0.04807308316230774
+DEBUG:root:DiceLoss1 y_true torch.Size([1, 160, 32, 32]) y_pred, torch.Size([1, 160, 32, 32])
+DEBUG:root:DiceLoss2 smooth 1e-06, dsc 0.04807308316230774, 1-dsc 0.9519269466400146
+DEBUG:root:loss_batch1 true_output torch.Size([1, 160, 32, 32]), pred torch.Size([1, 1, 160, 32, 32])
+DEBUG:root:loss_batch2 dsc 0.04807308316230774, loss 0.9519269466400146, model_input len 1
+DEBUG:root:calc_dsc1 y_true torch.Size([1, 160, 32, 32]), y_pred torch.Size([1, 1, 160, 32, 32])
+DEBUG:root:calc_dsc2 smooth 1e-06, lower 62007.41015625, upper 3363.876953125, dsc 0.0542495958507061
+DEBUG:root:calc_dsc1 y_true torch.Size([1, 160, 32, 32]), y_pred torch.Size([1, 160, 32, 32])
+DEBUG:root:calc_dsc2 smooth 1e-06, lower 62007.41015625, upper 3363.876953125, dsc 0.0542495958507061
+DEBUG:root:DiceLoss1 y_true torch.Size([1, 160, 32, 32]) y_pred, torch.Size([1, 160, 32, 32])
+DEBUG:root:DiceLoss2 smooth 1e-06, dsc 0.0542495958507061, 1-dsc 0.9457504153251648
+DEBUG:root:loss_batch1 true_output torch.Size([1, 160, 32, 32]), pred torch.Size([1, 1, 160, 32, 32])
+DEBUG:root:loss_batch2 dsc 0.0542495958507061, loss 0.9457504153251648, model_input len 1
+DEBUG:root:calc_dsc1 y_true torch.Size([1, 160, 32, 32]), y_pred torch.Size([1, 1, 160, 32, 32])
+DEBUG:root:calc_dsc2 smooth 1e-06, lower 61704.9921875, upper 2934.80078125, dsc 0.047561805695295334
+DEBUG:root:calc_dsc1 y_true torch.Size([1, 160, 32, 32]), y_pred torch.Size([1, 160, 32, 32])
+DEBUG:root:calc_dsc2 smooth 1e-06, lower 61704.9921875, upper 2934.80078125, dsc 0.047561805695295334
+DEBUG:root:DiceLoss1 y_true torch.Size([1, 160, 32, 32]) y_pred, torch.Size([1, 160, 32, 32])
+DEBUG:root:DiceLoss2 smooth 1e-06, dsc 0.047561805695295334, 1-dsc 0.9524381756782532
+DEBUG:root:loss_batch1 true_output torch.Size([1, 160, 32, 32]), pred torch.Size([1, 1, 160, 32, 32])
+DEBUG:root:loss_batch2 dsc 0.047561805695295334, loss 0.9524381756782532, model_input len 1
+DEBUG:root:calc_dsc1 y_true torch.Size([1, 160, 32, 32]), y_pred torch.Size([1, 1, 160, 32, 32])
+DEBUG:root:calc_dsc2 smooth 1e-06, lower 60915.125, upper 2348.5068359375, dsc 0.03855375573039055
+DEBUG:root:calc_dsc1 y_true torch.Size([1, 160, 32, 32]), y_pred torch.Size([1, 160, 32, 32])
+DEBUG:root:calc_dsc2 smooth 1e-06, lower 60915.125, upper 2348.5068359375, dsc 0.03855375573039055
+DEBUG:root:DiceLoss1 y_true torch.Size([1, 160, 32, 32]) y_pred, torch.Size([1, 160, 32, 32])
+DEBUG:root:DiceLoss2 smooth 1e-06, dsc 0.03855375573039055, 1-dsc 0.961446225643158
+DEBUG:root:loss_batch1 true_output torch.Size([1, 160, 32, 32]), pred torch.Size([1, 1, 160, 32, 32])
+DEBUG:root:loss_batch2 dsc 0.03855375573039055, loss 0.961446225643158, model_input len 1
+DEBUG:root:calc_dsc1 y_true torch.Size([1, 160, 32, 32]), y_pred torch.Size([1, 1, 160, 32, 32])
+DEBUG:root:calc_dsc2 smooth 1e-06, lower 60551.125, upper 1897.1123046875, dsc 0.03133075311779976
+DEBUG:root:calc_dsc1 y_true torch.Size([1, 160, 32, 32]), y_pred torch.Size([1, 160, 32, 32])
+DEBUG:root:calc_dsc2 smooth 1e-06, lower 60551.125, upper 1897.1123046875, dsc 0.03133075311779976
+DEBUG:root:DiceLoss1 y_true torch.Size([1, 160, 32, 32]) y_pred, torch.Size([1, 160, 32, 32])
+DEBUG:root:DiceLoss2 smooth 1e-06, dsc 0.03133075311779976, 1-dsc 0.9686692357063293
+DEBUG:root:loss_batch1 true_output torch.Size([1, 160, 32, 32]), pred torch.Size([1, 1, 160, 32, 32])
+DEBUG:root:loss_batch2 dsc 0.03133075311779976, loss 0.9686692357063293, model_input len 1
+DEBUG:root:calc_dsc1 y_true torch.Size([1, 160, 32, 32]), y_pred torch.Size([1, 1, 160, 32, 32])
+DEBUG:root:calc_dsc2 smooth 1e-06, lower 60473.0, upper 2139.668701171875, dsc 0.035382214933633804
+DEBUG:root:calc_dsc1 y_true torch.Size([1, 160, 32, 32]), y_pred torch.Size([1, 160, 32, 32])
+DEBUG:root:calc_dsc2 smooth 1e-06, lower 60473.0, upper 2139.668701171875, dsc 0.035382214933633804
+DEBUG:root:DiceLoss1 y_true torch.Size([1, 160, 32, 32]) y_pred, torch.Size([1, 160, 32, 32])
+DEBUG:root:DiceLoss2 smooth 1e-06, dsc 0.035382214933633804, 1-dsc 0.9646177887916565
+DEBUG:root:loss_batch1 true_output torch.Size([1, 160, 32, 32]), pred torch.Size([1, 1, 160, 32, 32])
+DEBUG:root:loss_batch2 dsc 0.035382214933633804, loss 0.9646177887916565, model_input len 1
+DEBUG:root:calc_dsc1 y_true torch.Size([1, 160, 32, 32]), y_pred torch.Size([1, 1, 160, 32, 32])
+DEBUG:root:calc_dsc2 smooth 1e-06, lower 60431.81640625, upper 2491.623291015625, dsc 0.04123032093048096
+DEBUG:root:calc_dsc1 y_true torch.Size([1, 160, 32, 32]), y_pred torch.Size([1, 160, 32, 32])
+DEBUG:root:calc_dsc2 smooth 1e-06, lower 60431.81640625, upper 2491.623291015625, dsc 0.04123032093048096
+DEBUG:root:DiceLoss1 y_true torch.Size([1, 160, 32, 32]) y_pred, torch.Size([1, 160, 32, 32])
+DEBUG:root:DiceLoss2 smooth 1e-06, dsc 0.04123032093048096, 1-dsc 0.958769679069519
+DEBUG:root:loss_batch1 true_output torch.Size([1, 160, 32, 32]), pred torch.Size([1, 1, 160, 32, 32])
+DEBUG:root:loss_batch2 dsc 0.04123032093048096, loss 0.958769679069519, model_input len 1
+DEBUG:root:calc_dsc1 y_true torch.Size([1, 160, 32, 32]), y_pred torch.Size([1, 1, 160, 32, 32])
+DEBUG:root:calc_dsc2 smooth 1e-06, lower 59882.8828125, upper 2171.94189453125, dsc 0.03626982867717743
+DEBUG:root:calc_dsc1 y_true torch.Size([1, 160, 32, 32]), y_pred torch.Size([1, 160, 32, 32])
+DEBUG:root:calc_dsc2 smooth 1e-06, lower 59882.8828125, upper 2171.94189453125, dsc 0.03626982867717743
+DEBUG:root:DiceLoss1 y_true torch.Size([1, 160, 32, 32]) y_pred, torch.Size([1, 160, 32, 32])
+DEBUG:root:DiceLoss2 smooth 1e-06, dsc 0.03626982867717743, 1-dsc 0.9637301564216614
+DEBUG:root:loss_batch1 true_output torch.Size([1, 160, 32, 32]), pred torch.Size([1, 1, 160, 32, 32])
+DEBUG:root:loss_batch2 dsc 0.03626982867717743, loss 0.9637301564216614, model_input len 1
+DEBUG:root:calc_dsc1 y_true torch.Size([1, 160, 32, 32]), y_pred torch.Size([1, 1, 160, 32, 32])
+DEBUG:root:calc_dsc2 smooth 1e-06, lower 60565.171875, upper 2870.96240234375, dsc 0.04740286245942116
+DEBUG:root:calc_dsc1 y_true torch.Size([1, 160, 32, 32]), y_pred torch.Size([1, 160, 32, 32])
+DEBUG:root:calc_dsc2 smooth 1e-06, lower 60565.171875, upper 2870.96240234375, dsc 0.04740286245942116
+DEBUG:root:DiceLoss1 y_true torch.Size([1, 160, 32, 32]) y_pred, torch.Size([1, 160, 32, 32])
+DEBUG:root:DiceLoss2 smooth 1e-06, dsc 0.04740286245942116, 1-dsc 0.9525971412658691
+DEBUG:root:loss_batch1 true_output torch.Size([1, 160, 32, 32]), pred torch.Size([1, 1, 160, 32, 32])
+DEBUG:root:loss_batch2 dsc 0.04740286245942116, loss 0.9525971412658691, model_input len 1
+DEBUG:root:calc_dsc1 y_true torch.Size([1, 160, 32, 32]), y_pred torch.Size([1, 1, 160, 32, 32])
+DEBUG:root:calc_dsc2 smooth 1e-06, lower 60374.09375, upper 3190.166259765625, dsc 0.052839986979961395
+DEBUG:root:calc_dsc1 y_true torch.Size([1, 160, 32, 32]), y_pred torch.Size([1, 160, 32, 32])
+DEBUG:root:calc_dsc2 smooth 1e-06, lower 60374.09375, upper 3190.166259765625, dsc 0.052839986979961395
+DEBUG:root:DiceLoss1 y_true torch.Size([1, 160, 32, 32]) y_pred, torch.Size([1, 160, 32, 32])
+DEBUG:root:DiceLoss2 smooth 1e-06, dsc 0.052839986979961395, 1-dsc 0.947160005569458
+DEBUG:root:loss_batch1 true_output torch.Size([1, 160, 32, 32]), pred torch.Size([1, 1, 160, 32, 32])
+DEBUG:root:loss_batch2 dsc 0.052839986979961395, loss 0.947160005569458, model_input len 1
+DEBUG:root:calc_dsc1 y_true torch.Size([1, 160, 32, 32]), y_pred torch.Size([1, 1, 160, 32, 32])
+DEBUG:root:calc_dsc2 smooth 1e-06, lower 60156.23046875, upper 2992.3779296875, dsc 0.04974344000220299
+DEBUG:root:calc_dsc1 y_true torch.Size([1, 160, 32, 32]), y_pred torch.Size([1, 160, 32, 32])
+DEBUG:root:calc_dsc2 smooth 1e-06, lower 60156.23046875, upper 2992.3779296875, dsc 0.04974344000220299
+DEBUG:root:DiceLoss1 y_true torch.Size([1, 160, 32, 32]) y_pred, torch.Size([1, 160, 32, 32])
+DEBUG:root:DiceLoss2 smooth 1e-06, dsc 0.04974344000220299, 1-dsc 0.9502565860748291
+DEBUG:root:loss_batch1 true_output torch.Size([1, 160, 32, 32]), pred torch.Size([1, 1, 160, 32, 32])
+DEBUG:root:loss_batch2 dsc 0.04974344000220299, loss 0.9502565860748291, model_input len 1
+DEBUG:root:calc_dsc1 y_true torch.Size([1, 160, 32, 32]), y_pred torch.Size([1, 1, 160, 32, 32])
+DEBUG:root:calc_dsc2 smooth 1e-06, lower 60046.328125, upper 3135.353515625, dsc 0.052215576171875
+DEBUG:root:calc_dsc1 y_true torch.Size([1, 160, 32, 32]), y_pred torch.Size([1, 160, 32, 32])
+DEBUG:root:calc_dsc2 smooth 1e-06, lower 60046.328125, upper 3135.353515625, dsc 0.052215576171875
+DEBUG:root:DiceLoss1 y_true torch.Size([1, 160, 32, 32]) y_pred, torch.Size([1, 160, 32, 32])
+DEBUG:root:DiceLoss2 smooth 1e-06, dsc 0.052215576171875, 1-dsc 0.947784423828125
+DEBUG:root:loss_batch1 true_output torch.Size([1, 160, 32, 32]), pred torch.Size([1, 1, 160, 32, 32])
+DEBUG:root:loss_batch2 dsc 0.052215576171875, loss 0.947784423828125, model_input len 1
+DEBUG:root:calc_dsc1 y_true torch.Size([1, 160, 32, 32]), y_pred torch.Size([1, 1, 160, 32, 32])
+DEBUG:root:calc_dsc2 smooth 1e-06, lower 60284.203125, upper 3766.7060546875, dsc 0.06248247250914574
+DEBUG:root:calc_dsc1 y_true torch.Size([1, 160, 32, 32]), y_pred torch.Size([1, 160, 32, 32])
+DEBUG:root:calc_dsc2 smooth 1e-06, lower 60284.203125, upper 3766.7060546875, dsc 0.06248247250914574
+DEBUG:root:DiceLoss1 y_true torch.Size([1, 160, 32, 32]) y_pred, torch.Size([1, 160, 32, 32])
+DEBUG:root:DiceLoss2 smooth 1e-06, dsc 0.06248247250914574, 1-dsc 0.937517523765564
+DEBUG:root:loss_batch1 true_output torch.Size([1, 160, 32, 32]), pred torch.Size([1, 1, 160, 32, 32])
+DEBUG:root:loss_batch2 dsc 0.06248247250914574, loss 0.937517523765564, model_input len 1
+DEBUG:root:calc_dsc1 y_true torch.Size([1, 160, 32, 32]), y_pred torch.Size([1, 1, 160, 32, 32])
+DEBUG:root:calc_dsc2 smooth 1e-06, lower 60386.859375, upper 3352.85986328125, dsc 0.05552300438284874
+DEBUG:root:calc_dsc1 y_true torch.Size([1, 160, 32, 32]), y_pred torch.Size([1, 160, 32, 32])
+DEBUG:root:calc_dsc2 smooth 1e-06, lower 60386.859375, upper 3352.85986328125, dsc 0.05552300438284874
+DEBUG:root:DiceLoss1 y_true torch.Size([1, 160, 32, 32]) y_pred, torch.Size([1, 160, 32, 32])
+DEBUG:root:DiceLoss2 smooth 1e-06, dsc 0.05552300438284874, 1-dsc 0.9444770216941833
+DEBUG:root:loss_batch1 true_output torch.Size([1, 160, 32, 32]), pred torch.Size([1, 1, 160, 32, 32])
+DEBUG:root:loss_batch2 dsc 0.05552300438284874, loss 0.9444770216941833, model_input len 1
+DEBUG:root:calc_dsc1 y_true torch.Size([1, 160, 32, 32]), y_pred torch.Size([1, 1, 160, 32, 32])
+DEBUG:root:calc_dsc2 smooth 1e-06, lower 59262.1953125, upper 2678.91357421875, dsc 0.04520442709326744
+DEBUG:root:calc_dsc1 y_true torch.Size([1, 160, 32, 32]), y_pred torch.Size([1, 160, 32, 32])
+DEBUG:root:calc_dsc2 smooth 1e-06, lower 59262.1953125, upper 2678.91357421875, dsc 0.04520442709326744
+DEBUG:root:DiceLoss1 y_true torch.Size([1, 160, 32, 32]) y_pred, torch.Size([1, 160, 32, 32])
+DEBUG:root:DiceLoss2 smooth 1e-06, dsc 0.04520442709326744, 1-dsc 0.9547955989837646
+DEBUG:root:loss_batch1 true_output torch.Size([1, 160, 32, 32]), pred torch.Size([1, 1, 160, 32, 32])
+DEBUG:root:loss_batch2 dsc 0.04520442709326744, loss 0.9547955989837646, model_input len 1
+DEBUG:root:calc_dsc1 y_true torch.Size([1, 160, 32, 32]), y_pred torch.Size([1, 1, 160, 32, 32])
+DEBUG:root:calc_dsc2 smooth 1e-06, lower 59816.640625, upper 2858.890380859375, dsc 0.04779423028230667
+DEBUG:root:calc_dsc1 y_true torch.Size([1, 160, 32, 32]), y_pred torch.Size([1, 160, 32, 32])
+DEBUG:root:calc_dsc2 smooth 1e-06, lower 59816.640625, upper 2858.890380859375, dsc 0.04779423028230667
+DEBUG:root:DiceLoss1 y_true torch.Size([1, 160, 32, 32]) y_pred, torch.Size([1, 160, 32, 32])
+DEBUG:root:DiceLoss2 smooth 1e-06, dsc 0.04779423028230667, 1-dsc 0.9522057771682739
+DEBUG:root:loss_batch1 true_output torch.Size([1, 160, 32, 32]), pred torch.Size([1, 1, 160, 32, 32])
+DEBUG:root:loss_batch2 dsc 0.04779423028230667, loss 0.9522057771682739, model_input len 1
+DEBUG:root:calc_dsc1 y_true torch.Size([1, 160, 32, 32]), y_pred torch.Size([1, 1, 160, 32, 32])
+DEBUG:root:calc_dsc2 smooth 1e-06, lower 59061.92578125, upper 2690.307373046875, dsc 0.045550622045993805
+DEBUG:root:calc_dsc1 y_true torch.Size([1, 160, 32, 32]), y_pred torch.Size([1, 160, 32, 32])
+DEBUG:root:calc_dsc2 smooth 1e-06, lower 59061.92578125, upper 2690.307373046875, dsc 0.045550622045993805
+DEBUG:root:DiceLoss1 y_true torch.Size([1, 160, 32, 32]) y_pred, torch.Size([1, 160, 32, 32])
+DEBUG:root:DiceLoss2 smooth 1e-06, dsc 0.045550622045993805, 1-dsc 0.9544493556022644
+DEBUG:root:loss_batch1 true_output torch.Size([1, 160, 32, 32]), pred torch.Size([1, 1, 160, 32, 32])
+DEBUG:root:loss_batch2 dsc 0.045550622045993805, loss 0.9544493556022644, model_input len 1
+DEBUG:root:calc_dsc1 y_true torch.Size([1, 160, 32, 32]), y_pred torch.Size([1, 1, 160, 32, 32])
+DEBUG:root:calc_dsc2 smooth 1e-06, lower 59442.03515625, upper 2719.0185546875, dsc 0.045742351561784744
+DEBUG:root:calc_dsc1 y_true torch.Size([1, 160, 32, 32]), y_pred torch.Size([1, 160, 32, 32])
+DEBUG:root:calc_dsc2 smooth 1e-06, lower 59442.03515625, upper 2719.0185546875, dsc 0.045742351561784744
+DEBUG:root:DiceLoss1 y_true torch.Size([1, 160, 32, 32]) y_pred, torch.Size([1, 160, 32, 32])
+DEBUG:root:DiceLoss2 smooth 1e-06, dsc 0.045742351561784744, 1-dsc 0.9542576670646667
+DEBUG:root:loss_batch1 true_output torch.Size([1, 160, 32, 32]), pred torch.Size([1, 1, 160, 32, 32])
+DEBUG:root:loss_batch2 dsc 0.045742351561784744, loss 0.9542576670646667, model_input len 1
+DEBUG:root:calc_dsc1 y_true torch.Size([1, 160, 32, 32]), y_pred torch.Size([1, 1, 160, 32, 32])
+DEBUG:root:calc_dsc2 smooth 1e-06, lower 59022.203125, upper 2667.631591796875, dsc 0.04519708454608917
+DEBUG:root:calc_dsc1 y_true torch.Size([1, 160, 32, 32]), y_pred torch.Size([1, 160, 32, 32])
+DEBUG:root:calc_dsc2 smooth 1e-06, lower 59022.203125, upper 2667.631591796875, dsc 0.04519708454608917
+DEBUG:root:DiceLoss1 y_true torch.Size([1, 160, 32, 32]) y_pred, torch.Size([1, 160, 32, 32])
+DEBUG:root:DiceLoss2 smooth 1e-06, dsc 0.04519708454608917, 1-dsc 0.954802930355072
+DEBUG:root:loss_batch1 true_output torch.Size([1, 160, 32, 32]), pred torch.Size([1, 1, 160, 32, 32])
+DEBUG:root:loss_batch2 dsc 0.04519708454608917, loss 0.954802930355072, model_input len 1
+DEBUG:root:calc_dsc1 y_true torch.Size([1, 160, 32, 32]), y_pred torch.Size([1, 1, 160, 32, 32])
+DEBUG:root:calc_dsc2 smooth 1e-06, lower 58918.984375, upper 2778.87939453125, dsc 0.04716441407799721
+DEBUG:root:calc_dsc1 y_true torch.Size([1, 160, 32, 32]), y_pred torch.Size([1, 160, 32, 32])
+DEBUG:root:calc_dsc2 smooth 1e-06, lower 58918.984375, upper 2778.87939453125, dsc 0.04716441407799721
+DEBUG:root:DiceLoss1 y_true torch.Size([1, 160, 32, 32]) y_pred, torch.Size([1, 160, 32, 32])
+DEBUG:root:DiceLoss2 smooth 1e-06, dsc 0.04716441407799721, 1-dsc 0.9528355598449707
+DEBUG:root:loss_batch1 true_output torch.Size([1, 160, 32, 32]), pred torch.Size([1, 1, 160, 32, 32])
+DEBUG:root:loss_batch2 dsc 0.04716441407799721, loss 0.9528355598449707, model_input len 1
+DEBUG:root:calc_dsc1 y_true torch.Size([1, 160, 32, 32]), y_pred torch.Size([1, 1, 160, 32, 32])
+DEBUG:root:calc_dsc2 smooth 1e-06, lower 58646.21875, upper 2796.55517578125, dsc 0.0476851761341095
+DEBUG:root:calc_dsc1 y_true torch.Size([1, 160, 32, 32]), y_pred torch.Size([1, 160, 32, 32])
+DEBUG:root:calc_dsc2 smooth 1e-06, lower 58646.21875, upper 2796.55517578125, dsc 0.0476851761341095
+DEBUG:root:DiceLoss1 y_true torch.Size([1, 160, 32, 32]) y_pred, torch.Size([1, 160, 32, 32])
+DEBUG:root:DiceLoss2 smooth 1e-06, dsc 0.0476851761341095, 1-dsc 0.9523148536682129
+DEBUG:root:loss_batch1 true_output torch.Size([1, 160, 32, 32]), pred torch.Size([1, 1, 160, 32, 32])
+DEBUG:root:loss_batch2 dsc 0.0476851761341095, loss 0.9523148536682129, model_input len 1
+DEBUG:root:calc_dsc1 y_true torch.Size([1, 160, 32, 32]), y_pred torch.Size([1, 1, 160, 32, 32])
+DEBUG:root:calc_dsc2 smooth 1e-06, lower 59022.20703125, upper 3728.8251953125, dsc 0.06317664682865143
+DEBUG:root:calc_dsc1 y_true torch.Size([1, 160, 32, 32]), y_pred torch.Size([1, 160, 32, 32])
+DEBUG:root:calc_dsc2 smooth 1e-06, lower 59022.20703125, upper 3728.8251953125, dsc 0.06317664682865143
+DEBUG:root:DiceLoss1 y_true torch.Size([1, 160, 32, 32]) y_pred, torch.Size([1, 160, 32, 32])
+DEBUG:root:DiceLoss2 smooth 1e-06, dsc 0.06317664682865143, 1-dsc 0.9368233680725098
+DEBUG:root:loss_batch1 true_output torch.Size([1, 160, 32, 32]), pred torch.Size([1, 1, 160, 32, 32])
+DEBUG:root:loss_batch2 dsc 0.06317664682865143, loss 0.9368233680725098, model_input len 1
+DEBUG:root:calc_dsc1 y_true torch.Size([1, 160, 32, 32]), y_pred torch.Size([1, 1, 160, 32, 32])
+DEBUG:root:calc_dsc2 smooth 1e-06, lower 58181.42578125, upper 2502.14794921875, dsc 0.04300595819950104
+DEBUG:root:calc_dsc1 y_true torch.Size([1, 160, 32, 32]), y_pred torch.Size([1, 160, 32, 32])
+DEBUG:root:calc_dsc2 smooth 1e-06, lower 58181.42578125, upper 2502.14794921875, dsc 0.04300595819950104
+DEBUG:root:DiceLoss1 y_true torch.Size([1, 160, 32, 32]) y_pred, torch.Size([1, 160, 32, 32])
+DEBUG:root:DiceLoss2 smooth 1e-06, dsc 0.04300595819950104, 1-dsc 0.9569940567016602
+DEBUG:root:loss_batch1 true_output torch.Size([1, 160, 32, 32]), pred torch.Size([1, 1, 160, 32, 32])
+DEBUG:root:loss_batch2 dsc 0.04300595819950104, loss 0.9569940567016602, model_input len 1
+DEBUG:root:calc_dsc1 y_true torch.Size([1, 160, 32, 32]), y_pred torch.Size([1, 1, 160, 32, 32])
+DEBUG:root:calc_dsc2 smooth 1e-06, lower 58083.46875, upper 2625.193115234375, dsc 0.045196905732154846
+DEBUG:root:calc_dsc1 y_true torch.Size([1, 160, 32, 32]), y_pred torch.Size([1, 160, 32, 32])
+DEBUG:root:calc_dsc2 smooth 1e-06, lower 58083.46875, upper 2625.193115234375, dsc 0.045196905732154846
+DEBUG:root:DiceLoss1 y_true torch.Size([1, 160, 32, 32]) y_pred, torch.Size([1, 160, 32, 32])
+DEBUG:root:DiceLoss2 smooth 1e-06, dsc 0.045196905732154846, 1-dsc 0.9548031091690063
+DEBUG:root:loss_batch1 true_output torch.Size([1, 160, 32, 32]), pred torch.Size([1, 1, 160, 32, 32])
+DEBUG:root:loss_batch2 dsc 0.045196905732154846, loss 0.9548031091690063, model_input len 1
+DEBUG:root:calc_dsc1 y_true torch.Size([1, 160, 32, 32]), y_pred torch.Size([1, 1, 160, 32, 32])
+DEBUG:root:calc_dsc2 smooth 1e-06, lower 57067.32421875, upper 3183.39208984375, dsc 0.055783096700906754
+DEBUG:root:calc_dsc1 y_true torch.Size([1, 160, 32, 32]), y_pred torch.Size([1, 160, 32, 32])
+DEBUG:root:calc_dsc2 smooth 1e-06, lower 57067.32421875, upper 3183.39208984375, dsc 0.055783096700906754
+DEBUG:root:DiceLoss1 y_true torch.Size([1, 160, 32, 32]) y_pred, torch.Size([1, 160, 32, 32])
+DEBUG:root:DiceLoss2 smooth 1e-06, dsc 0.055783096700906754, 1-dsc 0.9442169070243835
+DEBUG:root:loss_batch1 true_output torch.Size([1, 160, 32, 32]), pred torch.Size([1, 1, 160, 32, 32])
+DEBUG:root:loss_batch2 dsc 0.055783096700906754, loss 0.9442169070243835, model_input len 1
+DEBUG:root:calc_dsc1 y_true torch.Size([1, 160, 32, 32]), y_pred torch.Size([1, 1, 160, 32, 32])
+DEBUG:root:calc_dsc2 smooth 1e-06, lower 58093.078125, upper 2729.060302734375, dsc 0.04697737470269203
+DEBUG:root:calc_dsc1 y_true torch.Size([1, 160, 32, 32]), y_pred torch.Size([1, 160, 32, 32])
+DEBUG:root:calc_dsc2 smooth 1e-06, lower 58093.078125, upper 2729.060302734375, dsc 0.04697737470269203
+DEBUG:root:DiceLoss1 y_true torch.Size([1, 160, 32, 32]) y_pred, torch.Size([1, 160, 32, 32])
+DEBUG:root:DiceLoss2 smooth 1e-06, dsc 0.04697737470269203, 1-dsc 0.9530225992202759
+DEBUG:root:loss_batch1 true_output torch.Size([1, 160, 32, 32]), pred torch.Size([1, 1, 160, 32, 32])
+DEBUG:root:loss_batch2 dsc 0.04697737470269203, loss 0.9530225992202759, model_input len 1
+DEBUG:root:calc_dsc1 y_true torch.Size([1, 160, 32, 32]), y_pred torch.Size([1, 1, 160, 32, 32])
+DEBUG:root:calc_dsc2 smooth 1e-06, lower 57976.484375, upper 3098.14208984375, dsc 0.05343790724873543
+DEBUG:root:calc_dsc1 y_true torch.Size([1, 160, 32, 32]), y_pred torch.Size([1, 160, 32, 32])
+DEBUG:root:calc_dsc2 smooth 1e-06, lower 57976.484375, upper 3098.14208984375, dsc 0.05343790724873543
+DEBUG:root:DiceLoss1 y_true torch.Size([1, 160, 32, 32]) y_pred, torch.Size([1, 160, 32, 32])
+DEBUG:root:DiceLoss2 smooth 1e-06, dsc 0.05343790724873543, 1-dsc 0.9465621113777161
+DEBUG:root:loss_batch1 true_output torch.Size([1, 160, 32, 32]), pred torch.Size([1, 1, 160, 32, 32])
+DEBUG:root:loss_batch2 dsc 0.05343790724873543, loss 0.9465621113777161, model_input len 1
+DEBUG:root:calc_dsc1 y_true torch.Size([1, 160, 32, 32]), y_pred torch.Size([1, 1, 160, 32, 32])
+DEBUG:root:calc_dsc2 smooth 1e-06, lower 56626.59375, upper 2440.08642578125, dsc 0.0430908203125
+DEBUG:root:calc_dsc1 y_true torch.Size([1, 160, 32, 32]), y_pred torch.Size([1, 160, 32, 32])
+DEBUG:root:calc_dsc2 smooth 1e-06, lower 56626.59375, upper 2440.08642578125, dsc 0.0430908203125
+DEBUG:root:DiceLoss1 y_true torch.Size([1, 160, 32, 32]) y_pred, torch.Size([1, 160, 32, 32])
+DEBUG:root:DiceLoss2 smooth 1e-06, dsc 0.0430908203125, 1-dsc 0.9569091796875
+DEBUG:root:loss_batch1 true_output torch.Size([1, 160, 32, 32]), pred torch.Size([1, 1, 160, 32, 32])
+DEBUG:root:loss_batch2 dsc 0.0430908203125, loss 0.9569091796875, model_input len 1
+DEBUG:root:calc_dsc1 y_true torch.Size([1, 160, 32, 32]), y_pred torch.Size([1, 1, 160, 32, 32])
+DEBUG:root:calc_dsc2 smooth 1e-06, lower 57831.359375, upper 3209.91552734375, dsc 0.05550475791096687
+DEBUG:root:calc_dsc1 y_true torch.Size([1, 160, 32, 32]), y_pred torch.Size([1, 160, 32, 32])
+DEBUG:root:calc_dsc2 smooth 1e-06, lower 57831.359375, upper 3209.91552734375, dsc 0.05550475791096687
+DEBUG:root:DiceLoss1 y_true torch.Size([1, 160, 32, 32]) y_pred, torch.Size([1, 160, 32, 32])
+DEBUG:root:DiceLoss2 smooth 1e-06, dsc 0.05550475791096687, 1-dsc 0.9444952607154846
+DEBUG:root:loss_batch1 true_output torch.Size([1, 160, 32, 32]), pred torch.Size([1, 1, 160, 32, 32])
+DEBUG:root:loss_batch2 dsc 0.05550475791096687, loss 0.9444952607154846, model_input len 1
+DEBUG:root:calc_dsc1 y_true torch.Size([1, 160, 32, 32]), y_pred torch.Size([1, 1, 160, 32, 32])
+DEBUG:root:calc_dsc2 smooth 1e-06, lower 57260.9609375, upper 2138.06201171875, dsc 0.03733891248703003
+DEBUG:root:calc_dsc1 y_true torch.Size([1, 160, 32, 32]), y_pred torch.Size([1, 160, 32, 32])
+DEBUG:root:calc_dsc2 smooth 1e-06, lower 57260.9609375, upper 2138.06201171875, dsc 0.03733891248703003
+DEBUG:root:DiceLoss1 y_true torch.Size([1, 160, 32, 32]) y_pred, torch.Size([1, 160, 32, 32])
+DEBUG:root:DiceLoss2 smooth 1e-06, dsc 0.03733891248703003, 1-dsc 0.96266108751297
+DEBUG:root:loss_batch1 true_output torch.Size([1, 160, 32, 32]), pred torch.Size([1, 1, 160, 32, 32])
+DEBUG:root:loss_batch2 dsc 0.03733891248703003, loss 0.96266108751297, model_input len 1
+DEBUG:root:calc_dsc1 y_true torch.Size([1, 160, 32, 32]), y_pred torch.Size([1, 1, 160, 32, 32])
+DEBUG:root:calc_dsc2 smooth 1e-06, lower 57555.625, upper 2258.12841796875, dsc 0.039233844727277756
+DEBUG:root:calc_dsc1 y_true torch.Size([1, 160, 32, 32]), y_pred torch.Size([1, 160, 32, 32])
+DEBUG:root:calc_dsc2 smooth 1e-06, lower 57555.625, upper 2258.12841796875, dsc 0.039233844727277756
+DEBUG:root:DiceLoss1 y_true torch.Size([1, 160, 32, 32]) y_pred, torch.Size([1, 160, 32, 32])
+DEBUG:root:DiceLoss2 smooth 1e-06, dsc 0.039233844727277756, 1-dsc 0.9607661366462708
+DEBUG:root:loss_batch1 true_output torch.Size([1, 160, 32, 32]), pred torch.Size([1, 1, 160, 32, 32])
+DEBUG:root:loss_batch2 dsc 0.039233844727277756, loss 0.9607661366462708, model_input len 1
+DEBUG:root:calc_dsc1 y_true torch.Size([1, 160, 32, 32]), y_pred torch.Size([1, 1, 160, 32, 32])
+DEBUG:root:calc_dsc2 smooth 1e-06, lower 57776.6953125, upper 2787.63232421875, dsc 0.04824838787317276
+DEBUG:root:calc_dsc1 y_true torch.Size([1, 160, 32, 32]), y_pred torch.Size([1, 160, 32, 32])
+DEBUG:root:calc_dsc2 smooth 1e-06, lower 57776.6953125, upper 2787.63232421875, dsc 0.04824838787317276
+DEBUG:root:DiceLoss1 y_true torch.Size([1, 160, 32, 32]) y_pred, torch.Size([1, 160, 32, 32])
+DEBUG:root:DiceLoss2 smooth 1e-06, dsc 0.04824838787317276, 1-dsc 0.9517515897750854
+DEBUG:root:loss_batch1 true_output torch.Size([1, 160, 32, 32]), pred torch.Size([1, 1, 160, 32, 32])
+DEBUG:root:loss_batch2 dsc 0.04824838787317276, loss 0.9517515897750854, model_input len 1
+DEBUG:root:calc_dsc1 y_true torch.Size([1, 160, 32, 32]), y_pred torch.Size([1, 1, 160, 32, 32])
+DEBUG:root:calc_dsc2 smooth 1e-06, lower 58175.71875, upper 3157.938720703125, dsc 0.05428276211023331
+DEBUG:root:calc_dsc1 y_true torch.Size([1, 160, 32, 32]), y_pred torch.Size([1, 160, 32, 32])
+DEBUG:root:calc_dsc2 smooth 1e-06, lower 58175.71875, upper 3157.938720703125, dsc 0.05428276211023331
+DEBUG:root:DiceLoss1 y_true torch.Size([1, 160, 32, 32]) y_pred, torch.Size([1, 160, 32, 32])
+DEBUG:root:DiceLoss2 smooth 1e-06, dsc 0.05428276211023331, 1-dsc 0.9457172155380249
+DEBUG:root:loss_batch1 true_output torch.Size([1, 160, 32, 32]), pred torch.Size([1, 1, 160, 32, 32])
+DEBUG:root:loss_batch2 dsc 0.05428276211023331, loss 0.9457172155380249, model_input len 1
+DEBUG:root:calc_dsc1 y_true torch.Size([1, 160, 32, 32]), y_pred torch.Size([1, 1, 160, 32, 32])
+DEBUG:root:calc_dsc2 smooth 1e-06, lower 56901.078125, upper 1836.44482421875, dsc 0.03227434307336807
+DEBUG:root:calc_dsc1 y_true torch.Size([1, 160, 32, 32]), y_pred torch.Size([1, 160, 32, 32])
+DEBUG:root:calc_dsc2 smooth 1e-06, lower 56901.078125, upper 1836.44482421875, dsc 0.03227434307336807
+DEBUG:root:DiceLoss1 y_true torch.Size([1, 160, 32, 32]) y_pred, torch.Size([1, 160, 32, 32])
+DEBUG:root:DiceLoss2 smooth 1e-06, dsc 0.03227434307336807, 1-dsc 0.9677256345748901
+DEBUG:root:loss_batch1 true_output torch.Size([1, 160, 32, 32]), pred torch.Size([1, 1, 160, 32, 32])
+DEBUG:root:loss_batch2 dsc 0.03227434307336807, loss 0.9677256345748901, model_input len 1
+DEBUG:root:calc_dsc1 y_true torch.Size([1, 160, 32, 32]), y_pred torch.Size([1, 1, 160, 32, 32])
+DEBUG:root:calc_dsc2 smooth 1e-06, lower 58137.52734375, upper 3318.59423828125, dsc 0.05708179250359535
+DEBUG:root:calc_dsc1 y_true torch.Size([1, 160, 32, 32]), y_pred torch.Size([1, 160, 32, 32])
+DEBUG:root:calc_dsc2 smooth 1e-06, lower 58137.52734375, upper 3318.59423828125, dsc 0.05708179250359535
+DEBUG:root:DiceLoss1 y_true torch.Size([1, 160, 32, 32]) y_pred, torch.Size([1, 160, 32, 32])
+DEBUG:root:DiceLoss2 smooth 1e-06, dsc 0.05708179250359535, 1-dsc 0.9429181814193726
+DEBUG:root:loss_batch1 true_output torch.Size([1, 160, 32, 32]), pred torch.Size([1, 1, 160, 32, 32])
+DEBUG:root:loss_batch2 dsc 0.05708179250359535, loss 0.9429181814193726, model_input len 1
+DEBUG:root:calc_dsc1 y_true torch.Size([1, 160, 32, 32]), y_pred torch.Size([1, 1, 160, 32, 32])
+DEBUG:root:calc_dsc2 smooth 1e-06, lower 58042.2578125, upper 3744.953369140625, dsc 0.06452114880084991
+DEBUG:root:calc_dsc1 y_true torch.Size([1, 160, 32, 32]), y_pred torch.Size([1, 160, 32, 32])
+DEBUG:root:calc_dsc2 smooth 1e-06, lower 58042.2578125, upper 3744.953369140625, dsc 0.06452114880084991
+DEBUG:root:DiceLoss1 y_true torch.Size([1, 160, 32, 32]) y_pred, torch.Size([1, 160, 32, 32])
+DEBUG:root:DiceLoss2 smooth 1e-06, dsc 0.06452114880084991, 1-dsc 0.9354788661003113
+DEBUG:root:loss_batch1 true_output torch.Size([1, 160, 32, 32]), pred torch.Size([1, 1, 160, 32, 32])
+DEBUG:root:loss_batch2 dsc 0.06452114880084991, loss 0.9354788661003113, model_input len 1
+DEBUG:root:calc_dsc1 y_true torch.Size([1, 160, 32, 32]), y_pred torch.Size([1, 1, 160, 32, 32])
+DEBUG:root:calc_dsc2 smooth 1e-06, lower 56641.69140625, upper 2173.439453125, dsc 0.038371726870536804
+DEBUG:root:calc_dsc1 y_true torch.Size([1, 160, 32, 32]), y_pred torch.Size([1, 160, 32, 32])
+DEBUG:root:calc_dsc2 smooth 1e-06, lower 56641.69140625, upper 2173.439453125, dsc 0.038371726870536804
+DEBUG:root:DiceLoss1 y_true torch.Size([1, 160, 32, 32]) y_pred, torch.Size([1, 160, 32, 32])
+DEBUG:root:DiceLoss2 smooth 1e-06, dsc 0.038371726870536804, 1-dsc 0.961628258228302
+DEBUG:root:loss_batch1 true_output torch.Size([1, 160, 32, 32]), pred torch.Size([1, 1, 160, 32, 32])
+DEBUG:root:loss_batch2 dsc 0.038371726870536804, loss 0.961628258228302, model_input len 1
+DEBUG:root:calc_dsc1 y_true torch.Size([1, 160, 32, 32]), y_pred torch.Size([1, 1, 160, 32, 32])
+DEBUG:root:calc_dsc2 smooth 1e-06, lower 58114.91796875, upper 3566.10791015625, dsc 0.061363037675619125
+DEBUG:root:calc_dsc1 y_true torch.Size([1, 160, 32, 32]), y_pred torch.Size([1, 160, 32, 32])
+DEBUG:root:calc_dsc2 smooth 1e-06, lower 58114.91796875, upper 3566.10791015625, dsc 0.061363037675619125
+DEBUG:root:DiceLoss1 y_true torch.Size([1, 160, 32, 32]) y_pred, torch.Size([1, 160, 32, 32])
+DEBUG:root:DiceLoss2 smooth 1e-06, dsc 0.061363037675619125, 1-dsc 0.9386369585990906
+DEBUG:root:loss_batch1 true_output torch.Size([1, 160, 32, 32]), pred torch.Size([1, 1, 160, 32, 32])
+DEBUG:root:loss_batch2 dsc 0.061363037675619125, loss 0.9386369585990906, model_input len 1
+DEBUG:root:calc_dsc1 y_true torch.Size([1, 160, 32, 32]), y_pred torch.Size([1, 1, 160, 32, 32])
+DEBUG:root:calc_dsc2 smooth 1e-06, lower 56982.92578125, upper 2674.79296875, dsc 0.04694025218486786
+DEBUG:root:calc_dsc1 y_true torch.Size([1, 160, 32, 32]), y_pred torch.Size([1, 160, 32, 32])
+DEBUG:root:calc_dsc2 smooth 1e-06, lower 56982.92578125, upper 2674.79296875, dsc 0.04694025218486786
+DEBUG:root:DiceLoss1 y_true torch.Size([1, 160, 32, 32]) y_pred, torch.Size([1, 160, 32, 32])
+DEBUG:root:DiceLoss2 smooth 1e-06, dsc 0.04694025218486786, 1-dsc 0.953059732913971
+DEBUG:root:loss_batch1 true_output torch.Size([1, 160, 32, 32]), pred torch.Size([1, 1, 160, 32, 32])
+DEBUG:root:loss_batch2 dsc 0.04694025218486786, loss 0.953059732913971, model_input len 1
+DEBUG:root:calc_dsc1 y_true torch.Size([1, 160, 32, 32]), y_pred torch.Size([1, 1, 160, 32, 32])
+DEBUG:root:calc_dsc2 smooth 1e-06, lower 56585.4140625, upper 2349.68994140625, dsc 0.04152465611696243
+DEBUG:root:calc_dsc1 y_true torch.Size([1, 160, 32, 32]), y_pred torch.Size([1, 160, 32, 32])
+DEBUG:root:calc_dsc2 smooth 1e-06, lower 56585.4140625, upper 2349.68994140625, dsc 0.04152465611696243
+DEBUG:root:DiceLoss1 y_true torch.Size([1, 160, 32, 32]) y_pred, torch.Size([1, 160, 32, 32])
+DEBUG:root:DiceLoss2 smooth 1e-06, dsc 0.04152465611696243, 1-dsc 0.9584753513336182
+DEBUG:root:loss_batch1 true_output torch.Size([1, 160, 32, 32]), pred torch.Size([1, 1, 160, 32, 32])
+DEBUG:root:loss_batch2 dsc 0.04152465611696243, loss 0.9584753513336182, model_input len 1
+DEBUG:root:calc_dsc1 y_true torch.Size([1, 160, 32, 32]), y_pred torch.Size([1, 1, 160, 32, 32])
+DEBUG:root:calc_dsc2 smooth 1e-06, lower 56176.140625, upper 2236.243896484375, dsc 0.03980771824717522
+DEBUG:root:calc_dsc1 y_true torch.Size([1, 160, 32, 32]), y_pred torch.Size([1, 160, 32, 32])
+DEBUG:root:calc_dsc2 smooth 1e-06, lower 56176.140625, upper 2236.243896484375, dsc 0.03980771824717522
+DEBUG:root:DiceLoss1 y_true torch.Size([1, 160, 32, 32]) y_pred, torch.Size([1, 160, 32, 32])
+DEBUG:root:DiceLoss2 smooth 1e-06, dsc 0.03980771824717522, 1-dsc 0.9601922631263733
+DEBUG:root:loss_batch1 true_output torch.Size([1, 160, 32, 32]), pred torch.Size([1, 1, 160, 32, 32])
+DEBUG:root:loss_batch2 dsc 0.03980771824717522, loss 0.9601922631263733, model_input len 1
+DEBUG:root:calc_dsc1 y_true torch.Size([1, 160, 32, 32]), y_pred torch.Size([1, 1, 160, 32, 32])
+DEBUG:root:calc_dsc2 smooth 1e-06, lower 56744.625, upper 2944.61572265625, dsc 0.051892418414354324
+DEBUG:root:calc_dsc1 y_true torch.Size([1, 160, 32, 32]), y_pred torch.Size([1, 160, 32, 32])
+DEBUG:root:calc_dsc2 smooth 1e-06, lower 56744.625, upper 2944.61572265625, dsc 0.051892418414354324
+DEBUG:root:DiceLoss1 y_true torch.Size([1, 160, 32, 32]) y_pred, torch.Size([1, 160, 32, 32])
+DEBUG:root:DiceLoss2 smooth 1e-06, dsc 0.051892418414354324, 1-dsc 0.9481076002120972
+DEBUG:root:loss_batch1 true_output torch.Size([1, 160, 32, 32]), pred torch.Size([1, 1, 160, 32, 32])
+DEBUG:root:loss_batch2 dsc 0.051892418414354324, loss 0.9481076002120972, model_input len 1
+DEBUG:root:calc_dsc1 y_true torch.Size([1, 160, 32, 32]), y_pred torch.Size([1, 1, 160, 32, 32])
+DEBUG:root:calc_dsc2 smooth 1e-06, lower 57066.5625, upper 2873.69189453125, dsc 0.05035684257745743
+DEBUG:root:calc_dsc1 y_true torch.Size([1, 160, 32, 32]), y_pred torch.Size([1, 160, 32, 32])
+DEBUG:root:calc_dsc2 smooth 1e-06, lower 57066.5625, upper 2873.69189453125, dsc 0.05035684257745743
+DEBUG:root:DiceLoss1 y_true torch.Size([1, 160, 32, 32]) y_pred, torch.Size([1, 160, 32, 32])
+DEBUG:root:DiceLoss2 smooth 1e-06, dsc 0.05035684257745743, 1-dsc 0.9496431350708008
+DEBUG:root:loss_batch1 true_output torch.Size([1, 160, 32, 32]), pred torch.Size([1, 1, 160, 32, 32])
+DEBUG:root:loss_batch2 dsc 0.05035684257745743, loss 0.9496431350708008, model_input len 1
+DEBUG:root:calc_dsc1 y_true torch.Size([1, 160, 32, 32]), y_pred torch.Size([1, 1, 160, 32, 32])
+DEBUG:root:calc_dsc2 smooth 1e-06, lower 56817.1796875, upper 2878.199951171875, dsc 0.05065721273422241
+DEBUG:root:calc_dsc1 y_true torch.Size([1, 160, 32, 32]), y_pred torch.Size([1, 160, 32, 32])
+DEBUG:root:calc_dsc2 smooth 1e-06, lower 56817.1796875, upper 2878.199951171875, dsc 0.05065721273422241
+DEBUG:root:DiceLoss1 y_true torch.Size([1, 160, 32, 32]) y_pred, torch.Size([1, 160, 32, 32])
+DEBUG:root:DiceLoss2 smooth 1e-06, dsc 0.05065721273422241, 1-dsc 0.9493427872657776
+DEBUG:root:loss_batch1 true_output torch.Size([1, 160, 32, 32]), pred torch.Size([1, 1, 160, 32, 32])
+DEBUG:root:loss_batch2 dsc 0.05065721273422241, loss 0.9493427872657776, model_input len 1
+DEBUG:root:calc_dsc1 y_true torch.Size([1, 160, 32, 32]), y_pred torch.Size([1, 1, 160, 32, 32])
+DEBUG:root:calc_dsc2 smooth 1e-06, lower 56324.265625, upper 2559.643798828125, dsc 0.045444779098033905
+DEBUG:root:calc_dsc1 y_true torch.Size([1, 160, 32, 32]), y_pred torch.Size([1, 160, 32, 32])
+DEBUG:root:calc_dsc2 smooth 1e-06, lower 56324.265625, upper 2559.643798828125, dsc 0.045444779098033905
+DEBUG:root:DiceLoss1 y_true torch.Size([1, 160, 32, 32]) y_pred, torch.Size([1, 160, 32, 32])
+DEBUG:root:DiceLoss2 smooth 1e-06, dsc 0.045444779098033905, 1-dsc 0.9545552134513855
+DEBUG:root:loss_batch1 true_output torch.Size([1, 160, 32, 32]), pred torch.Size([1, 1, 160, 32, 32])
+DEBUG:root:loss_batch2 dsc 0.045444779098033905, loss 0.9545552134513855, model_input len 1
+DEBUG:root:calc_dsc1 y_true torch.Size([1, 160, 32, 32]), y_pred torch.Size([1, 1, 160, 32, 32])
+DEBUG:root:calc_dsc2 smooth 1e-06, lower 56490.02734375, upper 2917.662109375, dsc 0.05164915323257446
+DEBUG:root:calc_dsc1 y_true torch.Size([1, 160, 32, 32]), y_pred torch.Size([1, 160, 32, 32])
+DEBUG:root:calc_dsc2 smooth 1e-06, lower 56490.02734375, upper 2917.662109375, dsc 0.05164915323257446
+DEBUG:root:DiceLoss1 y_true torch.Size([1, 160, 32, 32]) y_pred, torch.Size([1, 160, 32, 32])
+DEBUG:root:DiceLoss2 smooth 1e-06, dsc 0.05164915323257446, 1-dsc 0.9483508467674255
+DEBUG:root:loss_batch1 true_output torch.Size([1, 160, 32, 32]), pred torch.Size([1, 1, 160, 32, 32])
+DEBUG:root:loss_batch2 dsc 0.05164915323257446, loss 0.9483508467674255, model_input len 1
+DEBUG:root:calc_dsc1 y_true torch.Size([1, 160, 32, 32]), y_pred torch.Size([1, 1, 160, 32, 32])
+DEBUG:root:calc_dsc2 smooth 1e-06, lower 56052.96875, upper 2633.5224609375, dsc 0.046982746571302414
+DEBUG:root:calc_dsc1 y_true torch.Size([1, 160, 32, 32]), y_pred torch.Size([1, 160, 32, 32])
+DEBUG:root:calc_dsc2 smooth 1e-06, lower 56052.96875, upper 2633.5224609375, dsc 0.046982746571302414
+DEBUG:root:DiceLoss1 y_true torch.Size([1, 160, 32, 32]) y_pred, torch.Size([1, 160, 32, 32])
+DEBUG:root:DiceLoss2 smooth 1e-06, dsc 0.046982746571302414, 1-dsc 0.9530172348022461
+DEBUG:root:loss_batch1 true_output torch.Size([1, 160, 32, 32]), pred torch.Size([1, 1, 160, 32, 32])
+DEBUG:root:loss_batch2 dsc 0.046982746571302414, loss 0.9530172348022461, model_input len 1
+DEBUG:root:calc_dsc1 y_true torch.Size([1, 160, 32, 32]), y_pred torch.Size([1, 1, 160, 32, 32])
+DEBUG:root:calc_dsc2 smooth 1e-06, lower 55959.80859375, upper 2665.36474609375, dsc 0.047629982233047485
+DEBUG:root:calc_dsc1 y_true torch.Size([1, 160, 32, 32]), y_pred torch.Size([1, 160, 32, 32])
+DEBUG:root:calc_dsc2 smooth 1e-06, lower 55959.80859375, upper 2665.36474609375, dsc 0.047629982233047485
+DEBUG:root:DiceLoss1 y_true torch.Size([1, 160, 32, 32]) y_pred, torch.Size([1, 160, 32, 32])
+DEBUG:root:DiceLoss2 smooth 1e-06, dsc 0.047629982233047485, 1-dsc 0.9523700475692749
+DEBUG:root:loss_batch1 true_output torch.Size([1, 160, 32, 32]), pred torch.Size([1, 1, 160, 32, 32])
+DEBUG:root:loss_batch2 dsc 0.047629982233047485, loss 0.9523700475692749, model_input len 1
+DEBUG:root:calc_dsc1 y_true torch.Size([1, 160, 32, 32]), y_pred torch.Size([1, 1, 160, 32, 32])
+DEBUG:root:calc_dsc2 smooth 1e-06, lower 55924.56640625, upper 2922.27490234375, dsc 0.05225386843085289
+DEBUG:root:calc_dsc1 y_true torch.Size([1, 160, 32, 32]), y_pred torch.Size([1, 160, 32, 32])
+DEBUG:root:calc_dsc2 smooth 1e-06, lower 55924.56640625, upper 2922.27490234375, dsc 0.05225386843085289
+DEBUG:root:DiceLoss1 y_true torch.Size([1, 160, 32, 32]) y_pred, torch.Size([1, 160, 32, 32])
+DEBUG:root:DiceLoss2 smooth 1e-06, dsc 0.05225386843085289, 1-dsc 0.9477461576461792
+DEBUG:root:loss_batch1 true_output torch.Size([1, 160, 32, 32]), pred torch.Size([1, 1, 160, 32, 32])
+DEBUG:root:loss_batch2 dsc 0.05225386843085289, loss 0.9477461576461792, model_input len 1
+DEBUG:root:calc_dsc1 y_true torch.Size([1, 160, 32, 32]), y_pred torch.Size([1, 1, 160, 32, 32])
+DEBUG:root:calc_dsc2 smooth 1e-06, lower 55727.6484375, upper 2504.13037109375, dsc 0.04493515193462372
+DEBUG:root:calc_dsc1 y_true torch.Size([1, 160, 32, 32]), y_pred torch.Size([1, 160, 32, 32])
+DEBUG:root:calc_dsc2 smooth 1e-06, lower 55727.6484375, upper 2504.13037109375, dsc 0.04493515193462372
+DEBUG:root:DiceLoss1 y_true torch.Size([1, 160, 32, 32]) y_pred, torch.Size([1, 160, 32, 32])
+DEBUG:root:DiceLoss2 smooth 1e-06, dsc 0.04493515193462372, 1-dsc 0.9550648331642151
+DEBUG:root:loss_batch1 true_output torch.Size([1, 160, 32, 32]), pred torch.Size([1, 1, 160, 32, 32])
+DEBUG:root:loss_batch2 dsc 0.04493515193462372, loss 0.9550648331642151, model_input len 1
+DEBUG:root:calc_dsc1 y_true torch.Size([1, 160, 32, 32]), y_pred torch.Size([1, 1, 160, 32, 32])
+DEBUG:root:calc_dsc2 smooth 1e-06, lower 56083.15625, upper 2653.57373046875, dsc 0.04731498658657074
+DEBUG:root:calc_dsc1 y_true torch.Size([1, 160, 32, 32]), y_pred torch.Size([1, 160, 32, 32])
+DEBUG:root:calc_dsc2 smooth 1e-06, lower 56083.15625, upper 2653.57373046875, dsc 0.04731498658657074
+DEBUG:root:DiceLoss1 y_true torch.Size([1, 160, 32, 32]) y_pred, torch.Size([1, 160, 32, 32])
+DEBUG:root:DiceLoss2 smooth 1e-06, dsc 0.04731498658657074, 1-dsc 0.9526849985122681
+DEBUG:root:loss_batch1 true_output torch.Size([1, 160, 32, 32]), pred torch.Size([1, 1, 160, 32, 32])
+DEBUG:root:loss_batch2 dsc 0.04731498658657074, loss 0.9526849985122681, model_input len 1
+DEBUG:root:calc_dsc1 y_true torch.Size([1, 160, 32, 32]), y_pred torch.Size([1, 1, 160, 32, 32])
+DEBUG:root:calc_dsc2 smooth 1e-06, lower 56132.0, upper 2724.474609375, dsc 0.04853692278265953
+DEBUG:root:calc_dsc1 y_true torch.Size([1, 160, 32, 32]), y_pred torch.Size([1, 160, 32, 32])
+DEBUG:root:calc_dsc2 smooth 1e-06, lower 56132.0, upper 2724.474609375, dsc 0.04853692278265953
+DEBUG:root:DiceLoss1 y_true torch.Size([1, 160, 32, 32]) y_pred, torch.Size([1, 160, 32, 32])
+DEBUG:root:DiceLoss2 smooth 1e-06, dsc 0.04853692278265953, 1-dsc 0.9514631032943726
+DEBUG:root:loss_batch1 true_output torch.Size([1, 160, 32, 32]), pred torch.Size([1, 1, 160, 32, 32])
+DEBUG:root:loss_batch2 dsc 0.04853692278265953, loss 0.9514631032943726, model_input len 1
+DEBUG:root:calc_dsc1 y_true torch.Size([1, 160, 32, 32]), y_pred torch.Size([1, 1, 160, 32, 32])
+DEBUG:root:calc_dsc2 smooth 1e-06, lower 55924.6953125, upper 2936.709716796875, dsc 0.05251185968518257
+DEBUG:root:calc_dsc1 y_true torch.Size([1, 160, 32, 32]), y_pred torch.Size([1, 160, 32, 32])
+DEBUG:root:calc_dsc2 smooth 1e-06, lower 55924.6953125, upper 2936.709716796875, dsc 0.05251185968518257
+DEBUG:root:DiceLoss1 y_true torch.Size([1, 160, 32, 32]) y_pred, torch.Size([1, 160, 32, 32])
+DEBUG:root:DiceLoss2 smooth 1e-06, dsc 0.05251185968518257, 1-dsc 0.9474881291389465
+DEBUG:root:loss_batch1 true_output torch.Size([1, 160, 32, 32]), pred torch.Size([1, 1, 160, 32, 32])
+DEBUG:root:loss_batch2 dsc 0.05251185968518257, loss 0.9474881291389465, model_input len 1
+DEBUG:root:calc_dsc1 y_true torch.Size([1, 160, 32, 32]), y_pred torch.Size([1, 1, 160, 32, 32])
+DEBUG:root:calc_dsc2 smooth 1e-06, lower 55307.37890625, upper 2677.741943359375, dsc 0.04841563478112221
+DEBUG:root:calc_dsc1 y_true torch.Size([1, 160, 32, 32]), y_pred torch.Size([1, 160, 32, 32])
+DEBUG:root:calc_dsc2 smooth 1e-06, lower 55307.37890625, upper 2677.741943359375, dsc 0.04841563478112221
+DEBUG:root:DiceLoss1 y_true torch.Size([1, 160, 32, 32]) y_pred, torch.Size([1, 160, 32, 32])
+DEBUG:root:DiceLoss2 smooth 1e-06, dsc 0.04841563478112221, 1-dsc 0.9515843391418457
+DEBUG:root:loss_batch1 true_output torch.Size([1, 160, 32, 32]), pred torch.Size([1, 1, 160, 32, 32])
+DEBUG:root:loss_batch2 dsc 0.04841563478112221, loss 0.9515843391418457, model_input len 1
+DEBUG:root:calc_dsc1 y_true torch.Size([1, 160, 32, 32]), y_pred torch.Size([1, 1, 160, 32, 32])
+DEBUG:root:calc_dsc2 smooth 1e-06, lower 54891.765625, upper 2152.01123046875, dsc 0.03920462727546692
+DEBUG:root:calc_dsc1 y_true torch.Size([1, 160, 32, 32]), y_pred torch.Size([1, 160, 32, 32])
+DEBUG:root:calc_dsc2 smooth 1e-06, lower 54891.765625, upper 2152.01123046875, dsc 0.03920462727546692
+DEBUG:root:DiceLoss1 y_true torch.Size([1, 160, 32, 32]) y_pred, torch.Size([1, 160, 32, 32])
+DEBUG:root:DiceLoss2 smooth 1e-06, dsc 0.03920462727546692, 1-dsc 0.9607954025268555
+DEBUG:root:loss_batch1 true_output torch.Size([1, 160, 32, 32]), pred torch.Size([1, 1, 160, 32, 32])
+DEBUG:root:loss_batch2 dsc 0.03920462727546692, loss 0.9607954025268555, model_input len 1
+DEBUG:root:calc_dsc1 y_true torch.Size([1, 160, 32, 32]), y_pred torch.Size([1, 1, 160, 32, 32])
+DEBUG:root:calc_dsc2 smooth 1e-06, lower 55133.109375, upper 2781.8076171875, dsc 0.0504562072455883
+DEBUG:root:calc_dsc1 y_true torch.Size([1, 160, 32, 32]), y_pred torch.Size([1, 160, 32, 32])
+DEBUG:root:calc_dsc2 smooth 1e-06, lower 55133.109375, upper 2781.8076171875, dsc 0.0504562072455883
+DEBUG:root:DiceLoss1 y_true torch.Size([1, 160, 32, 32]) y_pred, torch.Size([1, 160, 32, 32])
+DEBUG:root:DiceLoss2 smooth 1e-06, dsc 0.0504562072455883, 1-dsc 0.9495437741279602
+DEBUG:root:loss_batch1 true_output torch.Size([1, 160, 32, 32]), pred torch.Size([1, 1, 160, 32, 32])
+DEBUG:root:loss_batch2 dsc 0.0504562072455883, loss 0.9495437741279602, model_input len 1
+DEBUG:root:calc_dsc1 y_true torch.Size([1, 160, 32, 32]), y_pred torch.Size([1, 1, 160, 32, 32])
+DEBUG:root:calc_dsc2 smooth 1e-06, lower 55003.12890625, upper 2493.9931640625, dsc 0.04534275084733963
+DEBUG:root:calc_dsc1 y_true torch.Size([1, 160, 32, 32]), y_pred torch.Size([1, 160, 32, 32])
+DEBUG:root:calc_dsc2 smooth 1e-06, lower 55003.12890625, upper 2493.9931640625, dsc 0.04534275084733963
+DEBUG:root:DiceLoss1 y_true torch.Size([1, 160, 32, 32]) y_pred, torch.Size([1, 160, 32, 32])
+DEBUG:root:DiceLoss2 smooth 1e-06, dsc 0.04534275084733963, 1-dsc 0.954657256603241
+DEBUG:root:loss_batch1 true_output torch.Size([1, 160, 32, 32]), pred torch.Size([1, 1, 160, 32, 32])
+DEBUG:root:loss_batch2 dsc 0.04534275084733963, loss 0.954657256603241, model_input len 1
+DEBUG:root:calc_dsc1 y_true torch.Size([1, 160, 32, 32]), y_pred torch.Size([1, 1, 160, 32, 32])
+DEBUG:root:calc_dsc2 smooth 1e-06, lower 55283.11328125, upper 2868.62158203125, dsc 0.051889654248952866
+DEBUG:root:calc_dsc1 y_true torch.Size([1, 160, 32, 32]), y_pred torch.Size([1, 160, 32, 32])
+DEBUG:root:calc_dsc2 smooth 1e-06, lower 55283.11328125, upper 2868.62158203125, dsc 0.051889654248952866
+DEBUG:root:DiceLoss1 y_true torch.Size([1, 160, 32, 32]) y_pred, torch.Size([1, 160, 32, 32])
+DEBUG:root:DiceLoss2 smooth 1e-06, dsc 0.051889654248952866, 1-dsc 0.9481103420257568
+DEBUG:root:loss_batch1 true_output torch.Size([1, 160, 32, 32]), pred torch.Size([1, 1, 160, 32, 32])
+DEBUG:root:loss_batch2 dsc 0.051889654248952866, loss 0.9481103420257568, model_input len 1
+DEBUG:root:calc_dsc1 y_true torch.Size([1, 160, 32, 32]), y_pred torch.Size([1, 1, 160, 32, 32])
+DEBUG:root:calc_dsc2 smooth 1e-06, lower 55215.25390625, upper 3444.984375, dsc 0.062391895800828934
+DEBUG:root:calc_dsc1 y_true torch.Size([1, 160, 32, 32]), y_pred torch.Size([1, 160, 32, 32])
+DEBUG:root:calc_dsc2 smooth 1e-06, lower 55215.25390625, upper 3444.984375, dsc 0.062391895800828934
+DEBUG:root:DiceLoss1 y_true torch.Size([1, 160, 32, 32]) y_pred, torch.Size([1, 160, 32, 32])
+DEBUG:root:DiceLoss2 smooth 1e-06, dsc 0.062391895800828934, 1-dsc 0.9376081228256226
+DEBUG:root:loss_batch1 true_output torch.Size([1, 160, 32, 32]), pred torch.Size([1, 1, 160, 32, 32])
+DEBUG:root:loss_batch2 dsc 0.062391895800828934, loss 0.9376081228256226, model_input len 1
+DEBUG:root:calc_dsc1 y_true torch.Size([1, 160, 32, 32]), y_pred torch.Size([1, 1, 160, 32, 32])
+DEBUG:root:calc_dsc2 smooth 1e-06, lower 55323.7265625, upper 3278.928466796875, dsc 0.0592680349946022
+DEBUG:root:calc_dsc1 y_true torch.Size([1, 160, 32, 32]), y_pred torch.Size([1, 160, 32, 32])
+DEBUG:root:calc_dsc2 smooth 1e-06, lower 55323.7265625, upper 3278.928466796875, dsc 0.0592680349946022
+DEBUG:root:DiceLoss1 y_true torch.Size([1, 160, 32, 32]) y_pred, torch.Size([1, 160, 32, 32])
+DEBUG:root:DiceLoss2 smooth 1e-06, dsc 0.0592680349946022, 1-dsc 0.940731942653656
+DEBUG:root:loss_batch1 true_output torch.Size([1, 160, 32, 32]), pred torch.Size([1, 1, 160, 32, 32])
+DEBUG:root:loss_batch2 dsc 0.0592680349946022, loss 0.940731942653656, model_input len 1
+DEBUG:root:calc_dsc1 y_true torch.Size([1, 160, 32, 32]), y_pred torch.Size([1, 1, 160, 32, 32])
+DEBUG:root:calc_dsc2 smooth 1e-06, lower 54973.4375, upper 3205.25244140625, dsc 0.05830547586083412
+DEBUG:root:calc_dsc1 y_true torch.Size([1, 160, 32, 32]), y_pred torch.Size([1, 160, 32, 32])
+DEBUG:root:calc_dsc2 smooth 1e-06, lower 54973.4375, upper 3205.25244140625, dsc 0.05830547586083412
+DEBUG:root:DiceLoss1 y_true torch.Size([1, 160, 32, 32]) y_pred, torch.Size([1, 160, 32, 32])
+DEBUG:root:DiceLoss2 smooth 1e-06, dsc 0.05830547586083412, 1-dsc 0.9416944980621338
+DEBUG:root:loss_batch1 true_output torch.Size([1, 160, 32, 32]), pred torch.Size([1, 1, 160, 32, 32])
+DEBUG:root:loss_batch2 dsc 0.05830547586083412, loss 0.9416944980621338, model_input len 1
+DEBUG:root:calc_dsc1 y_true torch.Size([1, 160, 32, 32]), y_pred torch.Size([1, 1, 160, 32, 32])
+DEBUG:root:calc_dsc2 smooth 1e-06, lower 54568.40625, upper 2624.49072265625, dsc 0.048095427453517914
+DEBUG:root:calc_dsc1 y_true torch.Size([1, 160, 32, 32]), y_pred torch.Size([1, 160, 32, 32])
+DEBUG:root:calc_dsc2 smooth 1e-06, lower 54568.40625, upper 2624.49072265625, dsc 0.048095427453517914
+DEBUG:root:DiceLoss1 y_true torch.Size([1, 160, 32, 32]) y_pred, torch.Size([1, 160, 32, 32])
+DEBUG:root:DiceLoss2 smooth 1e-06, dsc 0.048095427453517914, 1-dsc 0.9519045948982239
+DEBUG:root:loss_batch1 true_output torch.Size([1, 160, 32, 32]), pred torch.Size([1, 1, 160, 32, 32])
+DEBUG:root:loss_batch2 dsc 0.048095427453517914, loss 0.9519045948982239, model_input len 1
+DEBUG:root:calc_dsc1 y_true torch.Size([1, 160, 32, 32]), y_pred torch.Size([1, 1, 160, 32, 32])
+DEBUG:root:calc_dsc2 smooth 1e-06, lower 53814.60546875, upper 2360.482666015625, dsc 0.04386323317885399
+DEBUG:root:calc_dsc1 y_true torch.Size([1, 160, 32, 32]), y_pred torch.Size([1, 160, 32, 32])
+DEBUG:root:calc_dsc2 smooth 1e-06, lower 53814.60546875, upper 2360.482666015625, dsc 0.04386323317885399
+DEBUG:root:DiceLoss1 y_true torch.Size([1, 160, 32, 32]) y_pred, torch.Size([1, 160, 32, 32])
+DEBUG:root:DiceLoss2 smooth 1e-06, dsc 0.04386323317885399, 1-dsc 0.9561367630958557
+DEBUG:root:loss_batch1 true_output torch.Size([1, 160, 32, 32]), pred torch.Size([1, 1, 160, 32, 32])
+DEBUG:root:loss_batch2 dsc 0.04386323317885399, loss 0.9561367630958557, model_input len 1
+DEBUG:root:calc_dsc1 y_true torch.Size([1, 160, 32, 32]), y_pred torch.Size([1, 1, 160, 32, 32])
+DEBUG:root:calc_dsc2 smooth 1e-06, lower 54626.15234375, upper 3372.884765625, dsc 0.061744872480630875
+DEBUG:root:calc_dsc1 y_true torch.Size([1, 160, 32, 32]), y_pred torch.Size([1, 160, 32, 32])
+DEBUG:root:calc_dsc2 smooth 1e-06, lower 54626.15234375, upper 3372.884765625, dsc 0.061744872480630875
+DEBUG:root:DiceLoss1 y_true torch.Size([1, 160, 32, 32]) y_pred, torch.Size([1, 160, 32, 32])
+DEBUG:root:DiceLoss2 smooth 1e-06, dsc 0.061744872480630875, 1-dsc 0.9382551312446594
+DEBUG:root:loss_batch1 true_output torch.Size([1, 160, 32, 32]), pred torch.Size([1, 1, 160, 32, 32])
+DEBUG:root:loss_batch2 dsc 0.061744872480630875, loss 0.9382551312446594, model_input len 1
+DEBUG:root:calc_dsc1 y_true torch.Size([1, 160, 32, 32]), y_pred torch.Size([1, 1, 160, 32, 32])
+DEBUG:root:calc_dsc2 smooth 1e-06, lower 54088.1640625, upper 2772.2900390625, dsc 0.05125502124428749
+DEBUG:root:calc_dsc1 y_true torch.Size([1, 160, 32, 32]), y_pred torch.Size([1, 160, 32, 32])
+DEBUG:root:calc_dsc2 smooth 1e-06, lower 54088.1640625, upper 2772.2900390625, dsc 0.05125502124428749
+DEBUG:root:DiceLoss1 y_true torch.Size([1, 160, 32, 32]) y_pred, torch.Size([1, 160, 32, 32])
+DEBUG:root:DiceLoss2 smooth 1e-06, dsc 0.05125502124428749, 1-dsc 0.9487449526786804
+DEBUG:root:loss_batch1 true_output torch.Size([1, 160, 32, 32]), pred torch.Size([1, 1, 160, 32, 32])
+DEBUG:root:loss_batch2 dsc 0.05125502124428749, loss 0.9487449526786804, model_input len 1
+DEBUG:root:calc_dsc1 y_true torch.Size([1, 160, 32, 32]), y_pred torch.Size([1, 1, 160, 32, 32])
+DEBUG:root:calc_dsc2 smooth 1e-06, lower 53149.9453125, upper 1886.963623046875, dsc 0.03550264611840248
+DEBUG:root:calc_dsc1 y_true torch.Size([1, 160, 32, 32]), y_pred torch.Size([1, 160, 32, 32])
+DEBUG:root:calc_dsc2 smooth 1e-06, lower 53149.9453125, upper 1886.963623046875, dsc 0.03550264611840248
+DEBUG:root:DiceLoss1 y_true torch.Size([1, 160, 32, 32]) y_pred, torch.Size([1, 160, 32, 32])
+DEBUG:root:DiceLoss2 smooth 1e-06, dsc 0.03550264611840248, 1-dsc 0.9644973278045654
+DEBUG:root:loss_batch1 true_output torch.Size([1, 160, 32, 32]), pred torch.Size([1, 1, 160, 32, 32])
+DEBUG:root:loss_batch2 dsc 0.03550264611840248, loss 0.9644973278045654, model_input len 1
+DEBUG:root:calc_dsc1 y_true torch.Size([1, 160, 32, 32]), y_pred torch.Size([1, 1, 160, 32, 32])
+DEBUG:root:calc_dsc2 smooth 1e-06, lower 54509.5, upper 3739.29541015625, dsc 0.06859897077083588
+DEBUG:root:calc_dsc1 y_true torch.Size([1, 160, 32, 32]), y_pred torch.Size([1, 160, 32, 32])
+DEBUG:root:calc_dsc2 smooth 1e-06, lower 54509.5, upper 3739.29541015625, dsc 0.06859897077083588
+DEBUG:root:DiceLoss1 y_true torch.Size([1, 160, 32, 32]) y_pred, torch.Size([1, 160, 32, 32])
+DEBUG:root:DiceLoss2 smooth 1e-06, dsc 0.06859897077083588, 1-dsc 0.9314010143280029
+DEBUG:root:loss_batch1 true_output torch.Size([1, 160, 32, 32]), pred torch.Size([1, 1, 160, 32, 32])
+DEBUG:root:loss_batch2 dsc 0.06859897077083588, loss 0.9314010143280029, model_input len 1
+DEBUG:root:calc_dsc1 y_true torch.Size([1, 160, 32, 32]), y_pred torch.Size([1, 1, 160, 32, 32])
+DEBUG:root:calc_dsc2 smooth 1e-06, lower 53902.8046875, upper 3007.58154296875, dsc 0.05579638481140137
+DEBUG:root:calc_dsc1 y_true torch.Size([1, 160, 32, 32]), y_pred torch.Size([1, 160, 32, 32])
+DEBUG:root:calc_dsc2 smooth 1e-06, lower 53902.8046875, upper 3007.58154296875, dsc 0.05579638481140137
+DEBUG:root:DiceLoss1 y_true torch.Size([1, 160, 32, 32]) y_pred, torch.Size([1, 160, 32, 32])
+DEBUG:root:DiceLoss2 smooth 1e-06, dsc 0.05579638481140137, 1-dsc 0.9442036151885986
+DEBUG:root:loss_batch1 true_output torch.Size([1, 160, 32, 32]), pred torch.Size([1, 1, 160, 32, 32])
+DEBUG:root:loss_batch2 dsc 0.05579638481140137, loss 0.9442036151885986, model_input len 1
+DEBUG:root:calc_dsc1 y_true torch.Size([1, 160, 32, 32]), y_pred torch.Size([1, 1, 160, 32, 32])
+DEBUG:root:calc_dsc2 smooth 1e-06, lower 53565.71875, upper 2694.498779296875, dsc 0.05030267313122749
+DEBUG:root:calc_dsc1 y_true torch.Size([1, 160, 32, 32]), y_pred torch.Size([1, 160, 32, 32])
+DEBUG:root:calc_dsc2 smooth 1e-06, lower 53565.71875, upper 2694.498779296875, dsc 0.05030267313122749
+DEBUG:root:DiceLoss1 y_true torch.Size([1, 160, 32, 32]) y_pred, torch.Size([1, 160, 32, 32])
+DEBUG:root:DiceLoss2 smooth 1e-06, dsc 0.05030267313122749, 1-dsc 0.9496973156929016
+DEBUG:root:loss_batch1 true_output torch.Size([1, 160, 32, 32]), pred torch.Size([1, 1, 160, 32, 32])
+DEBUG:root:loss_batch2 dsc 0.05030267313122749, loss 0.9496973156929016, model_input len 1
+DEBUG:root:calc_dsc1 y_true torch.Size([1, 160, 32, 32]), y_pred torch.Size([1, 1, 160, 32, 32])
+DEBUG:root:calc_dsc2 smooth 1e-06, lower 52079.1015625, upper 3234.8203125, dsc 0.062113597989082336
+DEBUG:root:calc_dsc1 y_true torch.Size([1, 160, 32, 32]), y_pred torch.Size([1, 160, 32, 32])
+DEBUG:root:calc_dsc2 smooth 1e-06, lower 52079.1015625, upper 3234.8203125, dsc 0.062113597989082336
+DEBUG:root:DiceLoss1 y_true torch.Size([1, 160, 32, 32]) y_pred, torch.Size([1, 160, 32, 32])
+DEBUG:root:DiceLoss2 smooth 1e-06, dsc 0.062113597989082336, 1-dsc 0.9378864169120789
+DEBUG:root:loss_batch1 true_output torch.Size([1, 160, 32, 32]), pred torch.Size([1, 1, 160, 32, 32])
+DEBUG:root:loss_batch2 dsc 0.062113597989082336, loss 0.9378864169120789, model_input len 1
+DEBUG:root:calc_dsc1 y_true torch.Size([1, 160, 32, 32]), y_pred torch.Size([1, 1, 160, 32, 32])
+DEBUG:root:calc_dsc2 smooth 1e-06, lower 53317.8046875, upper 2771.005615234375, dsc 0.05197148770093918
+DEBUG:root:calc_dsc1 y_true torch.Size([1, 160, 32, 32]), y_pred torch.Size([1, 160, 32, 32])
+DEBUG:root:calc_dsc2 smooth 1e-06, lower 53317.8046875, upper 2771.005615234375, dsc 0.05197148770093918
+DEBUG:root:DiceLoss1 y_true torch.Size([1, 160, 32, 32]) y_pred, torch.Size([1, 160, 32, 32])
+DEBUG:root:DiceLoss2 smooth 1e-06, dsc 0.05197148770093918, 1-dsc 0.9480285048484802
+DEBUG:root:loss_batch1 true_output torch.Size([1, 160, 32, 32]), pred torch.Size([1, 1, 160, 32, 32])
+DEBUG:root:loss_batch2 dsc 0.05197148770093918, loss 0.9480285048484802, model_input len 1
+DEBUG:root:calc_dsc1 y_true torch.Size([1, 160, 32, 32]), y_pred torch.Size([1, 1, 160, 32, 32])
+DEBUG:root:calc_dsc2 smooth 1e-06, lower 53136.20703125, upper 3167.575927734375, dsc 0.05961238220334053
+DEBUG:root:calc_dsc1 y_true torch.Size([1, 160, 32, 32]), y_pred torch.Size([1, 160, 32, 32])
+DEBUG:root:calc_dsc2 smooth 1e-06, lower 53136.20703125, upper 3167.575927734375, dsc 0.05961238220334053
+DEBUG:root:DiceLoss1 y_true torch.Size([1, 160, 32, 32]) y_pred, torch.Size([1, 160, 32, 32])
+DEBUG:root:DiceLoss2 smooth 1e-06, dsc 0.05961238220334053, 1-dsc 0.9403876066207886
+DEBUG:root:loss_batch1 true_output torch.Size([1, 160, 32, 32]), pred torch.Size([1, 1, 160, 32, 32])
+DEBUG:root:loss_batch2 dsc 0.05961238220334053, loss 0.9403876066207886, model_input len 1
+DEBUG:root:calc_dsc1 y_true torch.Size([1, 160, 32, 32]), y_pred torch.Size([1, 1, 160, 32, 32])
+DEBUG:root:calc_dsc2 smooth 1e-06, lower 51759.9375, upper 2450.1044921875, dsc 0.047335922718048096
+DEBUG:root:calc_dsc1 y_true torch.Size([1, 160, 32, 32]), y_pred torch.Size([1, 160, 32, 32])
+DEBUG:root:calc_dsc2 smooth 1e-06, lower 51759.9375, upper 2450.1044921875, dsc 0.047335922718048096
+DEBUG:root:DiceLoss1 y_true torch.Size([1, 160, 32, 32]) y_pred, torch.Size([1, 160, 32, 32])
+DEBUG:root:DiceLoss2 smooth 1e-06, dsc 0.047335922718048096, 1-dsc 0.9526640772819519
+DEBUG:root:loss_batch1 true_output torch.Size([1, 160, 32, 32]), pred torch.Size([1, 1, 160, 32, 32])
+DEBUG:root:loss_batch2 dsc 0.047335922718048096, loss 0.9526640772819519, model_input len 1
+DEBUG:root:calc_dsc1 y_true torch.Size([1, 160, 32, 32]), y_pred torch.Size([1, 1, 160, 32, 32])
+DEBUG:root:calc_dsc2 smooth 1e-06, lower 53352.3515625, upper 3265.228515625, dsc 0.06120121106505394
+DEBUG:root:calc_dsc1 y_true torch.Size([1, 160, 32, 32]), y_pred torch.Size([1, 160, 32, 32])
+DEBUG:root:calc_dsc2 smooth 1e-06, lower 53352.3515625, upper 3265.228515625, dsc 0.06120121106505394
+DEBUG:root:DiceLoss1 y_true torch.Size([1, 160, 32, 32]) y_pred, torch.Size([1, 160, 32, 32])
+DEBUG:root:DiceLoss2 smooth 1e-06, dsc 0.06120121106505394, 1-dsc 0.9387987852096558
+DEBUG:root:loss_batch1 true_output torch.Size([1, 160, 32, 32]), pred torch.Size([1, 1, 160, 32, 32])
+DEBUG:root:loss_batch2 dsc 0.06120121106505394, loss 0.9387987852096558, model_input len 1
+DEBUG:root:calc_dsc1 y_true torch.Size([1, 160, 32, 32]), y_pred torch.Size([1, 1, 160, 32, 32])
+DEBUG:root:calc_dsc2 smooth 1e-06, lower 53749.42578125, upper 2976.31787109375, dsc 0.05537394806742668
+DEBUG:root:calc_dsc1 y_true torch.Size([1, 160, 32, 32]), y_pred torch.Size([1, 160, 32, 32])
+DEBUG:root:calc_dsc2 smooth 1e-06, lower 53749.42578125, upper 2976.31787109375, dsc 0.05537394806742668
+DEBUG:root:DiceLoss1 y_true torch.Size([1, 160, 32, 32]) y_pred, torch.Size([1, 160, 32, 32])
+DEBUG:root:DiceLoss2 smooth 1e-06, dsc 0.05537394806742668, 1-dsc 0.9446260333061218
+DEBUG:root:loss_batch1 true_output torch.Size([1, 160, 32, 32]), pred torch.Size([1, 1, 160, 32, 32])
+DEBUG:root:loss_batch2 dsc 0.05537394806742668, loss 0.9446260333061218, model_input len 1
+DEBUG:root:calc_dsc1 y_true torch.Size([1, 160, 32, 32]), y_pred torch.Size([1, 1, 160, 32, 32])
+DEBUG:root:calc_dsc2 smooth 1e-06, lower 53137.71875, upper 2152.79296875, dsc 0.04051346331834793
+DEBUG:root:calc_dsc1 y_true torch.Size([1, 160, 32, 32]), y_pred torch.Size([1, 160, 32, 32])
+DEBUG:root:calc_dsc2 smooth 1e-06, lower 53137.71875, upper 2152.79296875, dsc 0.04051346331834793
+DEBUG:root:DiceLoss1 y_true torch.Size([1, 160, 32, 32]) y_pred, torch.Size([1, 160, 32, 32])
+DEBUG:root:DiceLoss2 smooth 1e-06, dsc 0.04051346331834793, 1-dsc 0.9594865441322327
+DEBUG:root:loss_batch1 true_output torch.Size([1, 160, 32, 32]), pred torch.Size([1, 1, 160, 32, 32])
+DEBUG:root:loss_batch2 dsc 0.04051346331834793, loss 0.9594865441322327, model_input len 1
+DEBUG:root:calc_dsc1 y_true torch.Size([1, 160, 32, 32]), y_pred torch.Size([1, 1, 160, 32, 32])
+DEBUG:root:calc_dsc2 smooth 1e-06, lower 54080.8046875, upper 3357.958740234375, dsc 0.06209150701761246
+DEBUG:root:calc_dsc1 y_true torch.Size([1, 160, 32, 32]), y_pred torch.Size([1, 160, 32, 32])
+DEBUG:root:calc_dsc2 smooth 1e-06, lower 54080.8046875, upper 3357.958740234375, dsc 0.06209150701761246
+DEBUG:root:DiceLoss1 y_true torch.Size([1, 160, 32, 32]) y_pred, torch.Size([1, 160, 32, 32])
+DEBUG:root:DiceLoss2 smooth 1e-06, dsc 0.06209150701761246, 1-dsc 0.9379084706306458
+DEBUG:root:loss_batch1 true_output torch.Size([1, 160, 32, 32]), pred torch.Size([1, 1, 160, 32, 32])
+DEBUG:root:loss_batch2 dsc 0.06209150701761246, loss 0.9379084706306458, model_input len 1
+DEBUG:root:calc_dsc1 y_true torch.Size([1, 160, 32, 32]), y_pred torch.Size([1, 1, 160, 32, 32])
+DEBUG:root:calc_dsc2 smooth 1e-06, lower 53155.2734375, upper 2500.7431640625, dsc 0.0470460020005703
+DEBUG:root:calc_dsc1 y_true torch.Size([1, 160, 32, 32]), y_pred torch.Size([1, 160, 32, 32])
+DEBUG:root:calc_dsc2 smooth 1e-06, lower 53155.2734375, upper 2500.7431640625, dsc 0.0470460020005703
+DEBUG:root:DiceLoss1 y_true torch.Size([1, 160, 32, 32]) y_pred, torch.Size([1, 160, 32, 32])
+DEBUG:root:DiceLoss2 smooth 1e-06, dsc 0.0470460020005703, 1-dsc 0.9529539942741394
+DEBUG:root:loss_batch1 true_output torch.Size([1, 160, 32, 32]), pred torch.Size([1, 1, 160, 32, 32])
+DEBUG:root:loss_batch2 dsc 0.0470460020005703, loss 0.9529539942741394, model_input len 1
+DEBUG:root:calc_dsc1 y_true torch.Size([1, 160, 32, 32]), y_pred torch.Size([1, 1, 160, 32, 32])
+DEBUG:root:calc_dsc2 smooth 1e-06, lower 53107.1796875, upper 2667.19384765625, dsc 0.05022284761071205
+DEBUG:root:calc_dsc1 y_true torch.Size([1, 160, 32, 32]), y_pred torch.Size([1, 160, 32, 32])
+DEBUG:root:calc_dsc2 smooth 1e-06, lower 53107.1796875, upper 2667.19384765625, dsc 0.05022284761071205
+DEBUG:root:DiceLoss1 y_true torch.Size([1, 160, 32, 32]) y_pred, torch.Size([1, 160, 32, 32])
+DEBUG:root:DiceLoss2 smooth 1e-06, dsc 0.05022284761071205, 1-dsc 0.9497771263122559
+DEBUG:root:loss_batch1 true_output torch.Size([1, 160, 32, 32]), pred torch.Size([1, 1, 160, 32, 32])
+DEBUG:root:loss_batch2 dsc 0.05022284761071205, loss 0.9497771263122559, model_input len 1
+DEBUG:root:calc_dsc1 y_true torch.Size([1, 160, 32, 32]), y_pred torch.Size([1, 1, 160, 32, 32])
+DEBUG:root:calc_dsc2 smooth 1e-06, lower 53010.30859375, upper 2668.701171875, dsc 0.05034305900335312
+DEBUG:root:calc_dsc1 y_true torch.Size([1, 160, 32, 32]), y_pred torch.Size([1, 160, 32, 32])
+DEBUG:root:calc_dsc2 smooth 1e-06, lower 53010.30859375, upper 2668.701171875, dsc 0.05034305900335312
+DEBUG:root:DiceLoss1 y_true torch.Size([1, 160, 32, 32]) y_pred, torch.Size([1, 160, 32, 32])
+DEBUG:root:DiceLoss2 smooth 1e-06, dsc 0.05034305900335312, 1-dsc 0.9496569633483887
+DEBUG:root:loss_batch1 true_output torch.Size([1, 160, 32, 32]), pred torch.Size([1, 1, 160, 32, 32])
+DEBUG:root:loss_batch2 dsc 0.05034305900335312, loss 0.9496569633483887, model_input len 1
+DEBUG:root:calc_dsc1 y_true torch.Size([1, 160, 32, 32]), y_pred torch.Size([1, 1, 160, 32, 32])
+DEBUG:root:calc_dsc2 smooth 1e-06, lower 52581.24609375, upper 2554.297119140625, dsc 0.04857810214161873
+DEBUG:root:calc_dsc1 y_true torch.Size([1, 160, 32, 32]), y_pred torch.Size([1, 160, 32, 32])
+DEBUG:root:calc_dsc2 smooth 1e-06, lower 52581.24609375, upper 2554.297119140625, dsc 0.04857810214161873
+DEBUG:root:DiceLoss1 y_true torch.Size([1, 160, 32, 32]) y_pred, torch.Size([1, 160, 32, 32])
+DEBUG:root:DiceLoss2 smooth 1e-06, dsc 0.04857810214161873, 1-dsc 0.9514219164848328
+DEBUG:root:loss_batch1 true_output torch.Size([1, 160, 32, 32]), pred torch.Size([1, 1, 160, 32, 32])
+DEBUG:root:loss_batch2 dsc 0.04857810214161873, loss 0.9514219164848328, model_input len 1
+DEBUG:root:calc_dsc1 y_true torch.Size([1, 160, 32, 32]), y_pred torch.Size([1, 1, 160, 32, 32])
+DEBUG:root:calc_dsc2 smooth 1e-06, lower 52467.69140625, upper 2837.073974609375, dsc 0.0540727823972702
+DEBUG:root:calc_dsc1 y_true torch.Size([1, 160, 32, 32]), y_pred torch.Size([1, 160, 32, 32])
+DEBUG:root:calc_dsc2 smooth 1e-06, lower 52467.69140625, upper 2837.073974609375, dsc 0.0540727823972702
+DEBUG:root:DiceLoss1 y_true torch.Size([1, 160, 32, 32]) y_pred, torch.Size([1, 160, 32, 32])
+DEBUG:root:DiceLoss2 smooth 1e-06, dsc 0.0540727823972702, 1-dsc 0.9459272027015686
+DEBUG:root:loss_batch1 true_output torch.Size([1, 160, 32, 32]), pred torch.Size([1, 1, 160, 32, 32])
+DEBUG:root:loss_batch2 dsc 0.0540727823972702, loss 0.9459272027015686, model_input len 1
+DEBUG:root:calc_dsc1 y_true torch.Size([1, 160, 32, 32]), y_pred torch.Size([1, 1, 160, 32, 32])
+DEBUG:root:calc_dsc2 smooth 1e-06, lower 52074.4609375, upper 2684.4580078125, dsc 0.051550377160310745
+DEBUG:root:calc_dsc1 y_true torch.Size([1, 160, 32, 32]), y_pred torch.Size([1, 160, 32, 32])
+DEBUG:root:calc_dsc2 smooth 1e-06, lower 52074.4609375, upper 2684.4580078125, dsc 0.051550377160310745
+DEBUG:root:DiceLoss1 y_true torch.Size([1, 160, 32, 32]) y_pred, torch.Size([1, 160, 32, 32])
+DEBUG:root:DiceLoss2 smooth 1e-06, dsc 0.051550377160310745, 1-dsc 0.9484496116638184
+DEBUG:root:loss_batch1 true_output torch.Size([1, 160, 32, 32]), pred torch.Size([1, 1, 160, 32, 32])
+DEBUG:root:loss_batch2 dsc 0.051550377160310745, loss 0.9484496116638184, model_input len 1
+DEBUG:root:calc_dsc1 y_true torch.Size([1, 160, 32, 32]), y_pred torch.Size([1, 1, 160, 32, 32])
+DEBUG:root:calc_dsc2 smooth 1e-06, lower 52098.8359375, upper 2484.079833984375, dsc 0.04768013954162598
+DEBUG:root:calc_dsc1 y_true torch.Size([1, 160, 32, 32]), y_pred torch.Size([1, 160, 32, 32])
+DEBUG:root:calc_dsc2 smooth 1e-06, lower 52098.8359375, upper 2484.079833984375, dsc 0.04768013954162598
+DEBUG:root:DiceLoss1 y_true torch.Size([1, 160, 32, 32]) y_pred, torch.Size([1, 160, 32, 32])
+DEBUG:root:DiceLoss2 smooth 1e-06, dsc 0.04768013954162598, 1-dsc 0.952319860458374
+DEBUG:root:loss_batch1 true_output torch.Size([1, 160, 32, 32]), pred torch.Size([1, 1, 160, 32, 32])
+DEBUG:root:loss_batch2 dsc 0.04768013954162598, loss 0.952319860458374, model_input len 1
+DEBUG:root:calc_dsc1 y_true torch.Size([1, 160, 32, 32]), y_pred torch.Size([1, 1, 160, 32, 32])
+DEBUG:root:calc_dsc2 smooth 1e-06, lower 52682.0625, upper 3716.7265625, dsc 0.07055013626813889
+DEBUG:root:calc_dsc1 y_true torch.Size([1, 160, 32, 32]), y_pred torch.Size([1, 160, 32, 32])
+DEBUG:root:calc_dsc2 smooth 1e-06, lower 52682.0625, upper 3716.7265625, dsc 0.07055013626813889
+DEBUG:root:DiceLoss1 y_true torch.Size([1, 160, 32, 32]) y_pred, torch.Size([1, 160, 32, 32])
+DEBUG:root:DiceLoss2 smooth 1e-06, dsc 0.07055013626813889, 1-dsc 0.9294498562812805
+DEBUG:root:loss_batch1 true_output torch.Size([1, 160, 32, 32]), pred torch.Size([1, 1, 160, 32, 32])
+DEBUG:root:loss_batch2 dsc 0.07055013626813889, loss 0.9294498562812805, model_input len 1
+DEBUG:root:calc_dsc1 y_true torch.Size([1, 160, 32, 32]), y_pred torch.Size([1, 1, 160, 32, 32])
+DEBUG:root:calc_dsc2 smooth 1e-06, lower 52409.8828125, upper 3026.30615234375, dsc 0.05774304270744324
+DEBUG:root:calc_dsc1 y_true torch.Size([1, 160, 32, 32]), y_pred torch.Size([1, 160, 32, 32])
+DEBUG:root:calc_dsc2 smooth 1e-06, lower 52409.8828125, upper 3026.30615234375, dsc 0.05774304270744324
+DEBUG:root:DiceLoss1 y_true torch.Size([1, 160, 32, 32]) y_pred, torch.Size([1, 160, 32, 32])
+DEBUG:root:DiceLoss2 smooth 1e-06, dsc 0.05774304270744324, 1-dsc 0.9422569274902344
+DEBUG:root:loss_batch1 true_output torch.Size([1, 160, 32, 32]), pred torch.Size([1, 1, 160, 32, 32])
+DEBUG:root:loss_batch2 dsc 0.05774304270744324, loss 0.9422569274902344, model_input len 1
+DEBUG:root:calc_dsc1 y_true torch.Size([1, 160, 32, 32]), y_pred torch.Size([1, 1, 160, 32, 32])
+DEBUG:root:calc_dsc2 smooth 1e-06, lower 52572.72265625, upper 2935.005859375, dsc 0.0558275431394577
+DEBUG:root:calc_dsc1 y_true torch.Size([1, 160, 32, 32]), y_pred torch.Size([1, 160, 32, 32])
+DEBUG:root:calc_dsc2 smooth 1e-06, lower 52572.72265625, upper 2935.005859375, dsc 0.0558275431394577
+DEBUG:root:DiceLoss1 y_true torch.Size([1, 160, 32, 32]) y_pred, torch.Size([1, 160, 32, 32])
+DEBUG:root:DiceLoss2 smooth 1e-06, dsc 0.0558275431394577, 1-dsc 0.9441724419593811
+DEBUG:root:loss_batch1 true_output torch.Size([1, 160, 32, 32]), pred torch.Size([1, 1, 160, 32, 32])
+DEBUG:root:loss_batch2 dsc 0.0558275431394577, loss 0.9441724419593811, model_input len 1
+DEBUG:root:calc_dsc1 y_true torch.Size([1, 160, 32, 32]), y_pred torch.Size([1, 1, 160, 32, 32])
+DEBUG:root:calc_dsc2 smooth 1e-06, lower 52556.51953125, upper 3006.924072265625, dsc 0.05721314996480942
+DEBUG:root:calc_dsc1 y_true torch.Size([1, 160, 32, 32]), y_pred torch.Size([1, 160, 32, 32])
+DEBUG:root:calc_dsc2 smooth 1e-06, lower 52556.51953125, upper 3006.924072265625, dsc 0.05721314996480942
+DEBUG:root:DiceLoss1 y_true torch.Size([1, 160, 32, 32]) y_pred, torch.Size([1, 160, 32, 32])
+DEBUG:root:DiceLoss2 smooth 1e-06, dsc 0.05721314996480942, 1-dsc 0.9427868723869324
+DEBUG:root:loss_batch1 true_output torch.Size([1, 160, 32, 32]), pred torch.Size([1, 1, 160, 32, 32])
+DEBUG:root:loss_batch2 dsc 0.05721314996480942, loss 0.9427868723869324, model_input len 1
+DEBUG:root:calc_dsc1 y_true torch.Size([1, 160, 32, 32]), y_pred torch.Size([1, 1, 160, 32, 32])
+DEBUG:root:calc_dsc2 smooth 1e-06, lower 52476.3203125, upper 2912.598876953125, dsc 0.055503107607364655
+DEBUG:root:calc_dsc1 y_true torch.Size([1, 160, 32, 32]), y_pred torch.Size([1, 160, 32, 32])
+DEBUG:root:calc_dsc2 smooth 1e-06, lower 52476.3203125, upper 2912.598876953125, dsc 0.055503107607364655
+DEBUG:root:DiceLoss1 y_true torch.Size([1, 160, 32, 32]) y_pred, torch.Size([1, 160, 32, 32])
+DEBUG:root:DiceLoss2 smooth 1e-06, dsc 0.055503107607364655, 1-dsc 0.9444968700408936
+DEBUG:root:loss_batch1 true_output torch.Size([1, 160, 32, 32]), pred torch.Size([1, 1, 160, 32, 32])
+DEBUG:root:loss_batch2 dsc 0.055503107607364655, loss 0.9444968700408936, model_input len 1
+DEBUG:root:calc_dsc1 y_true torch.Size([1, 160, 32, 32]), y_pred torch.Size([1, 1, 160, 32, 32])
+DEBUG:root:calc_dsc2 smooth 1e-06, lower 52391.78515625, upper 3373.00634765625, dsc 0.06438044458627701
+DEBUG:root:calc_dsc1 y_true torch.Size([1, 160, 32, 32]), y_pred torch.Size([1, 160, 32, 32])
+DEBUG:root:calc_dsc2 smooth 1e-06, lower 52391.78515625, upper 3373.00634765625, dsc 0.06438044458627701
+DEBUG:root:DiceLoss1 y_true torch.Size([1, 160, 32, 32]) y_pred, torch.Size([1, 160, 32, 32])
+DEBUG:root:DiceLoss2 smooth 1e-06, dsc 0.06438044458627701, 1-dsc 0.9356195330619812
+DEBUG:root:loss_batch1 true_output torch.Size([1, 160, 32, 32]), pred torch.Size([1, 1, 160, 32, 32])
+DEBUG:root:loss_batch2 dsc 0.06438044458627701, loss 0.9356195330619812, model_input len 1
+DEBUG:root:calc_dsc1 y_true torch.Size([1, 160, 32, 32]), y_pred torch.Size([1, 1, 160, 32, 32])
+DEBUG:root:calc_dsc2 smooth 1e-06, lower 51230.78515625, upper 2234.53857421875, dsc 0.04361710697412491
+DEBUG:root:calc_dsc1 y_true torch.Size([1, 160, 32, 32]), y_pred torch.Size([1, 160, 32, 32])
+DEBUG:root:calc_dsc2 smooth 1e-06, lower 51230.78515625, upper 2234.53857421875, dsc 0.04361710697412491
+DEBUG:root:DiceLoss1 y_true torch.Size([1, 160, 32, 32]) y_pred, torch.Size([1, 160, 32, 32])
+DEBUG:root:DiceLoss2 smooth 1e-06, dsc 0.04361710697412491, 1-dsc 0.9563828706741333
+DEBUG:root:loss_batch1 true_output torch.Size([1, 160, 32, 32]), pred torch.Size([1, 1, 160, 32, 32])
+DEBUG:root:loss_batch2 dsc 0.04361710697412491, loss 0.9563828706741333, model_input len 1
+DEBUG:root:calc_dsc1 y_true torch.Size([1, 160, 32, 32]), y_pred torch.Size([1, 1, 160, 32, 32])
+DEBUG:root:calc_dsc2 smooth 1e-06, lower 51180.74609375, upper 1897.1015625, dsc 0.03706670552492142
+DEBUG:root:calc_dsc1 y_true torch.Size([1, 160, 32, 32]), y_pred torch.Size([1, 160, 32, 32])
+DEBUG:root:calc_dsc2 smooth 1e-06, lower 51180.74609375, upper 1897.1015625, dsc 0.03706670552492142
+DEBUG:root:DiceLoss1 y_true torch.Size([1, 160, 32, 32]) y_pred, torch.Size([1, 160, 32, 32])
+DEBUG:root:DiceLoss2 smooth 1e-06, dsc 0.03706670552492142, 1-dsc 0.9629333019256592
+DEBUG:root:loss_batch1 true_output torch.Size([1, 160, 32, 32]), pred torch.Size([1, 1, 160, 32, 32])
+DEBUG:root:loss_batch2 dsc 0.03706670552492142, loss 0.9629333019256592, model_input len 1
+DEBUG:root:calc_dsc1 y_true torch.Size([1, 160, 32, 32]), y_pred torch.Size([1, 1, 160, 32, 32])
+DEBUG:root:calc_dsc2 smooth 1e-06, lower 52008.671875, upper 2866.338623046875, dsc 0.05511270463466644
+DEBUG:root:calc_dsc1 y_true torch.Size([1, 160, 32, 32]), y_pred torch.Size([1, 160, 32, 32])
+DEBUG:root:calc_dsc2 smooth 1e-06, lower 52008.671875, upper 2866.338623046875, dsc 0.05511270463466644
+DEBUG:root:DiceLoss1 y_true torch.Size([1, 160, 32, 32]) y_pred, torch.Size([1, 160, 32, 32])
+DEBUG:root:DiceLoss2 smooth 1e-06, dsc 0.05511270463466644, 1-dsc 0.9448872804641724
+DEBUG:root:loss_batch1 true_output torch.Size([1, 160, 32, 32]), pred torch.Size([1, 1, 160, 32, 32])
+DEBUG:root:loss_batch2 dsc 0.05511270463466644, loss 0.9448872804641724, model_input len 1
+DEBUG:root:calc_dsc1 y_true torch.Size([1, 160, 32, 32]), y_pred torch.Size([1, 1, 160, 32, 32])
+DEBUG:root:calc_dsc2 smooth 1e-06, lower 51701.95703125, upper 3269.634765625, dsc 0.06324005872011185
+DEBUG:root:calc_dsc1 y_true torch.Size([1, 160, 32, 32]), y_pred torch.Size([1, 160, 32, 32])
+DEBUG:root:calc_dsc2 smooth 1e-06, lower 51701.95703125, upper 3269.634765625, dsc 0.06324005872011185
+DEBUG:root:DiceLoss1 y_true torch.Size([1, 160, 32, 32]) y_pred, torch.Size([1, 160, 32, 32])
+DEBUG:root:DiceLoss2 smooth 1e-06, dsc 0.06324005872011185, 1-dsc 0.9367599487304688
+DEBUG:root:loss_batch1 true_output torch.Size([1, 160, 32, 32]), pred torch.Size([1, 1, 160, 32, 32])
+DEBUG:root:loss_batch2 dsc 0.06324005872011185, loss 0.9367599487304688, model_input len 1
+DEBUG:root:calc_dsc1 y_true torch.Size([1, 160, 32, 32]), y_pred torch.Size([1, 1, 160, 32, 32])
+DEBUG:root:calc_dsc2 smooth 1e-06, lower 50396.03515625, upper 1825.104736328125, dsc 0.036215245723724365
+DEBUG:root:calc_dsc1 y_true torch.Size([1, 160, 32, 32]), y_pred torch.Size([1, 160, 32, 32])
+DEBUG:root:calc_dsc2 smooth 1e-06, lower 50396.03515625, upper 1825.104736328125, dsc 0.036215245723724365
+DEBUG:root:DiceLoss1 y_true torch.Size([1, 160, 32, 32]) y_pred, torch.Size([1, 160, 32, 32])
+DEBUG:root:DiceLoss2 smooth 1e-06, dsc 0.036215245723724365, 1-dsc 0.9637847542762756
+DEBUG:root:loss_batch1 true_output torch.Size([1, 160, 32, 32]), pred torch.Size([1, 1, 160, 32, 32])
+DEBUG:root:loss_batch2 dsc 0.036215245723724365, loss 0.9637847542762756, model_input len 1
+DEBUG:root:calc_dsc1 y_true torch.Size([1, 160, 32, 32]), y_pred torch.Size([1, 1, 160, 32, 32])
+DEBUG:root:calc_dsc2 smooth 1e-06, lower 50382.2265625, upper 2168.264892578125, dsc 0.04303630441427231
+DEBUG:root:calc_dsc1 y_true torch.Size([1, 160, 32, 32]), y_pred torch.Size([1, 160, 32, 32])
+DEBUG:root:calc_dsc2 smooth 1e-06, lower 50382.2265625, upper 2168.264892578125, dsc 0.04303630441427231
+DEBUG:root:DiceLoss1 y_true torch.Size([1, 160, 32, 32]) y_pred, torch.Size([1, 160, 32, 32])
+DEBUG:root:DiceLoss2 smooth 1e-06, dsc 0.04303630441427231, 1-dsc 0.9569637179374695
+DEBUG:root:loss_batch1 true_output torch.Size([1, 160, 32, 32]), pred torch.Size([1, 1, 160, 32, 32])
+DEBUG:root:loss_batch2 dsc 0.04303630441427231, loss 0.9569637179374695, model_input len 1
+DEBUG:root:calc_dsc1 y_true torch.Size([1, 160, 32, 32]), y_pred torch.Size([1, 1, 160, 32, 32])
+DEBUG:root:calc_dsc2 smooth 1e-06, lower 50820.015625, upper 2786.7421875, dsc 0.054835524410009384
+DEBUG:root:calc_dsc1 y_true torch.Size([1, 160, 32, 32]), y_pred torch.Size([1, 160, 32, 32])
+DEBUG:root:calc_dsc2 smooth 1e-06, lower 50820.015625, upper 2786.7421875, dsc 0.054835524410009384
+DEBUG:root:DiceLoss1 y_true torch.Size([1, 160, 32, 32]) y_pred, torch.Size([1, 160, 32, 32])
+DEBUG:root:DiceLoss2 smooth 1e-06, dsc 0.054835524410009384, 1-dsc 0.9451645016670227
+DEBUG:root:loss_batch1 true_output torch.Size([1, 160, 32, 32]), pred torch.Size([1, 1, 160, 32, 32])
+DEBUG:root:loss_batch2 dsc 0.054835524410009384, loss 0.9451645016670227, model_input len 1
+DEBUG:root:calc_dsc1 y_true torch.Size([1, 160, 32, 32]), y_pred torch.Size([1, 1, 160, 32, 32])
+DEBUG:root:calc_dsc2 smooth 1e-06, lower 50015.37109375, upper 2136.563720703125, dsc 0.04271814227104187
+DEBUG:root:calc_dsc1 y_true torch.Size([1, 160, 32, 32]), y_pred torch.Size([1, 160, 32, 32])
+DEBUG:root:calc_dsc2 smooth 1e-06, lower 50015.37109375, upper 2136.563720703125, dsc 0.04271814227104187
+DEBUG:root:DiceLoss1 y_true torch.Size([1, 160, 32, 32]) y_pred, torch.Size([1, 160, 32, 32])
+DEBUG:root:DiceLoss2 smooth 1e-06, dsc 0.04271814227104187, 1-dsc 0.9572818279266357
+DEBUG:root:loss_batch1 true_output torch.Size([1, 160, 32, 32]), pred torch.Size([1, 1, 160, 32, 32])
+DEBUG:root:loss_batch2 dsc 0.04271814227104187, loss 0.9572818279266357, model_input len 1
+DEBUG:root:calc_dsc1 y_true torch.Size([1, 160, 32, 32]), y_pred torch.Size([1, 1, 160, 32, 32])
+DEBUG:root:calc_dsc2 smooth 1e-06, lower 50625.8359375, upper 2283.403076171875, dsc 0.045103512704372406
+DEBUG:root:calc_dsc1 y_true torch.Size([1, 160, 32, 32]), y_pred torch.Size([1, 160, 32, 32])
+DEBUG:root:calc_dsc2 smooth 1e-06, lower 50625.8359375, upper 2283.403076171875, dsc 0.045103512704372406
+DEBUG:root:DiceLoss1 y_true torch.Size([1, 160, 32, 32]) y_pred, torch.Size([1, 160, 32, 32])
+DEBUG:root:DiceLoss2 smooth 1e-06, dsc 0.045103512704372406, 1-dsc 0.9548965096473694
+DEBUG:root:loss_batch1 true_output torch.Size([1, 160, 32, 32]), pred torch.Size([1, 1, 160, 32, 32])
+DEBUG:root:loss_batch2 dsc 0.045103512704372406, loss 0.9548965096473694, model_input len 1
+DEBUG:root:calc_dsc1 y_true torch.Size([1, 160, 32, 32]), y_pred torch.Size([1, 1, 160, 32, 32])
+DEBUG:root:calc_dsc2 smooth 1e-06, lower 51314.6328125, upper 2846.75634765625, dsc 0.05547650158405304
+DEBUG:root:calc_dsc1 y_true torch.Size([1, 160, 32, 32]), y_pred torch.Size([1, 160, 32, 32])
+DEBUG:root:calc_dsc2 smooth 1e-06, lower 51314.6328125, upper 2846.75634765625, dsc 0.05547650158405304
+DEBUG:root:DiceLoss1 y_true torch.Size([1, 160, 32, 32]) y_pred, torch.Size([1, 160, 32, 32])
+DEBUG:root:DiceLoss2 smooth 1e-06, dsc 0.05547650158405304, 1-dsc 0.9445235133171082
+DEBUG:root:loss_batch1 true_output torch.Size([1, 160, 32, 32]), pred torch.Size([1, 1, 160, 32, 32])
+DEBUG:root:loss_batch2 dsc 0.05547650158405304, loss 0.9445235133171082, model_input len 1
+DEBUG:root:calc_dsc1 y_true torch.Size([1, 160, 32, 32]), y_pred torch.Size([1, 1, 160, 32, 32])
+DEBUG:root:calc_dsc2 smooth 1e-06, lower 50813.5078125, upper 2648.535400390625, dsc 0.05212266370654106
+DEBUG:root:calc_dsc1 y_true torch.Size([1, 160, 32, 32]), y_pred torch.Size([1, 160, 32, 32])
+DEBUG:root:calc_dsc2 smooth 1e-06, lower 50813.5078125, upper 2648.535400390625, dsc 0.05212266370654106
+DEBUG:root:DiceLoss1 y_true torch.Size([1, 160, 32, 32]) y_pred, torch.Size([1, 160, 32, 32])
+DEBUG:root:DiceLoss2 smooth 1e-06, dsc 0.05212266370654106, 1-dsc 0.9478773474693298
+DEBUG:root:loss_batch1 true_output torch.Size([1, 160, 32, 32]), pred torch.Size([1, 1, 160, 32, 32])
+DEBUG:root:loss_batch2 dsc 0.05212266370654106, loss 0.9478773474693298, model_input len 1
+DEBUG:root:calc_dsc1 y_true torch.Size([1, 160, 32, 32]), y_pred torch.Size([1, 1, 160, 32, 32])
+DEBUG:root:calc_dsc2 smooth 1e-06, lower 50728.015625, upper 2867.297607421875, dsc 0.05652296170592308
+DEBUG:root:calc_dsc1 y_true torch.Size([1, 160, 32, 32]), y_pred torch.Size([1, 160, 32, 32])
+DEBUG:root:calc_dsc2 smooth 1e-06, lower 50728.015625, upper 2867.297607421875, dsc 0.05652296170592308
+DEBUG:root:DiceLoss1 y_true torch.Size([1, 160, 32, 32]) y_pred, torch.Size([1, 160, 32, 32])
+DEBUG:root:DiceLoss2 smooth 1e-06, dsc 0.05652296170592308, 1-dsc 0.9434770345687866
+DEBUG:root:loss_batch1 true_output torch.Size([1, 160, 32, 32]), pred torch.Size([1, 1, 160, 32, 32])
+DEBUG:root:loss_batch2 dsc 0.05652296170592308, loss 0.9434770345687866, model_input len 1
+DEBUG:root:calc_dsc1 y_true torch.Size([1, 160, 32, 32]), y_pred torch.Size([1, 1, 160, 32, 32])
+DEBUG:root:calc_dsc2 smooth 1e-06, lower 49911.07421875, upper 2358.6416015625, dsc 0.04725687950849533
+DEBUG:root:calc_dsc1 y_true torch.Size([1, 160, 32, 32]), y_pred torch.Size([1, 160, 32, 32])
+DEBUG:root:calc_dsc2 smooth 1e-06, lower 49911.07421875, upper 2358.6416015625, dsc 0.04725687950849533
+DEBUG:root:DiceLoss1 y_true torch.Size([1, 160, 32, 32]) y_pred, torch.Size([1, 160, 32, 32])
+DEBUG:root:DiceLoss2 smooth 1e-06, dsc 0.04725687950849533, 1-dsc 0.9527431130409241
+DEBUG:root:loss_batch1 true_output torch.Size([1, 160, 32, 32]), pred torch.Size([1, 1, 160, 32, 32])
+DEBUG:root:loss_batch2 dsc 0.04725687950849533, loss 0.9527431130409241, model_input len 1
+DEBUG:root:calc_dsc1 y_true torch.Size([1, 160, 32, 32]), y_pred torch.Size([1, 1, 160, 32, 32])
+DEBUG:root:calc_dsc2 smooth 1e-06, lower 50340.01953125, upper 2680.308837890625, dsc 0.05324409529566765
+DEBUG:root:calc_dsc1 y_true torch.Size([1, 160, 32, 32]), y_pred torch.Size([1, 160, 32, 32])
+DEBUG:root:calc_dsc2 smooth 1e-06, lower 50340.01953125, upper 2680.308837890625, dsc 0.05324409529566765
+DEBUG:root:DiceLoss1 y_true torch.Size([1, 160, 32, 32]) y_pred, torch.Size([1, 160, 32, 32])
+DEBUG:root:DiceLoss2 smooth 1e-06, dsc 0.05324409529566765, 1-dsc 0.9467558860778809
+DEBUG:root:loss_batch1 true_output torch.Size([1, 160, 32, 32]), pred torch.Size([1, 1, 160, 32, 32])
+DEBUG:root:loss_batch2 dsc 0.05324409529566765, loss 0.9467558860778809, model_input len 1
+DEBUG:root:calc_dsc1 y_true torch.Size([1, 160, 32, 32]), y_pred torch.Size([1, 1, 160, 32, 32])
+DEBUG:root:calc_dsc2 smooth 1e-06, lower 51063.84375, upper 3751.67578125, dsc 0.07347029447555542
+DEBUG:root:calc_dsc1 y_true torch.Size([1, 160, 32, 32]), y_pred torch.Size([1, 160, 32, 32])
+DEBUG:root:calc_dsc2 smooth 1e-06, lower 51063.84375, upper 3751.67578125, dsc 0.07347029447555542
+DEBUG:root:DiceLoss1 y_true torch.Size([1, 160, 32, 32]) y_pred, torch.Size([1, 160, 32, 32])
+DEBUG:root:DiceLoss2 smooth 1e-06, dsc 0.07347029447555542, 1-dsc 0.9265297055244446
+DEBUG:root:loss_batch1 true_output torch.Size([1, 160, 32, 32]), pred torch.Size([1, 1, 160, 32, 32])
+DEBUG:root:loss_batch2 dsc 0.07347029447555542, loss 0.9265297055244446, model_input len 1
+DEBUG:root:calc_dsc1 y_true torch.Size([1, 160, 32, 32]), y_pred torch.Size([1, 1, 160, 32, 32])
+DEBUG:root:calc_dsc2 smooth 1e-06, lower 51196.78125, upper 3596.78857421875, dsc 0.07025419175624847
+DEBUG:root:calc_dsc1 y_true torch.Size([1, 160, 32, 32]), y_pred torch.Size([1, 160, 32, 32])
+DEBUG:root:calc_dsc2 smooth 1e-06, lower 51196.78125, upper 3596.78857421875, dsc 0.07025419175624847
+DEBUG:root:DiceLoss1 y_true torch.Size([1, 160, 32, 32]) y_pred, torch.Size([1, 160, 32, 32])
+DEBUG:root:DiceLoss2 smooth 1e-06, dsc 0.07025419175624847, 1-dsc 0.9297457933425903
+DEBUG:root:loss_batch1 true_output torch.Size([1, 160, 32, 32]), pred torch.Size([1, 1, 160, 32, 32])
+DEBUG:root:loss_batch2 dsc 0.07025419175624847, loss 0.9297457933425903, model_input len 1
+DEBUG:root:calc_dsc1 y_true torch.Size([1, 160, 32, 32]), y_pred torch.Size([1, 1, 160, 32, 32])
+DEBUG:root:calc_dsc2 smooth 1e-06, lower 49595.93359375, upper 2351.41162109375, dsc 0.04741137847304344
+DEBUG:root:calc_dsc1 y_true torch.Size([1, 160, 32, 32]), y_pred torch.Size([1, 160, 32, 32])
+DEBUG:root:calc_dsc2 smooth 1e-06, lower 49595.93359375, upper 2351.41162109375, dsc 0.04741137847304344
+DEBUG:root:DiceLoss1 y_true torch.Size([1, 160, 32, 32]) y_pred, torch.Size([1, 160, 32, 32])
+DEBUG:root:DiceLoss2 smooth 1e-06, dsc 0.04741137847304344, 1-dsc 0.9525886178016663
+DEBUG:root:loss_batch1 true_output torch.Size([1, 160, 32, 32]), pred torch.Size([1, 1, 160, 32, 32])
+DEBUG:root:loss_batch2 dsc 0.04741137847304344, loss 0.9525886178016663, model_input len 1
+DEBUG:root:calc_dsc1 y_true torch.Size([1, 160, 32, 32]), y_pred torch.Size([1, 1, 160, 32, 32])
+DEBUG:root:calc_dsc2 smooth 1e-06, lower 50112.09765625, upper 3397.2314453125, dsc 0.06779263913631439
+DEBUG:root:calc_dsc1 y_true torch.Size([1, 160, 32, 32]), y_pred torch.Size([1, 160, 32, 32])
+DEBUG:root:calc_dsc2 smooth 1e-06, lower 50112.09765625, upper 3397.2314453125, dsc 0.06779263913631439
+DEBUG:root:DiceLoss1 y_true torch.Size([1, 160, 32, 32]) y_pred, torch.Size([1, 160, 32, 32])
+DEBUG:root:DiceLoss2 smooth 1e-06, dsc 0.06779263913631439, 1-dsc 0.9322073459625244
+DEBUG:root:loss_batch1 true_output torch.Size([1, 160, 32, 32]), pred torch.Size([1, 1, 160, 32, 32])
+DEBUG:root:loss_batch2 dsc 0.06779263913631439, loss 0.9322073459625244, model_input len 1
+DEBUG:root:calc_dsc1 y_true torch.Size([1, 160, 32, 32]), y_pred torch.Size([1, 1, 160, 32, 32])
+DEBUG:root:calc_dsc2 smooth 1e-06, lower 50204.90234375, upper 2723.607421875, dsc 0.054249830543994904
+DEBUG:root:calc_dsc1 y_true torch.Size([1, 160, 32, 32]), y_pred torch.Size([1, 160, 32, 32])
+DEBUG:root:calc_dsc2 smooth 1e-06, lower 50204.90234375, upper 2723.607421875, dsc 0.054249830543994904
+DEBUG:root:DiceLoss1 y_true torch.Size([1, 160, 32, 32]) y_pred, torch.Size([1, 160, 32, 32])
+DEBUG:root:DiceLoss2 smooth 1e-06, dsc 0.054249830543994904, 1-dsc 0.9457501769065857
+DEBUG:root:loss_batch1 true_output torch.Size([1, 160, 32, 32]), pred torch.Size([1, 1, 160, 32, 32])
+DEBUG:root:loss_batch2 dsc 0.054249830543994904, loss 0.9457501769065857, model_input len 1
+DEBUG:root:calc_dsc1 y_true torch.Size([1, 160, 32, 32]), y_pred torch.Size([1, 1, 160, 32, 32])
+DEBUG:root:calc_dsc2 smooth 1e-06, lower 49581.12890625, upper 2626.8251953125, dsc 0.052980341017246246
+DEBUG:root:calc_dsc1 y_true torch.Size([1, 160, 32, 32]), y_pred torch.Size([1, 160, 32, 32])
+DEBUG:root:calc_dsc2 smooth 1e-06, lower 49581.12890625, upper 2626.8251953125, dsc 0.052980341017246246
+DEBUG:root:DiceLoss1 y_true torch.Size([1, 160, 32, 32]) y_pred, torch.Size([1, 160, 32, 32])
+DEBUG:root:DiceLoss2 smooth 1e-06, dsc 0.052980341017246246, 1-dsc 0.947019636631012
+DEBUG:root:loss_batch1 true_output torch.Size([1, 160, 32, 32]), pred torch.Size([1, 1, 160, 32, 32])
+DEBUG:root:loss_batch2 dsc 0.052980341017246246, loss 0.947019636631012, model_input len 1
+DEBUG:root:calc_dsc1 y_true torch.Size([1, 160, 32, 32]), y_pred torch.Size([1, 1, 160, 32, 32])
+DEBUG:root:calc_dsc2 smooth 1e-06, lower 49436.25, upper 2773.4130859375, dsc 0.05610079690814018
+DEBUG:root:calc_dsc1 y_true torch.Size([1, 160, 32, 32]), y_pred torch.Size([1, 160, 32, 32])
+DEBUG:root:calc_dsc2 smooth 1e-06, lower 49436.25, upper 2773.4130859375, dsc 0.05610079690814018
+DEBUG:root:DiceLoss1 y_true torch.Size([1, 160, 32, 32]) y_pred, torch.Size([1, 160, 32, 32])
+DEBUG:root:DiceLoss2 smooth 1e-06, dsc 0.05610079690814018, 1-dsc 0.9438992142677307
+DEBUG:root:loss_batch1 true_output torch.Size([1, 160, 32, 32]), pred torch.Size([1, 1, 160, 32, 32])
+DEBUG:root:loss_batch2 dsc 0.05610079690814018, loss 0.9438992142677307, model_input len 1
+DEBUG:root:calc_dsc1 y_true torch.Size([1, 160, 32, 32]), y_pred torch.Size([1, 1, 160, 32, 32])
+DEBUG:root:calc_dsc2 smooth 1e-06, lower 49341.4296875, upper 3192.497314453125, dsc 0.06470216810703278
+DEBUG:root:calc_dsc1 y_true torch.Size([1, 160, 32, 32]), y_pred torch.Size([1, 160, 32, 32])
+DEBUG:root:calc_dsc2 smooth 1e-06, lower 49341.4296875, upper 3192.497314453125, dsc 0.06470216810703278
+DEBUG:root:DiceLoss1 y_true torch.Size([1, 160, 32, 32]) y_pred, torch.Size([1, 160, 32, 32])
+DEBUG:root:DiceLoss2 smooth 1e-06, dsc 0.06470216810703278, 1-dsc 0.9352978467941284
+DEBUG:root:loss_batch1 true_output torch.Size([1, 160, 32, 32]), pred torch.Size([1, 1, 160, 32, 32])
+DEBUG:root:loss_batch2 dsc 0.06470216810703278, loss 0.9352978467941284, model_input len 1
+DEBUG:root:calc_dsc1 y_true torch.Size([1, 160, 32, 32]), y_pred torch.Size([1, 1, 160, 32, 32])
+DEBUG:root:calc_dsc2 smooth 1e-06, lower 49312.65625, upper 3158.482421875, dsc 0.06405013799667358
+DEBUG:root:calc_dsc1 y_true torch.Size([1, 160, 32, 32]), y_pred torch.Size([1, 160, 32, 32])
+DEBUG:root:calc_dsc2 smooth 1e-06, lower 49312.65625, upper 3158.482421875, dsc 0.06405013799667358
+DEBUG:root:DiceLoss1 y_true torch.Size([1, 160, 32, 32]) y_pred, torch.Size([1, 160, 32, 32])
+DEBUG:root:DiceLoss2 smooth 1e-06, dsc 0.06405013799667358, 1-dsc 0.9359498620033264
+DEBUG:root:loss_batch1 true_output torch.Size([1, 160, 32, 32]), pred torch.Size([1, 1, 160, 32, 32])
+DEBUG:root:loss_batch2 dsc 0.06405013799667358, loss 0.9359498620033264, model_input len 1
+DEBUG:root:calc_dsc1 y_true torch.Size([1, 160, 32, 32]), y_pred torch.Size([1, 1, 160, 32, 32])
+DEBUG:root:calc_dsc2 smooth 1e-06, lower 48596.8125, upper 2682.110595703125, dsc 0.05519108101725578
+DEBUG:root:calc_dsc1 y_true torch.Size([1, 160, 32, 32]), y_pred torch.Size([1, 160, 32, 32])
+DEBUG:root:calc_dsc2 smooth 1e-06, lower 48596.8125, upper 2682.110595703125, dsc 0.05519108101725578
+DEBUG:root:DiceLoss1 y_true torch.Size([1, 160, 32, 32]) y_pred, torch.Size([1, 160, 32, 32])
+DEBUG:root:DiceLoss2 smooth 1e-06, dsc 0.05519108101725578, 1-dsc 0.9448089003562927
+DEBUG:root:loss_batch1 true_output torch.Size([1, 160, 32, 32]), pred torch.Size([1, 1, 160, 32, 32])
+DEBUG:root:loss_batch2 dsc 0.05519108101725578, loss 0.9448089003562927, model_input len 1
+DEBUG:root:calc_dsc1 y_true torch.Size([1, 160, 32, 32]), y_pred torch.Size([1, 1, 160, 32, 32])
+DEBUG:root:calc_dsc2 smooth 1e-06, lower 45609.0703125, upper 2914.0478515625, dsc 0.06389185041189194
+DEBUG:root:calc_dsc1 y_true torch.Size([1, 160, 32, 32]), y_pred torch.Size([1, 160, 32, 32])
+DEBUG:root:calc_dsc2 smooth 1e-06, lower 45609.0703125, upper 2914.0478515625, dsc 0.06389185041189194
+DEBUG:root:DiceLoss1 y_true torch.Size([1, 160, 32, 32]) y_pred, torch.Size([1, 160, 32, 32])
+DEBUG:root:DiceLoss2 smooth 1e-06, dsc 0.06389185041189194, 1-dsc 0.9361081719398499
+DEBUG:root:loss_batch1 true_output torch.Size([1, 160, 32, 32]), pred torch.Size([1, 1, 160, 32, 32])
+DEBUG:root:loss_batch2 dsc 0.06389185041189194, loss 0.9361081719398499, model_input len 1
+DEBUG:root:calc_dsc1 y_true torch.Size([1, 160, 32, 32]), y_pred torch.Size([1, 1, 160, 32, 32])
+DEBUG:root:calc_dsc2 smooth 1e-06, lower 46819.98828125, upper 2508.8232421875, dsc 0.053584448993206024
+DEBUG:root:calc_dsc1 y_true torch.Size([1, 160, 32, 32]), y_pred torch.Size([1, 160, 32, 32])
+DEBUG:root:calc_dsc2 smooth 1e-06, lower 46819.98828125, upper 2508.8232421875, dsc 0.053584448993206024
+DEBUG:root:DiceLoss1 y_true torch.Size([1, 160, 32, 32]) y_pred, torch.Size([1, 160, 32, 32])
+DEBUG:root:DiceLoss2 smooth 1e-06, dsc 0.053584448993206024, 1-dsc 0.9464155435562134
+DEBUG:root:loss_batch1 true_output torch.Size([1, 160, 32, 32]), pred torch.Size([1, 1, 160, 32, 32])
+DEBUG:root:loss_batch2 dsc 0.053584448993206024, loss 0.9464155435562134, model_input len 1
+DEBUG:root:calc_dsc1 y_true torch.Size([1, 160, 32, 32]), y_pred torch.Size([1, 1, 160, 32, 32])
+DEBUG:root:calc_dsc2 smooth 1e-06, lower 46496.44921875, upper 2660.713623046875, dsc 0.05722401663661003
+DEBUG:root:calc_dsc1 y_true torch.Size([1, 160, 32, 32]), y_pred torch.Size([1, 160, 32, 32])
+DEBUG:root:calc_dsc2 smooth 1e-06, lower 46496.44921875, upper 2660.713623046875, dsc 0.05722401663661003
+DEBUG:root:DiceLoss1 y_true torch.Size([1, 160, 32, 32]) y_pred, torch.Size([1, 160, 32, 32])
+DEBUG:root:DiceLoss2 smooth 1e-06, dsc 0.05722401663661003, 1-dsc 0.9427759647369385
+DEBUG:root:loss_batch1 true_output torch.Size([1, 160, 32, 32]), pred torch.Size([1, 1, 160, 32, 32])
+DEBUG:root:loss_batch2 dsc 0.05722401663661003, loss 0.9427759647369385, model_input len 1
+DEBUG:root:calc_dsc1 y_true torch.Size([1, 160, 32, 32]), y_pred torch.Size([1, 1, 160, 32, 32])
+DEBUG:root:calc_dsc2 smooth 1e-06, lower 45071.109375, upper 2267.255615234375, dsc 0.05030396580696106
+DEBUG:root:calc_dsc1 y_true torch.Size([1, 160, 32, 32]), y_pred torch.Size([1, 160, 32, 32])
+DEBUG:root:calc_dsc2 smooth 1e-06, lower 45071.109375, upper 2267.255615234375, dsc 0.05030396580696106
+DEBUG:root:DiceLoss1 y_true torch.Size([1, 160, 32, 32]) y_pred, torch.Size([1, 160, 32, 32])
+DEBUG:root:DiceLoss2 smooth 1e-06, dsc 0.05030396580696106, 1-dsc 0.9496960639953613
+DEBUG:root:loss_batch1 true_output torch.Size([1, 160, 32, 32]), pred torch.Size([1, 1, 160, 32, 32])
+DEBUG:root:loss_batch2 dsc 0.05030396580696106, loss 0.9496960639953613, model_input len 1
+DEBUG:root:calc_dsc1 y_true torch.Size([1, 160, 32, 32]), y_pred torch.Size([1, 1, 160, 32, 32])
+DEBUG:root:calc_dsc2 smooth 1e-06, lower 46850.76171875, upper 2934.092041015625, dsc 0.06262634694576263
+DEBUG:root:calc_dsc1 y_true torch.Size([1, 160, 32, 32]), y_pred torch.Size([1, 160, 32, 32])
+DEBUG:root:calc_dsc2 smooth 1e-06, lower 46850.76171875, upper 2934.092041015625, dsc 0.06262634694576263
+DEBUG:root:DiceLoss1 y_true torch.Size([1, 160, 32, 32]) y_pred, torch.Size([1, 160, 32, 32])
+DEBUG:root:DiceLoss2 smooth 1e-06, dsc 0.06262634694576263, 1-dsc 0.9373736381530762
+DEBUG:root:loss_batch1 true_output torch.Size([1, 160, 32, 32]), pred torch.Size([1, 1, 160, 32, 32])
+DEBUG:root:loss_batch2 dsc 0.06262634694576263, loss 0.9373736381530762, model_input len 1
+DEBUG:root:calc_dsc1 y_true torch.Size([1, 160, 32, 32]), y_pred torch.Size([1, 1, 160, 32, 32])
+DEBUG:root:calc_dsc2 smooth 1e-06, lower 48414.2890625, upper 2624.905517578125, dsc 0.05421757698059082
+DEBUG:root:calc_dsc1 y_true torch.Size([1, 160, 32, 32]), y_pred torch.Size([1, 160, 32, 32])
+DEBUG:root:calc_dsc2 smooth 1e-06, lower 48414.2890625, upper 2624.905517578125, dsc 0.05421757698059082
+DEBUG:root:DiceLoss1 y_true torch.Size([1, 160, 32, 32]) y_pred, torch.Size([1, 160, 32, 32])
+DEBUG:root:DiceLoss2 smooth 1e-06, dsc 0.05421757698059082, 1-dsc 0.9457824230194092
+DEBUG:root:loss_batch1 true_output torch.Size([1, 160, 32, 32]), pred torch.Size([1, 1, 160, 32, 32])
+DEBUG:root:loss_batch2 dsc 0.05421757698059082, loss 0.9457824230194092, model_input len 1
+DEBUG:root:calc_dsc1 y_true torch.Size([1, 160, 32, 32]), y_pred torch.Size([1, 1, 160, 32, 32])
+DEBUG:root:calc_dsc2 smooth 1e-06, lower 48614.1015625, upper 2853.666259765625, dsc 0.058700378984212875
+DEBUG:root:calc_dsc1 y_true torch.Size([1, 160, 32, 32]), y_pred torch.Size([1, 160, 32, 32])
+DEBUG:root:calc_dsc2 smooth 1e-06, lower 48614.1015625, upper 2853.666259765625, dsc 0.058700378984212875
+DEBUG:root:DiceLoss1 y_true torch.Size([1, 160, 32, 32]) y_pred, torch.Size([1, 160, 32, 32])
+DEBUG:root:DiceLoss2 smooth 1e-06, dsc 0.058700378984212875, 1-dsc 0.9412996172904968
+DEBUG:root:loss_batch1 true_output torch.Size([1, 160, 32, 32]), pred torch.Size([1, 1, 160, 32, 32])
+DEBUG:root:loss_batch2 dsc 0.058700378984212875, loss 0.9412996172904968, model_input len 1
+DEBUG:root:calc_dsc1 y_true torch.Size([1, 160, 32, 32]), y_pred torch.Size([1, 1, 160, 32, 32])
+DEBUG:root:calc_dsc2 smooth 1e-06, lower 47637.46875, upper 1831.850830078125, dsc 0.03845399245619774
+DEBUG:root:calc_dsc1 y_true torch.Size([1, 160, 32, 32]), y_pred torch.Size([1, 160, 32, 32])
+DEBUG:root:calc_dsc2 smooth 1e-06, lower 47637.46875, upper 1831.850830078125, dsc 0.03845399245619774
+DEBUG:root:DiceLoss1 y_true torch.Size([1, 160, 32, 32]) y_pred, torch.Size([1, 160, 32, 32])
+DEBUG:root:DiceLoss2 smooth 1e-06, dsc 0.03845399245619774, 1-dsc 0.961546003818512
+DEBUG:root:loss_batch1 true_output torch.Size([1, 160, 32, 32]), pred torch.Size([1, 1, 160, 32, 32])
+DEBUG:root:loss_batch2 dsc 0.03845399245619774, loss 0.961546003818512, model_input len 1
+DEBUG:root:calc_dsc1 y_true torch.Size([1, 160, 32, 32]), y_pred torch.Size([1, 1, 160, 32, 32])
+DEBUG:root:calc_dsc2 smooth 1e-06, lower 49001.953125, upper 3329.4873046875, dsc 0.06794600933790207
+DEBUG:root:calc_dsc1 y_true torch.Size([1, 160, 32, 32]), y_pred torch.Size([1, 160, 32, 32])
+DEBUG:root:calc_dsc2 smooth 1e-06, lower 49001.953125, upper 3329.4873046875, dsc 0.06794600933790207
+DEBUG:root:DiceLoss1 y_true torch.Size([1, 160, 32, 32]) y_pred, torch.Size([1, 160, 32, 32])
+DEBUG:root:DiceLoss2 smooth 1e-06, dsc 0.06794600933790207, 1-dsc 0.9320539832115173
+DEBUG:root:loss_batch1 true_output torch.Size([1, 160, 32, 32]), pred torch.Size([1, 1, 160, 32, 32])
+DEBUG:root:loss_batch2 dsc 0.06794600933790207, loss 0.9320539832115173, model_input len 1
+DEBUG:root:calc_dsc1 y_true torch.Size([1, 160, 32, 32]), y_pred torch.Size([1, 1, 160, 32, 32])
+DEBUG:root:calc_dsc2 smooth 1e-06, lower 48606.51953125, upper 3260.174560546875, dsc 0.0670727863907814
+DEBUG:root:calc_dsc1 y_true torch.Size([1, 160, 32, 32]), y_pred torch.Size([1, 160, 32, 32])
+DEBUG:root:calc_dsc2 smooth 1e-06, lower 48606.51953125, upper 3260.174560546875, dsc 0.0670727863907814
+DEBUG:root:DiceLoss1 y_true torch.Size([1, 160, 32, 32]) y_pred, torch.Size([1, 160, 32, 32])
+DEBUG:root:DiceLoss2 smooth 1e-06, dsc 0.0670727863907814, 1-dsc 0.9329271912574768
+DEBUG:root:loss_batch1 true_output torch.Size([1, 160, 32, 32]), pred torch.Size([1, 1, 160, 32, 32])
+DEBUG:root:loss_batch2 dsc 0.0670727863907814, loss 0.9329271912574768, model_input len 1
+DEBUG:root:calc_dsc1 y_true torch.Size([1, 160, 32, 32]), y_pred torch.Size([1, 1, 160, 32, 32])
+DEBUG:root:calc_dsc2 smooth 1e-06, lower 48307.6484375, upper 2624.8447265625, dsc 0.05433600768446922
+DEBUG:root:calc_dsc1 y_true torch.Size([1, 160, 32, 32]), y_pred torch.Size([1, 160, 32, 32])
+DEBUG:root:calc_dsc2 smooth 1e-06, lower 48307.6484375, upper 2624.8447265625, dsc 0.05433600768446922
+DEBUG:root:DiceLoss1 y_true torch.Size([1, 160, 32, 32]) y_pred, torch.Size([1, 160, 32, 32])
+DEBUG:root:DiceLoss2 smooth 1e-06, dsc 0.05433600768446922, 1-dsc 0.9456639885902405
+DEBUG:root:loss_batch1 true_output torch.Size([1, 160, 32, 32]), pred torch.Size([1, 1, 160, 32, 32])
+DEBUG:root:loss_batch2 dsc 0.05433600768446922, loss 0.9456639885902405, model_input len 1
+DEBUG:root:calc_dsc1 y_true torch.Size([1, 160, 32, 32]), y_pred torch.Size([1, 1, 160, 32, 32])
+DEBUG:root:calc_dsc2 smooth 1e-06, lower 47847.046875, upper 2685.3486328125, dsc 0.056123603135347366
+DEBUG:root:calc_dsc1 y_true torch.Size([1, 160, 32, 32]), y_pred torch.Size([1, 160, 32, 32])
+DEBUG:root:calc_dsc2 smooth 1e-06, lower 47847.046875, upper 2685.3486328125, dsc 0.056123603135347366
+DEBUG:root:DiceLoss1 y_true torch.Size([1, 160, 32, 32]) y_pred, torch.Size([1, 160, 32, 32])
+DEBUG:root:DiceLoss2 smooth 1e-06, dsc 0.056123603135347366, 1-dsc 0.9438763856887817
+DEBUG:root:loss_batch1 true_output torch.Size([1, 160, 32, 32]), pred torch.Size([1, 1, 160, 32, 32])
+DEBUG:root:loss_batch2 dsc 0.056123603135347366, loss 0.9438763856887817, model_input len 1
+DEBUG:root:calc_dsc1 y_true torch.Size([1, 160, 32, 32]), y_pred torch.Size([1, 1, 160, 32, 32])
+DEBUG:root:calc_dsc2 smooth 1e-06, lower 48247.9921875, upper 2651.3759765625, dsc 0.05495308339595795
+DEBUG:root:calc_dsc1 y_true torch.Size([1, 160, 32, 32]), y_pred torch.Size([1, 160, 32, 32])
+DEBUG:root:calc_dsc2 smooth 1e-06, lower 48247.9921875, upper 2651.3759765625, dsc 0.05495308339595795
+DEBUG:root:DiceLoss1 y_true torch.Size([1, 160, 32, 32]) y_pred, torch.Size([1, 160, 32, 32])
+DEBUG:root:DiceLoss2 smooth 1e-06, dsc 0.05495308339595795, 1-dsc 0.9450469017028809
+DEBUG:root:loss_batch1 true_output torch.Size([1, 160, 32, 32]), pred torch.Size([1, 1, 160, 32, 32])
+DEBUG:root:loss_batch2 dsc 0.05495308339595795, loss 0.9450469017028809, model_input len 1
+DEBUG:root:calc_dsc1 y_true torch.Size([1, 160, 32, 32]), y_pred torch.Size([1, 1, 160, 32, 32])
+DEBUG:root:calc_dsc2 smooth 1e-06, lower 48293.0859375, upper 3024.426513671875, dsc 0.06262648850679398
+DEBUG:root:calc_dsc1 y_true torch.Size([1, 160, 32, 32]), y_pred torch.Size([1, 160, 32, 32])
+DEBUG:root:calc_dsc2 smooth 1e-06, lower 48293.0859375, upper 3024.426513671875, dsc 0.06262648850679398
+DEBUG:root:DiceLoss1 y_true torch.Size([1, 160, 32, 32]) y_pred, torch.Size([1, 160, 32, 32])
+DEBUG:root:DiceLoss2 smooth 1e-06, dsc 0.06262648850679398, 1-dsc 0.9373735189437866
+DEBUG:root:loss_batch1 true_output torch.Size([1, 160, 32, 32]), pred torch.Size([1, 1, 160, 32, 32])
+DEBUG:root:loss_batch2 dsc 0.06262648850679398, loss 0.9373735189437866, model_input len 1
+DEBUG:root:calc_dsc1 y_true torch.Size([1, 160, 32, 32]), y_pred torch.Size([1, 1, 160, 32, 32])
+DEBUG:root:calc_dsc2 smooth 1e-06, lower 47782.39453125, upper 2285.254638671875, dsc 0.047826290130615234
+DEBUG:root:calc_dsc1 y_true torch.Size([1, 160, 32, 32]), y_pred torch.Size([1, 160, 32, 32])
+DEBUG:root:calc_dsc2 smooth 1e-06, lower 47782.39453125, upper 2285.254638671875, dsc 0.047826290130615234
+DEBUG:root:DiceLoss1 y_true torch.Size([1, 160, 32, 32]) y_pred, torch.Size([1, 160, 32, 32])
+DEBUG:root:DiceLoss2 smooth 1e-06, dsc 0.047826290130615234, 1-dsc 0.9521737098693848
+DEBUG:root:loss_batch1 true_output torch.Size([1, 160, 32, 32]), pred torch.Size([1, 1, 160, 32, 32])
+DEBUG:root:loss_batch2 dsc 0.047826290130615234, loss 0.9521737098693848, model_input len 1
+DEBUG:root:calc_dsc1 y_true torch.Size([1, 160, 32, 32]), y_pred torch.Size([1, 1, 160, 32, 32])
+DEBUG:root:calc_dsc2 smooth 1e-06, lower 47596.00390625, upper 2557.59521484375, dsc 0.05373550206422806
+DEBUG:root:calc_dsc1 y_true torch.Size([1, 160, 32, 32]), y_pred torch.Size([1, 160, 32, 32])
+DEBUG:root:calc_dsc2 smooth 1e-06, lower 47596.00390625, upper 2557.59521484375, dsc 0.05373550206422806
+DEBUG:root:DiceLoss1 y_true torch.Size([1, 160, 32, 32]) y_pred, torch.Size([1, 160, 32, 32])
+DEBUG:root:DiceLoss2 smooth 1e-06, dsc 0.05373550206422806, 1-dsc 0.9462645053863525
+DEBUG:root:loss_batch1 true_output torch.Size([1, 160, 32, 32]), pred torch.Size([1, 1, 160, 32, 32])
+DEBUG:root:loss_batch2 dsc 0.05373550206422806, loss 0.9462645053863525, model_input len 1
+DEBUG:root:calc_dsc1 y_true torch.Size([1, 160, 32, 32]), y_pred torch.Size([1, 1, 160, 32, 32])
+DEBUG:root:calc_dsc2 smooth 1e-06, lower 47580.0078125, upper 2498.624755859375, dsc 0.052514173090457916
+DEBUG:root:calc_dsc1 y_true torch.Size([1, 160, 32, 32]), y_pred torch.Size([1, 160, 32, 32])
+DEBUG:root:calc_dsc2 smooth 1e-06, lower 47580.0078125, upper 2498.624755859375, dsc 0.052514173090457916
+DEBUG:root:DiceLoss1 y_true torch.Size([1, 160, 32, 32]) y_pred, torch.Size([1, 160, 32, 32])
+DEBUG:root:DiceLoss2 smooth 1e-06, dsc 0.052514173090457916, 1-dsc 0.9474858045578003
+DEBUG:root:loss_batch1 true_output torch.Size([1, 160, 32, 32]), pred torch.Size([1, 1, 160, 32, 32])
+DEBUG:root:loss_batch2 dsc 0.052514173090457916, loss 0.9474858045578003, model_input len 1
+DEBUG:root:calc_dsc1 y_true torch.Size([1, 160, 32, 32]), y_pred torch.Size([1, 1, 160, 32, 32])
+DEBUG:root:calc_dsc2 smooth 1e-06, lower 47242.28515625, upper 2790.669921875, dsc 0.05907144397497177
+DEBUG:root:calc_dsc1 y_true torch.Size([1, 160, 32, 32]), y_pred torch.Size([1, 160, 32, 32])
+DEBUG:root:calc_dsc2 smooth 1e-06, lower 47242.28515625, upper 2790.669921875, dsc 0.05907144397497177
+DEBUG:root:DiceLoss1 y_true torch.Size([1, 160, 32, 32]) y_pred, torch.Size([1, 160, 32, 32])
+DEBUG:root:DiceLoss2 smooth 1e-06, dsc 0.05907144397497177, 1-dsc 0.94092857837677
+DEBUG:root:loss_batch1 true_output torch.Size([1, 160, 32, 32]), pred torch.Size([1, 1, 160, 32, 32])
+DEBUG:root:loss_batch2 dsc 0.05907144397497177, loss 0.94092857837677, model_input len 1
+DEBUG:root:calc_dsc1 y_true torch.Size([1, 160, 32, 32]), y_pred torch.Size([1, 1, 160, 32, 32])
+DEBUG:root:calc_dsc2 smooth 1e-06, lower 46642.5234375, upper 2346.66162109375, dsc 0.05031163617968559
+DEBUG:root:calc_dsc1 y_true torch.Size([1, 160, 32, 32]), y_pred torch.Size([1, 160, 32, 32])
+DEBUG:root:calc_dsc2 smooth 1e-06, lower 46642.5234375, upper 2346.66162109375, dsc 0.05031163617968559
+DEBUG:root:DiceLoss1 y_true torch.Size([1, 160, 32, 32]) y_pred, torch.Size([1, 160, 32, 32])
+DEBUG:root:DiceLoss2 smooth 1e-06, dsc 0.05031163617968559, 1-dsc 0.9496883749961853
+DEBUG:root:loss_batch1 true_output torch.Size([1, 160, 32, 32]), pred torch.Size([1, 1, 160, 32, 32])
+DEBUG:root:loss_batch2 dsc 0.05031163617968559, loss 0.9496883749961853, model_input len 1
+DEBUG:root:calc_dsc1 y_true torch.Size([1, 160, 32, 32]), y_pred torch.Size([1, 1, 160, 32, 32])
+DEBUG:root:calc_dsc2 smooth 1e-06, lower 46394.9140625, upper 2358.832275390625, dsc 0.05084247514605522
+DEBUG:root:calc_dsc1 y_true torch.Size([1, 160, 32, 32]), y_pred torch.Size([1, 160, 32, 32])
+DEBUG:root:calc_dsc2 smooth 1e-06, lower 46394.9140625, upper 2358.832275390625, dsc 0.05084247514605522
+DEBUG:root:DiceLoss1 y_true torch.Size([1, 160, 32, 32]) y_pred, torch.Size([1, 160, 32, 32])
+DEBUG:root:DiceLoss2 smooth 1e-06, dsc 0.05084247514605522, 1-dsc 0.9491575360298157
+DEBUG:root:loss_batch1 true_output torch.Size([1, 160, 32, 32]), pred torch.Size([1, 1, 160, 32, 32])
+DEBUG:root:loss_batch2 dsc 0.05084247514605522, loss 0.9491575360298157, model_input len 1
+DEBUG:root:calc_dsc1 y_true torch.Size([1, 160, 32, 32]), y_pred torch.Size([1, 1, 160, 32, 32])
+DEBUG:root:calc_dsc2 smooth 1e-06, lower 47115.3984375, upper 3151.622314453125, dsc 0.06689155846834183
+DEBUG:root:calc_dsc1 y_true torch.Size([1, 160, 32, 32]), y_pred torch.Size([1, 160, 32, 32])
+DEBUG:root:calc_dsc2 smooth 1e-06, lower 47115.3984375, upper 3151.622314453125, dsc 0.06689155846834183
+DEBUG:root:DiceLoss1 y_true torch.Size([1, 160, 32, 32]) y_pred, torch.Size([1, 160, 32, 32])
+DEBUG:root:DiceLoss2 smooth 1e-06, dsc 0.06689155846834183, 1-dsc 0.9331084489822388
+DEBUG:root:loss_batch1 true_output torch.Size([1, 160, 32, 32]), pred torch.Size([1, 1, 160, 32, 32])
+DEBUG:root:loss_batch2 dsc 0.06689155846834183, loss 0.9331084489822388, model_input len 1
+DEBUG:root:calc_dsc1 y_true torch.Size([1, 160, 32, 32]), y_pred torch.Size([1, 1, 160, 32, 32])
+DEBUG:root:calc_dsc2 smooth 1e-06, lower 46886.6484375, upper 2923.42626953125, dsc 0.062350932508707047
+DEBUG:root:calc_dsc1 y_true torch.Size([1, 160, 32, 32]), y_pred torch.Size([1, 160, 32, 32])
+DEBUG:root:calc_dsc2 smooth 1e-06, lower 46886.6484375, upper 2923.42626953125, dsc 0.062350932508707047
+DEBUG:root:DiceLoss1 y_true torch.Size([1, 160, 32, 32]) y_pred, torch.Size([1, 160, 32, 32])
+DEBUG:root:DiceLoss2 smooth 1e-06, dsc 0.062350932508707047, 1-dsc 0.9376490712165833
+DEBUG:root:loss_batch1 true_output torch.Size([1, 160, 32, 32]), pred torch.Size([1, 1, 160, 32, 32])
+DEBUG:root:loss_batch2 dsc 0.062350932508707047, loss 0.9376490712165833, model_input len 1
+DEBUG:root:calc_dsc1 y_true torch.Size([1, 160, 32, 32]), y_pred torch.Size([1, 1, 160, 32, 32])
+DEBUG:root:calc_dsc2 smooth 1e-06, lower 46386.3515625, upper 2681.371826171875, dsc 0.05780518800020218
+DEBUG:root:calc_dsc1 y_true torch.Size([1, 160, 32, 32]), y_pred torch.Size([1, 160, 32, 32])
+DEBUG:root:calc_dsc2 smooth 1e-06, lower 46386.3515625, upper 2681.371826171875, dsc 0.05780518800020218
+DEBUG:root:DiceLoss1 y_true torch.Size([1, 160, 32, 32]) y_pred, torch.Size([1, 160, 32, 32])
+DEBUG:root:DiceLoss2 smooth 1e-06, dsc 0.05780518800020218, 1-dsc 0.9421948194503784
+DEBUG:root:loss_batch1 true_output torch.Size([1, 160, 32, 32]), pred torch.Size([1, 1, 160, 32, 32])
+DEBUG:root:loss_batch2 dsc 0.05780518800020218, loss 0.9421948194503784, model_input len 1
+DEBUG:root:calc_dsc1 y_true torch.Size([1, 160, 32, 32]), y_pred torch.Size([1, 1, 160, 32, 32])
+DEBUG:root:calc_dsc2 smooth 1e-06, lower 46817.30859375, upper 3339.82421875, dsc 0.07133737951517105
+DEBUG:root:calc_dsc1 y_true torch.Size([1, 160, 32, 32]), y_pred torch.Size([1, 160, 32, 32])
+DEBUG:root:calc_dsc2 smooth 1e-06, lower 46817.30859375, upper 3339.82421875, dsc 0.07133737951517105
+DEBUG:root:DiceLoss1 y_true torch.Size([1, 160, 32, 32]) y_pred, torch.Size([1, 160, 32, 32])
+DEBUG:root:DiceLoss2 smooth 1e-06, dsc 0.07133737951517105, 1-dsc 0.9286625981330872
+DEBUG:root:loss_batch1 true_output torch.Size([1, 160, 32, 32]), pred torch.Size([1, 1, 160, 32, 32])
+DEBUG:root:loss_batch2 dsc 0.07133737951517105, loss 0.9286625981330872, model_input len 1

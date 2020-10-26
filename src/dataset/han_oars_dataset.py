@@ -2,6 +2,12 @@ import concurrent.futures
 
 import SimpleITK as sitk
 import numpy as np
+from torchio.transforms import (
+    ZNormalization,
+    RandomAffine,
+    Compose,
+)
+import matplotlib.pyplot as plt
 
 import src.dataset.oars_labels_consts as OARS_LABELS
 from src.consts import CPU_COUNT
@@ -11,6 +17,8 @@ from torch.utils.data import Dataset
 from pathlib import Path
 from functools import reduce
 
+from src.dataset.transform_input import transform_input
+
 
 class HaNOarsDataset(Dataset):
     """ source https://pytorch.org/tutorials/beginner/data_loading_tutorial.html """
@@ -19,7 +27,8 @@ class HaNOarsDataset(Dataset):
                  root_dir,
                  size,
                  shrink_factor=1,
-                 load_images=True):
+                 load_images=True,
+                 transform=None):
         """
         Args:
             root_dir (string): Directory with all the images.
@@ -27,6 +36,7 @@ class HaNOarsDataset(Dataset):
         self.root_dir_path = Path(root_dir)
         self.size = size
         self.shrink_factor = shrink_factor
+        self.transform = transform
 
         self.is_numpy = False
         self.output_label = None
@@ -39,7 +49,10 @@ class HaNOarsDataset(Dataset):
         return self.size
 
     def __getitem__(self, idx):
+        item_data = self.data_list[idx]
         item_label = self.label_list[idx]
+
+        # label filtering
         if self.output_label is not None:
             if type(self.output_label) is list:
                 item_label = reduce(lambda a, b: a | (item_label == b), self.output_label, False) * 1
@@ -47,7 +60,11 @@ class HaNOarsDataset(Dataset):
                 item_label = (item_label == self.output_label) * 1
             item_label = item_label.astype(np.int8)
 
-        return self.data_list[idx], item_label
+        # torchio data augmentation and transforms
+        if self.transform is not None:
+            item_data, item_label = transform_input(item_data, item_label, self.transform)
+
+        return item_data, item_label
 
     def set_output_label(self, output_label=None):
         self.output_label = output_label
@@ -137,7 +154,8 @@ class HaNOarsDataset(Dataset):
 
         return self
 
-    def data_normalize(self):
+    def data_normalize__deprecated_(self):
+        # __DEPRECATED__
         print('normalizing dataset')
 
         def normalize(data, index):
@@ -213,19 +231,34 @@ class HaNOarsDataset(Dataset):
 
 
 if __name__ == "__main__":
-    import matplotlib.pyplot as plt
-
     slice_n = 99
 
-    dataset = HaNOarsDataset(f'./data/{"HaN_OAR"}_shrink{2}x_padded160', 50)
-    dataset.data_normalize()
+    spatial = RandomAffine(
+        scales=1,
+        degrees=3,
+        isotropic=False,
+        default_pad_value='otsu',
+        image_interpolation='bspline')
+    transform = Compose([
+        spatial,
+        ZNormalization()
+    ])
+
+    dataset = HaNOarsDataset(f'./data/{"HaN_OAR"}_shrink{2}x_padded160', 10, transform=transform)
     dataset.filter_labels([OARS_LABELS.EYE_L, OARS_LABELS.EYE_R, OARS_LABELS.LENS_L, OARS_LABELS.LENS_R], False)
     dataset.to_numpy()
 
-    tmp_data = dataset.data_list[0]
-    tmp_label = dataset.label_list[0]
+    tmp_data, tmp_label = dataset[0]
+
+    # tmp_label2 = dataset.label_list[0]
+    # unique, counts = np.unique(tmp_label[tmp_label > 0], return_counts=True)
+    # print(np.asarray((unique, counts)).T)
+    # unique, counts = np.unique(tmp_label2[tmp_label2 > 0], return_counts=True)
+    # print(np.asarray((unique, counts)).T)
+
     print(tmp_data.shape, tmp_data.min(), tmp_data.max())
     print(tmp_label.shape, tmp_label.min(), tmp_label.max())
+    print(np.unique(tmp_label))
 
     plt.figure(figsize=(20, 20))
     plt.subplot(1, 2, 1)

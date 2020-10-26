@@ -26,27 +26,35 @@ def up_double_conv(in_channels, out_channels, kernel_size=3, padding=(1, 1, 1)):
 class UNetV2(nn.Module):
     """ source https://github.com/milesial/Pytorch-UNet/blob/master/unet/unet_model.py """
 
-    def __init__(self, in_channels=16):
+    def __init__(self, in_channels=16, dropout_rate=0):
         super().__init__()
         out_channels = in_channels
 
         # downconv1 1=>x, x=>2x
-        self.dconv_down1 = double_conv(1, out_channels, out_channels * 2)
+        self.dconv_down1 = nn.Sequential(
+            double_conv(1, out_channels, out_channels * 2),
+            nn.Dropout(dropout_rate))
         out_channels *= 2
         self.pool1 = nn.MaxPool3d(2, stride=2, ceil_mode=True)  # 1/2
 
         # downconv2 2x=>2x, 2x=>4x
-        self.dconv_down2 = down_double_conv(out_channels, out_channels * 2)
+        self.dconv_down2 = nn.Sequential(
+            down_double_conv(out_channels, out_channels * 2),
+            nn.Dropout(dropout_rate))
         out_channels *= 2
         self.pool2 = nn.MaxPool3d(2, stride=2, ceil_mode=True)  # 1/4
 
         # downconv3 4x=>4x, 4x=>8x
-        self.dconv_down3 = down_double_conv(out_channels, out_channels * 2)
+        self.dconv_down3 = nn.Sequential(
+            down_double_conv(out_channels, out_channels * 2),
+            nn.Dropout(dropout_rate))
         out_channels *= 2
         self.pool3 = nn.MaxPool3d(2, stride=2, ceil_mode=True)  # 1/8
 
         # middle 8x=>8x, 8x=>16x
-        self.dconv_middle = down_double_conv(out_channels, out_channels * 2)
+        self.dconv_middle = nn.Sequential(
+            down_double_conv(out_channels, out_channels * 2),
+            nn.Dropout(dropout_rate))
         out_channels *= 2
         print(f'max output channels {out_channels}')
 

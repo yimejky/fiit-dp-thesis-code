@@ -36,7 +36,8 @@ def iterate_model(dataloader, model, optimizer, loss_func, device, is_eval=False
             # batch done
             msg = f'Batch {info_text} [%i] loss %.5f, dsc %.5f' % (i + 1, item_loss, item_dsc)
             print(msg)
-            logging.debug(f'iterate_model {msg}')
+            logging.debug(f'iterate_model0 optimizer {optimizer.param_groups[0]["lr"]}')
+            logging.debug(f'iterate_model1 batch info {msg}')
 
             # clearing
             del data

@@ -12,16 +12,20 @@ from src.model_and_training.loss_batch import loss_batch
 
 def show_model_dataset_pred_preview(model_info,
                                     dataset,
+                                    dataset_index=None,
                                     figfile=None,
                                     max_slices=MAX_PADDING_SLICES,
                                     default_slice=(MAX_PADDING_SLICES - 1) // 2):
     model, device, optimizer, criterion = itemgetter('model', 'device', 'optimizer', 'criterion')(model_info)
 
     with torch.no_grad():
+        if dataset_index is None:
+            dataset_index = dataset.indices[0]
+
         model.eval()
         torch.cuda.empty_cache()
-        print(f'showing number {dataset.indices[0]}')
-        inputs, labels = dataset[0]
+        print(f'showing number {dataset_index}')
+        inputs, labels = dataset[dataset_index]
         inputs = torch.from_numpy(np.array([inputs])).to(device).float()
         labels = torch.from_numpy(np.array([labels])).to(device).float()
         prediction = model(inputs)
