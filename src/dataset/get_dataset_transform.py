@@ -9,7 +9,8 @@ def get_dataset_transform():
         degrees=3,
         isotropic=False,
         default_pad_value='otsu',
-        image_interpolation='bspline')
+        image_interpolation='bspline'
+    )
     transform = Compose([
         spatial,
         get_norm_transform()

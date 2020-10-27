@@ -3,11 +3,10 @@ import matplotlib.pyplot as plt
 from IPython.display import display
 from ipywidgets import widgets
 
-from src.consts import MAX_PADDING_SLICES
 
-
-def preview_dataset(dataset, preview_index=2, show_hist=False, max_slices=MAX_PADDING_SLICES):
+def preview_dataset(dataset, preview_index=0, show_hist=False):
     data, label = dataset[preview_index]
+    max_slices = label.shape[0]
 
     print(f'data max {data.max()}, min {data.min()}')
     print(f'label max {label.max()}, min {label.min()}')

@@ -8,7 +8,7 @@ from src.model_and_training.getters.get_model import get_model
 from src.model_and_training.getters.get_model_params import get_model_params
 from src.model_and_training.getters.get_optimizer import get_optimizer
 from src.model_and_training.getters.get_tensorboard_writer import get_tensorboard_writer
-from src.model_and_training.prepare_model.write_model_info_to_tensorboard import write_model_info_to_tensorboard
+from src.model_and_training.write_model_info_to_tensorboard import write_model_info_to_tensorboard
 
 
 def prepare_model(epochs=30,  # 30 x train_size = number of steps

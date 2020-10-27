@@ -72,10 +72,11 @@ class HaNOarsDataset(Dataset):
     def copy(self, copy_lists=True):
         # creating obj
         copy_dataset = HaNOarsDataset(
-            str(self.root_dir_path),
-            self.size,
-            self.shrink_factor,
-            load_images=False)
+            root_dir=str(self.root_dir_path),
+            size=self.size,
+            shrink_factor=self.shrink_factor,
+            load_images=False,
+            transform=self.transform)
 
         # coping inner attributes
         copy_dataset.is_numpy = self.is_numpy
@@ -239,12 +240,12 @@ if __name__ == "__main__":
         isotropic=False,
         default_pad_value='otsu',
         image_interpolation='bspline')
-    transform = Compose([
+    tmp_transform = Compose([
         spatial,
         ZNormalization()
     ])
 
-    dataset = HaNOarsDataset(f'./data/{"HaN_OAR"}_shrink{2}x_padded160', 10, transform=transform)
+    dataset = HaNOarsDataset(f'./data/{"HaN_OAR"}_shrink{2}x_padded160', 10, transform=tmp_transform)
     dataset.filter_labels([OARS_LABELS.EYE_L, OARS_LABELS.EYE_R, OARS_LABELS.LENS_L, OARS_LABELS.LENS_R], False)
     dataset.to_numpy()
 
