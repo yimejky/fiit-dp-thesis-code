@@ -49,6 +49,15 @@ class HaNOarsDataset(Dataset):
         return self.size
 
     def __getitem__(self, idx):
+        item_data, item_label = self.get_raw_item_with_label_filter(idx)
+
+        # torchio data augmentation and transforms
+        if self.transform is not None:
+            item_data, item_label = transform_input(item_data, item_label, self.transform)
+
+        return item_data, item_label
+
+    def get_raw_item_with_label_filter(self, idx):
         item_data = self.data_list[idx]
         item_label = self.label_list[idx]
 
@@ -59,10 +68,6 @@ class HaNOarsDataset(Dataset):
             else:
                 item_label = (item_label == self.output_label) * 1
             item_label = item_label.astype(np.int8)
-
-        # torchio data augmentation and transforms
-        if self.transform is not None:
-            item_data, item_label = transform_input(item_data, item_label, self.transform)
 
         return item_data, item_label
 

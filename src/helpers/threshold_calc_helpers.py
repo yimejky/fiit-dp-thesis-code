@@ -2,15 +2,19 @@ import torch
 import numpy as np
 import pandas as pd
 
+from src.dataset.get_norm_transform import get_norm_transform
+from src.dataset.transform_input import transform_input
 from src.helpers.calc_dsc import calc_dsc
 
 
 def get_rescaled_preds(model, dataset, device):
     preds = []
     rescaled_preds = []
-    for i in range(len(dataset)):
-        data, label = dataset[i]
-        data_input = torch.from_numpy(np.array([data])).to(device).float()
+    for index in range(len(dataset)):
+        raw_data, raw_label = dataset.get_raw_item_with_label_filter(index)
+        norm_data, norm_label = transform_input(raw_data, raw_label, get_norm_transform())
+
+        data_input = torch.from_numpy(np.array([norm_data])).to(device).float()
         # data_input.shape => batch, channel, slices, x, y
 
         prediction = model(data_input)[0]
@@ -31,14 +35,15 @@ def get_rescaled_preds(model, dataset, device):
 
 def get_dataset_threshold_info(dataset, preds, rescaled_preds, index, info_list, is_train=False, is_valid=False,
                                is_test=False):
-    data, label = dataset[index]
+    raw_data, raw_label = dataset.get_raw_item_with_label_filter(index)
+    norm_data, norm_label = transform_input(raw_data, raw_label, get_norm_transform())
     prediction = preds[index]
     rescaled_pred = rescaled_preds[index]
 
     info = {}
     info['index'] = index
-    info['dsc'] = calc_dsc(label, prediction)
-    info['rescaled_dsc'] = calc_dsc(label, rescaled_pred)
+    info['dsc'] = calc_dsc(norm_label, prediction)
+    info['rescaled_dsc'] = calc_dsc(norm_label, rescaled_pred)
     info['is_train'] = is_train
     info['is_valid'] = is_valid
     info['is_test'] = is_test
@@ -46,7 +51,7 @@ def get_dataset_threshold_info(dataset, preds, rescaled_preds, index, info_list,
     step = 0.01
     for thresh in np.arange(0, 1 + step, step):
         tmp_text = "{:.2f}".format(thresh)
-        info[f'thres_rescaled_dsc_{tmp_text}'] = calc_dsc(label, (rescaled_pred > thresh) * 1)
+        info[f'thres_rescaled_dsc_{tmp_text}'] = calc_dsc(norm_label, (rescaled_pred > thresh) * 1)
 
     info_list.append(info)
     return info_list
