@@ -10,10 +10,10 @@ pip install dill
 
 # matplotlib 3d
 pip install ipympl
+pip install itkwidgets
 
 # jupyter widgets
-jupyter labextension install @jupyter-widgets/jupyterlab-manager @jupyterlab/toc
-jupyter lab build
+bash ./scripts/install_labs.sh
 
 # opencv
 # pip install opencv-python
