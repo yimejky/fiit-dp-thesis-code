@@ -16,10 +16,14 @@ def prepare_model(epochs=30,  # 30 x train_size = number of steps
                   in_channels=16,
                   dropout_rate=0.2,
                   train_batch_size=1,
-                  train_dataset=None, valid_dataset=None, test_dataset=None):
+                  model_name=None,
+                  train_dataset=None,
+                  valid_dataset=None,
+                  test_dataset=None):
     # Params
     log_date = datetime.datetime.now().strftime("%Y%m%d-%H%M%S")
-    model_name = f'{log_date}_3d_unet'
+    if model_name is None:
+        model_name = f'{log_date}_3d_unet'
 
     # Setting up model and stuff
     device = get_device()

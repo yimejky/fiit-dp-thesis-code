@@ -4,8 +4,11 @@ from IPython.display import display
 from ipywidgets import widgets
 
 
-def preview_dataset(dataset, preview_index=0, show_hist=False):
-    data, label = dataset[preview_index]
+def preview_dataset(dataset, preview_index=0, show_hist=False, use_transform=False):
+    if use_transform:
+        data, label = dataset[preview_index]
+    else:
+        data, label = dataset.get_raw_item_with_label_filter(preview_index)
     max_slices = label.shape[0]
 
     print(f'data max {data.max()}, min {data.min()}')

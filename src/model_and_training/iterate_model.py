@@ -26,8 +26,7 @@ def iterate_model(dataloader, model, optimizer, loss_func, device, is_eval=False
             inputs = inputs.to(device).float()
             labels = labels.to(device).float()
 
-            item_loss, item_dsc, inputs_len = loss_batch(model, optimizer, loss_func,
-                                                         inputs, labels,
+            item_loss, item_dsc, inputs_len = loss_batch(model, optimizer, loss_func, inputs, labels,
                                                          calc_backward=not is_eval)
             losses.append(item_loss)
             dices.append(item_dsc)

@@ -1,36 +1,10 @@
-import torch
 import numpy as np
 import pandas as pd
 
 from src.dataset.get_norm_transform import get_norm_transform
 from src.dataset.transform_input import transform_input
 from src.helpers.calc_dsc import calc_dsc
-
-
-def get_rescaled_preds(model, dataset, device):
-    preds = []
-    rescaled_preds = []
-    for index in range(len(dataset)):
-        raw_data, raw_label = dataset.get_raw_item_with_label_filter(index)
-        norm_data, norm_label = transform_input(raw_data, raw_label, get_norm_transform())
-
-        data_input = torch.from_numpy(np.array([norm_data])).to(device).float()
-        # data_input.shape => batch, channel, slices, x, y
-
-        prediction = model(data_input)[0]
-        prediction = prediction.cpu().detach().numpy()[0]
-        rescaled_pred = prediction - prediction.min()
-        rescaled_pred = rescaled_pred / rescaled_pred.max()
-
-        preds.append(prediction)
-        rescaled_preds.append(rescaled_pred)
-
-        del data_input
-        del prediction
-        del rescaled_pred
-        torch.cuda.empty_cache()
-
-    return preds, rescaled_preds
+from src.helpers.get_rescaled_pred import get_rescaled_preds
 
 
 def get_dataset_threshold_info(dataset, preds, rescaled_preds, index, info_list, is_train=False, is_valid=False,

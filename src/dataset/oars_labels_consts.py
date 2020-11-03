@@ -1,4 +1,3 @@
-
 OARS_LABELS_DICT = {
     "BRAIN_STEM": 1,
     "EYE_L": 2,
@@ -23,6 +22,7 @@ OARS_LABELS_DICT = {
     "MANDIBLE_L": 21,
     "MANDIBLE_R": 22
 }
+OARS_LABELS_R_DICT = {v: k for k, v in OARS_LABELS_DICT.items()}
 
 OARS_LABELS_LIST = list(OARS_LABELS_DICT.values())
 
