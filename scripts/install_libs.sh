@@ -12,9 +12,6 @@ pip install dill
 pip install ipympl
 pip install itkwidgets
 
-# jupyter widgets
-bash ./scripts/install_labs.sh
-
 # opencv
 # pip install opencv-python
 pip install opencv-contrib-python

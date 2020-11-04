@@ -2,7 +2,6 @@ from operator import itemgetter
 
 import torch
 
-from src.model_and_training import ModelInfo
 from src.model_and_training.getters.get_criterion import get_criterion
 from src.model_and_training.getters.get_device import get_device
 from src.model_and_training.getters.get_loaders import get_loaders
@@ -42,7 +41,7 @@ def load_checkpoint_model_info(model_name, epoch, train_dataset, valid_dataset, 
     # Tensorboard logs
     tensorboard_writer = get_tensorboard_writer(model_name)
 
-    model_info: ModelInfo = {
+    model_info = {
         "model": model,
         "model_params": model_params,
         "model_name": model_name,

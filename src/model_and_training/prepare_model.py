@@ -1,6 +1,5 @@
 import datetime
 
-from src.model_and_training import ModelInfo
 from src.model_and_training.getters.get_criterion import get_criterion
 from src.model_and_training.getters.get_device import get_device
 from src.model_and_training.getters.get_loaders import get_loaders
@@ -45,7 +44,7 @@ def prepare_model(epochs=30,  # 30 x train_size = number of steps
     # Tensorboard logs
     tensorboard_writer = get_tensorboard_writer(model_name)
 
-    model_info: ModelInfo = {
+    model_info = {
         "model": model,
         "model_params": model_params,
         "model_name": model_name,
