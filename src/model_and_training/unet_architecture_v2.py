@@ -1,3 +1,5 @@
+import logging
+
 import torch
 from torch import nn
 
@@ -56,7 +58,7 @@ class UNetV2(nn.Module):
             down_double_conv(out_channels, out_channels * 2),
             nn.Dropout(dropout_rate))
         out_channels *= 2
-        print(f'max output channels {out_channels}')
+        logging.debug(f'UNet Architecture v2: max output channels {out_channels}')
 
         # upconv1 16x+8x=>8x, 8x=>8x
         self.up1 = nn.ConvTranspose3d(out_channels, out_channels, 2, stride=2, bias=False)

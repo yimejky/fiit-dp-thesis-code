@@ -1,3 +1,5 @@
+import logging
+
 import torch
 from torch import nn
 
@@ -45,7 +47,7 @@ class UNet(nn.Module):
         # middle
         self.dconv_middle = double_conv(out_channels, out_channels * 2)  # 128=>128, 128=>256
         out_channels *= 2
-        print(f'max output channels {out_channels}')
+        logging.debug(f'UNet Architecture v1: max output channels {out_channels}')
 
         # upconv1
         self.up1 = nn.ConvTranspose3d(out_channels, out_channels, 2, stride=2, bias=False)
