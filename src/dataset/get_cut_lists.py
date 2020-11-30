@@ -9,7 +9,7 @@ def get_cut_lists(low_res_model,
                   cut_full_res_dataset,
                   low_res_mask_threshold=0.5):
     for dataset_index in range(len(full_res_dataset)):
-        print(f'getting cut index {dataset_index}')
+        print(f'get_cut_lists: Cutting index {dataset_index}')
 
         # getting raw data
         raw_low_res_data_img = low_res_dataset.data_list[dataset_index]

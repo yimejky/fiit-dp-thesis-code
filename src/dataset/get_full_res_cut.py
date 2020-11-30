@@ -59,20 +59,20 @@ def get_full_res_cut(
                                        show_debug=show_debug)
     positive_pixels_count = np.sum(model_output_img > 0)
 
+    # outliers detection
     remove_pixel_idx = get_img_outliers_pixels(model_output_img[0, 0])
     for x in remove_pixel_idx:
         model_output_img[tuple([0, 0, *x])] = 0
-    print(f'Removing {len(remove_pixel_idx)} outlier pixels from {positive_pixels_count}')
+    print(f'get_full_res_cut: Removing {len(remove_pixel_idx)}/{positive_pixels_count} outlier pixels')
 
     # expanding low res int mask to high res
     exp_model_output_img = expand_image(model_output_img, expand_factor=16)  # shape (1, 1, 160, 512, 512)
 
     # getting bounding box
-    bounding_box = get_bounding_box_3D(exp_model_output_img[0][0])
+    bounding_box = get_bounding_box_3D(exp_model_output_img[0][0]) # removing batch, channel dimension
     new_bounding_box = get_final_bounding_box_slice(bounding_box, desire_bounding_box_size)
 
     # getting bounding box cut
-    # print(f'debug bounding: {raw_full_res_data_img.shape}, {raw_full_res_label_img.shape}')
     data_cut = raw_full_res_data_img[
                :,
                new_bounding_box[0]:new_bounding_box[1] + 1,
@@ -83,20 +83,21 @@ def get_full_res_cut(
                 new_bounding_box[0]:new_bounding_box[1] + 1,
                 new_bounding_box[2]:new_bounding_box[3] + 1,
                 new_bounding_box[4]:new_bounding_box[5] + 1]
-    # print(f'debug after cut and fixing dimensions: {label_cut.shape}, {data_cut.shape}')
 
     cut_sum = label_cut.sum()
     full_res_sum = raw_full_res_label_img.sum()
-    print('Does cut and original label contain the same amount of pixels?', cut_sum == full_res_sum, cut_sum,
+    print('get_full_res_cut: Does cut and original label contain the same amount of pixels?',
+          cut_sum == full_res_sum,
+          cut_sum,
           full_res_sum)
     # assert cut_sum == full_res_sum
 
     # debug
     if show_debug:
-        print('Bounding box sizes',
+        print('get_full_res_cut: Bounding box sizes',
               get_bounding_box_3D_size(*bounding_box),
               get_bounding_box_3D_size(*new_bounding_box))
-        print('Bounding boxes', bounding_box, new_bounding_box)
+        print('get_full_res_cut: Bounding boxes', bounding_box, new_bounding_box)
         debug_preview_model_output(low_res_data_img, low_res_label_img, model_output_img)
         debug_preview_cuts(exp_model_output_img, new_bounding_box, data_cut, label_cut)
 

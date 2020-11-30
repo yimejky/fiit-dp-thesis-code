@@ -32,7 +32,7 @@ def get_final_bounding_box_slice(bounding_box, desire_box_size):
     delta_box = desire_box_size - np.array(box_size)
     left_delta_box = delta_box // 2
     right_delta_box = delta_box - left_delta_box
-    print('debug box delta', delta_box)
+    print('get_final_bounding_box_slice: box delta', delta_box)
     # print('debug box delta', 'left', left_delta_box, 'right', right_delta_box)
 
     slice_a = bounding_box[0] - left_delta_box[0]
