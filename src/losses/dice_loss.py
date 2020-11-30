@@ -13,10 +13,10 @@ class DiceLoss(nn.Module):
         self.smooth = 1e-6
 
     def forward(self, y_pred, y_true):
+        logging.debug(f'DiceLoss1 y_true {y_true.shape} y_pred, {y_pred.shape}')
         assert y_pred.size() == y_true.size()
         dsc = calc_dsc(y_true, y_pred, self.smooth)
 
-        logging.debug(f'DiceLoss1 y_true {y_true.shape} y_pred, {y_pred.shape}')
         logging.debug(f'DiceLoss2 smooth {self.smooth}, dsc {dsc}, 1-dsc {1 - dsc}')
 
         return 1. - dsc

@@ -28,13 +28,16 @@ def up_double_conv(in_channels, out_channels, kernel_size=3, padding=(1, 1, 1)):
 class UNetV2(nn.Module):
     """ source https://github.com/milesial/Pytorch-UNet/blob/master/unet/unet_model.py """
 
-    def __init__(self, in_channels=16, dropout_rate=0):
+    def __init__(self, in_channels=16,
+                 input_data_channels=1,
+                 output_label_channels=1,
+                 dropout_rate=0):
         super().__init__()
         out_channels = in_channels
 
-        # downconv1 1=>x, x=>2x
+        # downconv1 y=>x, x=>2x
         self.dconv_down1 = nn.Sequential(
-            double_conv(1, out_channels, out_channels * 2),
+            double_conv(input_data_channels, out_channels, out_channels * 2),
             nn.Dropout(dropout_rate))
         out_channels *= 2
         self.pool1 = nn.MaxPool3d(2, stride=2, ceil_mode=True)  # 1/2
@@ -75,8 +78,8 @@ class UNetV2(nn.Module):
         self.dconv_up3 = up_double_conv(out_channels + out_channels // 2, out_channels // 2)
         out_channels = out_channels // 2
 
-        # final conv 2x=>1
-        self.final = nn.Conv3d(out_channels, 1, kernel_size=1)
+        # final conv 2x=>z
+        self.final = nn.Conv3d(out_channels, output_label_channels, kernel_size=1)
         self.sigmoid = nn.Sigmoid()
 
     def forward(self, x):

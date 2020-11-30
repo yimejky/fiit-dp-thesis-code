@@ -13,6 +13,8 @@ from src.model_and_training.write_model_info_to_tensorboard import write_model_i
 def prepare_model(epochs=30,  # 30 x train_size = number of steps
                   learning_rate=5e-4,
                   in_channels=16,
+                  input_data_channels=1,
+                  output_label_channels=1,
                   dropout_rate=0.2,
                   train_batch_size=1,
                   model_name=None,
@@ -32,6 +34,8 @@ def prepare_model(epochs=30,  # 30 x train_size = number of steps
     model_params = {
         "in_channels": in_channels,
         "dropout_rate": dropout_rate,
+        "input_data_channels": input_data_channels,
+        "output_label_channels": output_label_channels,
     }
     model = get_model(device, model_params)
     optimizer = get_optimizer(model=model, learning_rate=learning_rate)

@@ -2,6 +2,7 @@ import logging
 
 
 def calc_dsc(y_true, y_pred, smooth=1e-6):
+    logging.debug(f'calc_dsc_helper1 y_true {y_true.shape}, y_pred {y_pred.shape}')
     assert y_true.size() == y_pred.size()
 
     y_true = y_true.contiguous().view(-1)
@@ -12,7 +13,6 @@ def calc_dsc(y_true, y_pred, smooth=1e-6):
     lower = y_true.sum() + y_pred.sum() + smooth
     dsc = upper / lower
 
-    logging.debug(f'calc_dsc_helper1 y_true {y_true.shape}, y_pred {y_pred.shape}')
     logging.debug(f'calc_dsc_helper2 smooth {smooth}, lower {lower}, upper {upper}, dsc {dsc}')
 
     return dsc

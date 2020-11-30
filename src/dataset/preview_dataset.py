@@ -9,17 +9,18 @@ def preview_dataset(dataset, preview_index=0, show_hist=False, use_transform=Fal
         data, label = dataset[preview_index]
     else:
         data, label = dataset.get_raw_item_with_label_filter(preview_index)
+    max_channels = label.shape[0]
     max_slices = label.shape[1]
 
     print(f'data max {data.max()}, min {data.min()}')
     print(f'label max {label.max()}, min {label.min()}')
 
-    def f(slice_index):
+    def f(slice_index, label_channel):
         plt.figure(figsize=(20, 10))
         plt.subplot(1, 2, 1)
         plt.imshow(data[0, slice_index], cmap="gray")
         plt.subplot(1, 2, 2)
-        plt.imshow(label[0, slice_index])
+        plt.imshow(label[label_channel, slice_index])
         plt.show()
 
         if show_hist:
@@ -31,7 +32,8 @@ def preview_dataset(dataset, preview_index=0, show_hist=False, use_transform=Fal
             plt.show()
 
     sliceSlider = widgets.IntSlider(min=0, max=max_slices - 1, step=1, value=(max_slices - 1) / 2)
-    ui = widgets.VBox([widgets.HBox([sliceSlider])])
-    out = widgets.interactive_output(f, {'slice_index': sliceSlider})
+    labelChannelSlider = widgets.IntSlider(min=0, max=max_channels - 1, step=1, value=(max_channels - 1) / 2)
+    ui = widgets.VBox([widgets.HBox([sliceSlider, labelChannelSlider])])
+    out = widgets.interactive_output(f, {'slice_index': sliceSlider, 'label_channel': labelChannelSlider})
     # noinspection PyTypeChecker
     display(ui, out)

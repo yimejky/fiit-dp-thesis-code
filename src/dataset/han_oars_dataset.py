@@ -57,15 +57,31 @@ class HaNOarsDataset(Dataset):
         return item_data, item_label
 
     def get_raw_item_with_label_filter(self, idx):
+        """
+        outpu_label can be int, array, or dict
+        if list, it will merge labels to one
+        if dict it will create channel per item
+        """
         item_data = self.data_list[idx]
         item_label = self.label_list[idx]
+        output_label = self.output_label
 
         # label filtering
         if self.output_label is not None:
-            if type(self.output_label) is list:
-                item_label = reduce(lambda a, b: a | (item_label == b), self.output_label, False) * 1
+            type_output_label = type(output_label)
+            if type_output_label is list:
+                item_label = reduce(lambda a, b: a | (item_label == b), output_label, False) * 1
+            if type_output_label is dict:
+                len_output_label = len(output_label)
+                output_label_items = list(output_label.items())
+
+                new_item_label = np.zeros((len_output_label, *item_label[0].shape))
+                for i, val in enumerate(output_label_items):
+                    OAR_KEY, OAR_VALUE = val
+                    new_item_label[i] = ((item_label == OAR_VALUE) * 1).astype(np.int8)
+                item_label = new_item_label
             else:
-                item_label = (item_label == self.output_label) * 1
+                item_label = (item_label == output_label) * 1
             item_label = item_label.astype(np.int8)
 
         return item_data, item_label
