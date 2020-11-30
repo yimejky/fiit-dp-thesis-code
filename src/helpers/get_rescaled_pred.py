@@ -12,10 +12,11 @@ def get_rescaled_pred(model, dataset, device, index):
     data_input = torch.from_numpy(np.array([norm_data])).to(device).float()
     # data_input.shape => batch, channel, slices, x, y
 
+    # removing batch dimension
     prediction = model(data_input)[0]
     del data_input
 
-    prediction = prediction.cpu().detach().numpy()[0]
+    prediction = prediction.cpu().detach().numpy()
     rescaled_pred = prediction - prediction.min()
     rescaled_pred = rescaled_pred / rescaled_pred.max()
 

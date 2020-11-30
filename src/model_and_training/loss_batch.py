@@ -7,7 +7,6 @@ def loss_batch(model, optimizer, loss_func, model_input, true_output, calc_backw
     """ source https://pytorch.org/tutorials/beginner/nn_tutorial.html """
     prediction = model(model_input)
     # model input has channel dimension, our implementation of label dont
-    prediction = prediction[:, 0]
 
     dsc = calc_dsc(true_output, prediction)
     loss = loss_func(prediction, true_output)

@@ -2,7 +2,12 @@ from src.consts import DESIRE_BOUNDING_BOX_SIZE
 from src.dataset.get_full_res_cut import get_full_res_cut
 
 
-def get_cut_lists(low_res_model, low_res_dataset, full_res_dataset, cut_full_res_dataset, low_res_mask_threshold=0.5):
+def get_cut_lists(low_res_model,
+                  low_res_device,
+                  low_res_dataset,
+                  full_res_dataset,
+                  cut_full_res_dataset,
+                  low_res_mask_threshold=0.5):
     for dataset_index in range(len(full_res_dataset)):
         print(f'getting cut index {dataset_index}')
 
@@ -14,6 +19,7 @@ def get_cut_lists(low_res_model, low_res_dataset, full_res_dataset, cut_full_res
 
         # parsing
         data_cut, label_cut, new_bounding_box = get_full_res_cut(low_res_model=low_res_model,
+                                                                 low_res_device=low_res_device,
                                                                  raw_low_res_data_img=raw_low_res_data_img,
                                                                  raw_low_res_label_img=raw_low_res_label_img,
                                                                  raw_full_res_data_img=raw_full_res_data_img,

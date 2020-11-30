@@ -50,7 +50,6 @@ class HaNOarsDataset(Dataset):
 
     def __getitem__(self, idx):
         item_data, item_label = self.get_raw_item_with_label_filter(idx)
-
         # torchio data augmentation and transforms
         if self.transform is not None:
             item_data, item_label = transform_input(item_data, item_label, self.transform)
@@ -132,10 +131,7 @@ class HaNOarsDataset(Dataset):
                 label = sitk.GetArrayFromImage(input_label).astype(np.int8)
                 label_idx = reduce(lambda a, b: a | (label == b), wanted_labels, False)
                 new_label = np.zeros(label.shape)
-                if unify_labels:
-                    new_label[label_idx] = 1
-                else:
-                    new_label[label_idx] = label[label_idx]
+                new_label[label_idx] = 1 if unify_labels else label[label_idx]
                 self.label_list[index] = sitk.GetImageFromArray(new_label.astype(np.int8))
             else:
                 label = input_label
@@ -160,26 +156,27 @@ class HaNOarsDataset(Dataset):
 
         return self
 
-    def data_normalize__deprecated_(self):
-        # __DEPRECATED__
-        print('normalizing dataset')
-
-        def normalize(data, index):
-            USE_NUMPY = True
-            if USE_NUMPY:
-                data_np = sitk.GetArrayFromImage(data)
-                data_np = (data_np - data_np.mean()) / data_np.std()
-                # data_np = (data_np - data_np.min()) / (data_np.max() - data_np.min())
-                self.data_list[index] = sitk.GetImageFromArray(data_np)
-            else:  # simple itk
-                norm_filter = sitk.NormalizeImageFilter()
-                self.data_list[index] = norm_filter.Execute(data)
-
-        with concurrent.futures.ThreadPoolExecutor(max_workers=CPU_COUNT) as executor:
-            [executor.submit(normalize, self.data_list[i], i) for i in range(self.size)]
-        print("normalizing done")
-
-        return self
+    # __DEPRECATED__
+    # def data_normalize__deprecated__(self):
+    #
+    #     print('normalizing dataset')
+    #
+    #     def normalize(data, index):
+    #         USE_NUMPY = True
+    #         if USE_NUMPY:
+    #             data_np = sitk.GetArrayFromImage(data)
+    #             data_np = (data_np - data_np.mean()) / data_np.std()
+    #             # data_np = (data_np - data_np.min()) / (data_np.max() - data_np.min())
+    #             self.data_list[index] = sitk.GetImageFromArray(data_np)
+    #         else:  # simple itk
+    #             norm_filter = sitk.NormalizeImageFilter()
+    #             self.data_list[index] = norm_filter.Execute(data)
+    #
+    #     with concurrent.futures.ThreadPoolExecutor(max_workers=CPU_COUNT) as executor:
+    #         [executor.submit(normalize, self.data_list[i], i) for i in range(self.size)]
+    #     print("normalizing done")
+    #
+    #     return self
 
     def dilatate_labels(self, repeat=1):
         print(f'dilatating {repeat}x dataset')
@@ -205,13 +202,10 @@ class HaNOarsDataset(Dataset):
         print('parsing dataset to simple itk')
         for i in range(self.size):
             data_np = self.data_list[i]
-            label_np = self.label_list[i]
+            label_np = self.label_list[i].astype(np.int8)
 
-            data = sitk.GetImageFromArray(data_np[0])
-            label = sitk.GetImageFromArray(label_np.astype(np.int8))
-
-            self.data_list[i] = data
-            self.label_list[i] = label
+            self.data_list[i] = sitk.GetImageFromArray(data_np[0])
+            self.label_list[i] = sitk.GetImageFromArray(label_np[0])
 
         return self
 
@@ -220,13 +214,14 @@ class HaNOarsDataset(Dataset):
         print('parsing dataset to numpy')
 
         def parse_data(data, index):
-            data_np = sitk.GetArrayFromImage(data)
             # adding channel dimension, because conv3d takes: channel, slices, height, width
+            data_np = sitk.GetArrayFromImage(data)
             self.data_list[index] = np.expand_dims(data_np, axis=0)
 
         def parse_label(label, index):
-            label_np = sitk.GetArrayFromImage(label)
-            self.label_list[index] = label_np.astype(np.int8)
+            # adding channel dimension, because conv3d takes: channel, slices, height, width
+            label_np = sitk.GetArrayFromImage(label).astype(np.int8)
+            self.label_list[index] = np.expand_dims(label_np, axis=0)
 
         with concurrent.futures.ThreadPoolExecutor(max_workers=CPU_COUNT) as executor:
             [executor.submit(parse_data, self.data_list[i], i) for i in range(self.size)]

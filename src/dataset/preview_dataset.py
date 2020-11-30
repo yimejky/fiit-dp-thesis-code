@@ -9,7 +9,7 @@ def preview_dataset(dataset, preview_index=0, show_hist=False, use_transform=Fal
         data, label = dataset[preview_index]
     else:
         data, label = dataset.get_raw_item_with_label_filter(preview_index)
-    max_slices = label.shape[0]
+    max_slices = label.shape[1]
 
     print(f'data max {data.max()}, min {data.min()}')
     print(f'label max {label.max()}, min {label.min()}')
@@ -17,9 +17,9 @@ def preview_dataset(dataset, preview_index=0, show_hist=False, use_transform=Fal
     def f(slice_index):
         plt.figure(figsize=(20, 10))
         plt.subplot(1, 2, 1)
-        plt.imshow(data[0][slice_index], cmap="gray")
+        plt.imshow(data[0, slice_index], cmap="gray")
         plt.subplot(1, 2, 2)
-        plt.imshow(label[slice_index])
+        plt.imshow(label[0, slice_index])
         plt.show()
 
         if show_hist:

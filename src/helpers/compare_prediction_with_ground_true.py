@@ -22,9 +22,12 @@ def compare_one_prediction_with_ground_true(raw_data,
         default_slice = max_slices // 2
 
     raw_data, raw_label = transform_input(raw_data, raw_label, get_norm_transform())
-    raw_data = raw_data[0]  # removing channel dimension
-    tmp_thresh_pred = ((raw_prediction > pred_threshold) * 1).astype(np.int8)
+    # Removing channel dimension, TODO: labels can have multiple channels
+    raw_data = raw_data[0]
+    raw_label = raw_label[0]
+    raw_prediction = raw_prediction[0]
 
+    tmp_thresh_pred = ((raw_prediction > pred_threshold) * 1).astype(np.int8)
     intersection = tmp_thresh_pred * raw_label
 
     # compare img without background
@@ -82,6 +85,7 @@ def compare_prediction_with_ground_true(dataset,
                                         default_slice=None):
     raw_prediction = prediction[dataset_index]
     raw_data, raw_label = dataset.get_raw_item_with_label_filter(dataset_index)
+    print(f'DEBUG0 {raw_data.shape}, {raw_label.shape}, {raw_prediction.shape}')
 
     compare_one_prediction_with_ground_true(raw_data,
                                             raw_label,
