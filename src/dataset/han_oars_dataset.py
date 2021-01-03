@@ -2,6 +2,7 @@ import concurrent.futures
 
 import SimpleITK as sitk
 import numpy as np
+import logging
 from torchio.transforms import (
     ZNormalization,
     RandomAffine,
@@ -107,7 +108,7 @@ class HaNOarsDataset(Dataset):
         copy_dataset.label_list = [None] * self.size
         if copy_lists:
             for i in range(self.size):
-                print(f'copying index {i}')
+                logging.debug(f'han_oars_dataset: copying index {i}')
                 copy_dataset.data_list[i] = self.data_list[i].copy()
                 copy_dataset.label_list[i] = self.label_list[i].copy()
 
