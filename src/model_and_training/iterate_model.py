@@ -22,6 +22,8 @@ def iterate_model(dataloader, model, optimizer, loss_func, device, is_eval=False
     with grad_context:
         losses, dices, nums = [], [], []
         for i, data in enumerate(dataloader):
+            model.actual_step = i
+
             inputs, labels = data
             inputs = inputs.to(device).float()
             labels = labels.to(device).float()

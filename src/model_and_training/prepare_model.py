@@ -8,6 +8,7 @@ from src.model_and_training.getters.get_model_params import get_model_params
 from src.model_and_training.getters.get_optimizer import get_optimizer
 from src.model_and_training.getters.get_tensorboard_writer import get_tensorboard_writer
 from src.model_and_training.write_model_info_to_tensorboard import write_model_info_to_tensorboard
+from src.model_and_training.unet_architecture_v2 import UNetV2
 
 
 def prepare_model(epochs=30,  # 30 x train_size = number of steps
@@ -20,7 +21,8 @@ def prepare_model(epochs=30,  # 30 x train_size = number of steps
                   model_name=None,
                   train_dataset=None,
                   valid_dataset=None,
-                  test_dataset=None):
+                  test_dataset=None,
+                  model_class=UNetV2):
     # Params
     log_date = datetime.datetime.now().strftime("%Y%m%d-%H%M%S")
     if model_name is None:
@@ -37,7 +39,7 @@ def prepare_model(epochs=30,  # 30 x train_size = number of steps
         "input_data_channels": input_data_channels,
         "output_label_channels": output_label_channels,
     }
-    model = get_model(device, model_params)
+    model = get_model(device, model_params, model_class=model_class)
     optimizer = get_optimizer(model=model, learning_rate=learning_rate)
 
     # Data loaders
@@ -47,6 +49,7 @@ def prepare_model(epochs=30,  # 30 x train_size = number of steps
     model_total_params, model_total_trainable_params = get_model_params(model)
     # Tensorboard logs
     tensorboard_writer = get_tensorboard_writer(model_name)
+    model.tensorboard_writer = tensorboard_writer
 
     model_info = {
         "model": model,

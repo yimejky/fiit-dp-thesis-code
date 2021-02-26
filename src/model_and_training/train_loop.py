@@ -18,6 +18,7 @@ def train_loop(model_info):
     start_time = last_time = time()
 
     for epoch_i in range(epochs):
+        model.actual_epoch = epoch_i
         train_loss, train_dsc = iterate_model(train_dataloader, model, optimizer, criterion, device, is_eval=False)
         print('Epoch [%d] train done' % (epoch_i + 1))
         valid_loss, valid_dsc = iterate_model(valid_dataloader, model, optimizer, criterion, device, is_eval=True)

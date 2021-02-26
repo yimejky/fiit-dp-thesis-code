@@ -1,5 +1,7 @@
 from operator import itemgetter
 
+from src.model_and_training.getters.get_loaders import get_loaders
+
 
 def get_indices(dataset):
     return str(sorted([i + 1 for i in dataset.indices]))
@@ -13,6 +15,11 @@ def write_model_info_to_tensorboard(model_info,  train_dataset, valid_dataset, t
     optimizer, criterion = itemgetter('optimizer', 'criterion')(model_info)
     model_total_params, model_total_trainable_params = itemgetter(
         'model_total_params', 'model_total_trainable_params')(model_info)
+
+    train_dataloader, valid_dataloader, test_dataloader = get_loaders(train_batch_size,
+                                                                      train_dataset, valid_dataset, test_dataset)
+    images, labels = iter(train_dataloader).next()
+    tensorboard_writer.add_graph(model, images.to(model_info['device']))
 
     tensorboard_writer.add_text('model', str(type(model).__name__))
     tensorboard_writer.add_text('model_params', str(model_params))
