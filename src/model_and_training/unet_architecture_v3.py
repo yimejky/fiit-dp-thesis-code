@@ -150,8 +150,8 @@ class UNetV3(nn.Module):
         # DOWN1
         h = d1 = self.dconv_down1(h)
         p1 = self.dconv_atten1(d1)
-        # print("inside pool2: ", h.data[0].shape, p1.data[0].shape, torch.matmul(h, p1).data[0].shape)
-        pre_pool = torch.matmul(h, p1)
+        # print("inside pool2: ", h.data[0].shape, p1.data[0].shape, torch.mul(h, p1).data[0].shape)
+        pre_pool = torch.mul(h, p1)
         h = self.pool1(pre_pool)
         p1 = self.atten_pool1(p1)
         # print("after pool1: ", h.data[0].shape)
@@ -161,8 +161,8 @@ class UNetV3(nn.Module):
         p2 = self.dconv_atten2(d2)
         p2 = torch.cat((p1, p2), dim=1)
         p2 = self.dconv_merge_atten2(p2)
-        # print("inside pool2: ", h.data[0].shape, p2.data[0].shape, torch.matmul(h, p2).data[0].shape)
-        pre_pool = torch.matmul(h, p2)
+        # print("inside pool2: ", h.data[0].shape, p2.data[0].shape, torch.mul(h, p2).data[0].shape)
+        pre_pool = torch.mul(h, p2)
         h = self.pool2(pre_pool)
         p2 = self.atten_pool2(p2)
         # print("after pool2: ", h.data[0].shape)
@@ -172,8 +172,8 @@ class UNetV3(nn.Module):
         p3 = self.dconv_atten3(d3)
         p3 = torch.cat((p2, p3), dim=1)
         p3 = self.dconv_merge_atten3(p3)
-        # print("inside pool3: ", h.data[0].shape, p3.data[0].shape, torch.matmul(h, p3).data[0].shape)
-        pre_pool = torch.matmul(h, p3)
+        # print("inside pool3: ", h.data[0].shape, p3.data[0].shape, torch.mul(h, p3).data[0].shape)
+        pre_pool = torch.mul(h, p3)
         h = self.pool3(pre_pool)
         p3 = self.atten_pool3(p3)
         # print("after pool3: ", h.data[0].shape)
@@ -186,8 +186,8 @@ class UNetV3(nn.Module):
         # print("middle: ", h.data[0].shape)
 
         # UP1
-        # print("before up1: ", h.data[0].shape, pm.data[0].shape, torch.matmul(h, pm).data[0].shape)
-        pre_up = torch.matmul(h, pm)
+        # print("before up1: ", h.data[0].shape, pm.data[0].shape, torch.mul(h, pm).data[0].shape)
+        pre_up = torch.mul(h, pm)
         h = self.up1(pre_up)
         ap1 = self.atten_up1(pm)
 
@@ -200,8 +200,8 @@ class UNetV3(nn.Module):
         # print("after up1: ", h.data[0].shape)
 
         # UP2
-        # print("before up2: ", h.data[0].shape, ap1.data[0].shape, torch.matmul(h, ap1).data[0].shape)
-        pre_up = torch.matmul(h, ap1)
+        # print("before up2: ", h.data[0].shape, ap1.data[0].shape, torch.mul(h, ap1).data[0].shape)
+        pre_up = torch.mul(h, ap1)
         h = self.up2(pre_up)
         ap2 = self.atten_up2(ap1)
 
@@ -214,8 +214,8 @@ class UNetV3(nn.Module):
         # print("after up2: ", h.data[0].shape)
 
         # UP3
-        # print("before up3: ", h.data[0].shape, ap2.data[0].shape, torch.matmul(h, ap2).data[0].shape)
-        pre_up = torch.matmul(h, ap2)
+        # print("before up3: ", h.data[0].shape, ap2.data[0].shape, torch.mul(h, ap2).data[0].shape)
+        pre_up = torch.mul(h, ap2)
         h = self.up3(pre_up)
         ap3 = self.atten_up2(ap2)
 
@@ -228,8 +228,8 @@ class UNetV3(nn.Module):
         # print("after up3: ", ap3.data[0].shape, h.data[0].shape)
 
         # FINAL
-        # print("before final: ", h.data[0].shape, ap3.data[0].shape, torch.matmul(h, ap3).data[0].shape)
-        pre_final = torch.matmul(h, ap3)
+        # print("before final: ", h.data[0].shape, ap3.data[0].shape, torch.mul(h, ap3).data[0].shape)
+        pre_final = torch.mul(h, ap3)
         h = self.final(pre_final)
         h = self.sigmoid(h)
 
@@ -243,10 +243,10 @@ class UNetV3(nn.Module):
             self.tensorboard_writer.add_image('single_sam_img', tmp[single_index], self.actual_epoch, dataformats="CHW")
             self.tensorboard_writer.add_images('batch_sam_img', tmp, self.actual_epoch, dataformats="NCHW")
 
-            tmp = h.data[0].detach().cpu().numpy()
-            tmp = tmp.transpose(1, 0, 2, 3)
+            # tmp = h.data[0].detach().cpu().numpy()
+            # tmp = tmp.transpose(1, 0, 2, 3)
             # print('OUTPUT', np.min(tmp), np.max(tmp), tmp.shape)
-            self.tensorboard_writer.add_image('single_output_img', tmp[single_index], self.actual_epoch, dataformats="CHW")
-            self.tensorboard_writer.add_images('batch_output_img', tmp, self.actual_epoch, dataformats="NCHW")
+            # self.tensorboard_writer.add_image('single_output_img', tmp[single_index], self.actual_epoch, dataformats="CHW")
+            # self.tensorboard_writer.add_images('batch_output_img', tmp, self.actual_epoch, dataformats="NCHW")
 
         return h

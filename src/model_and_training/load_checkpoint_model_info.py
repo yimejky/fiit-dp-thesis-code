@@ -9,9 +9,14 @@ from src.model_and_training.getters.get_model import get_model
 from src.model_and_training.getters.get_model_params import get_model_params
 from src.model_and_training.getters.get_optimizer import get_optimizer
 from src.model_and_training.getters.get_tensorboard_writer import get_tensorboard_writer
+from src.model_and_training.unet_architecture_v2 import UNetV2
 
 
-def load_checkpoint_model_info(model_name, epoch, train_dataset, valid_dataset, test_dataset):
+def load_checkpoint_model_info(model_name, epoch,
+                               train_dataset,
+                               valid_dataset,
+                               test_dataset,
+                               model_class=UNetV2):
     checkpoint_file_name = f'checkpoint_epoch_{epoch}.pkl'
     model_checkpoint_path = f'models/{model_name}/{checkpoint_file_name}'
 
@@ -24,7 +29,7 @@ def load_checkpoint_model_info(model_name, epoch, train_dataset, valid_dataset, 
     model_params = checkpoint['model_params']
 
     # Architecture and optimizer with state
-    model = get_model(device, model_params)
+    model = get_model(device, model_params, model_class=model_class)
     model.load_state_dict(checkpoint['model_state_dict'])
     model.eval()
 
@@ -40,6 +45,7 @@ def load_checkpoint_model_info(model_name, epoch, train_dataset, valid_dataset, 
     model_total_params, model_total_trainable_params = get_model_params(model)
     # Tensorboard logs
     tensorboard_writer = get_tensorboard_writer(model_name)
+    model.tensorboard_writer = tensorboard_writer
 
     model_info = {
         "model": model,

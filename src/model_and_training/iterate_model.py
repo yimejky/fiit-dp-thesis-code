@@ -9,6 +9,8 @@ from src.model_and_training.loss_batch import loss_batch
 
 
 def iterate_model(dataloader, model, optimizer, loss_func, device, is_eval=False):
+    model.is_train = not is_eval
+
     if is_eval:
         info_text = 'eval'
         model.eval()

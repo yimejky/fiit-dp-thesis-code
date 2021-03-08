@@ -20,7 +20,7 @@ def show_model_dataset_pred_preview(model_info,
 
     with torch.no_grad():
         if dataset_index is None:
-            dataset_index = dataset.indices[0]
+            dataset_index = 0
 
         model.eval()
         torch.cuda.empty_cache()
@@ -49,7 +49,11 @@ def show_model_dataset_pred_preview(model_info,
 
             tmp_ax = plt.subplot(1, 3, 2)
             tmp_ax.title.set_text('Label')
-            plt.imshow(labels[0, slice_index], cmap="gray")
+
+            try:
+                plt.imshow(labels[0, slice_index], cmap="gray")
+            except:
+                plt.imshow(labels[0, 0, slice_index], cmap="gray")
 
             tmp_ax = plt.subplot(1, 3, 3)
             tmp_ax.title.set_text('Prediction')

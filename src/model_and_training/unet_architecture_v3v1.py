@@ -53,6 +53,7 @@ class UNetV3v1(nn.Module):
 
         self.actual_epoch = 0
         self.actual_step = 0
+        self.is_train = False
 
         out_channels = in_channels
 
@@ -164,8 +165,14 @@ class UNetV3v1(nn.Module):
         # DOWN1
         h = d1 = self.dconv_down1(h)
         p1 = self.dconv_atten1(d1)
-        # print("inside pool2: ", h.data[0].shape, p1.data[0].shape, torch.matmul(h, p1).data[0].shape)
-        pre_pool = torch.matmul(h, p1)
+
+        # print("DEBUG EPOCH AND STEP", self.actual_epoch, self.actual_step)
+        if self.tensorboard_writer and self.actual_step == 0:
+            print(f"DEBUG: Writing to tensorboard before epoch {self.is_train}, {self.actual_epoch}, step {self.actual_step}")
+            self.save_layer_output(p1, 'sam_first', single_index=60)
+
+        # print("inside pool2: ", h.data[0].shape, p1.data[0].shape, torch.mul(h, p1).data[0].shape)
+        pre_pool = torch.mul(h, p1)
         # print("pre_pool debug 1",
         #       pre_pool.shape, h.mean(dim=(-3, -2, -1)).unsqueeze(2).unsqueeze(3).unsqueeze(4).shape)
         cse_out = self.cse_down1(h.mean(dim=(-3, -2, -1))).unsqueeze(2).unsqueeze(3).unsqueeze(4)
@@ -179,8 +186,8 @@ class UNetV3v1(nn.Module):
         p2 = self.dconv_atten2(d2)
         p2 = torch.cat((p1, p2), dim=1)
         p2 = self.dconv_merge_atten2(p2)
-        # print("inside pool2: ", h.data[0].shape, p2.data[0].shape, torch.matmul(h, p2).data[0].shape)
-        pre_pool = torch.matmul(h, p2)
+        # print("inside pool2: ", h.data[0].shape, p2.data[0].shape, torch.mul(h, p2).data[0].shape)
+        pre_pool = torch.mul(h, p2)
         # print("pre_pool debug 2",
         #       pre_pool.shape, h.mean(dim=(-3, -2, -1)).unsqueeze(2).unsqueeze(3).unsqueeze(4).shape)
         cse_out = self.cse_down2(h.mean(dim=(-3, -2, -1))).unsqueeze(2).unsqueeze(3).unsqueeze(4)
@@ -194,8 +201,8 @@ class UNetV3v1(nn.Module):
         p3 = self.dconv_atten3(d3)
         p3 = torch.cat((p2, p3), dim=1)
         p3 = self.dconv_merge_atten3(p3)
-        # print("inside pool3: ", h.data[0].shape, p3.data[0].shape, torch.matmul(h, p3).data[0].shape)
-        pre_pool = torch.matmul(h, p3)
+        # print("inside pool3: ", h.data[0].shape, p3.data[0].shape, torch.mul(h, p3).data[0].shape)
+        pre_pool = torch.mul(h, p3)
         # print("pre_pool debug 3",
         #       pre_pool.shape, h.mean(dim=(-3, -2, -1)).unsqueeze(2).unsqueeze(3).unsqueeze(4).shape)
         cse_out = self.cse_down3(h.mean(dim=(-3, -2, -1))).unsqueeze(2).unsqueeze(3).unsqueeze(4)
@@ -212,8 +219,8 @@ class UNetV3v1(nn.Module):
         # print("middle: ", h.data[0].shape)
 
         # UP1
-        # print("before up1: ", h.data[0].shape, pm.data[0].shape, torch.matmul(h, pm).data[0].shape)
-        pre_up = torch.matmul(h, pm)
+        # print("before up1: ", h.data[0].shape, pm.data[0].shape, torch.mul(h, pm).data[0].shape)
+        pre_up = torch.mul(h, pm)
         # print("pre_pool debug up1",
         #       pre_pool.shape, h.mean(dim=(-3, -2, -1)).unsqueeze(2).unsqueeze(3).unsqueeze(4).shape)
         cse_out = self.cse_mid(h.mean(dim=(-3, -2, -1))).unsqueeze(2).unsqueeze(3).unsqueeze(4)
@@ -230,8 +237,8 @@ class UNetV3v1(nn.Module):
         # print("after up1: ", h.data[0].shape)
 
         # UP2
-        # print("before up2: ", h.data[0].shape, ap1.data[0].shape, torch.matmul(h, ap1).data[0].shape)
-        pre_up = torch.matmul(h, ap1)
+        # print("before up2: ", h.data[0].shape, ap1.data[0].shape, torch.mul(h, ap1).data[0].shape)
+        pre_up = torch.mul(h, ap1)
         # print("pre_pool debug up2",
         #       pre_pool.shape, h.mean(dim=(-3, -2, -1)).unsqueeze(2).unsqueeze(3).unsqueeze(4).shape)
         cse_out = self.cse_up1(h.mean(dim=(-3, -2, -1))).unsqueeze(2).unsqueeze(3).unsqueeze(4)
@@ -248,8 +255,8 @@ class UNetV3v1(nn.Module):
         # print("after up2: ", h.data[0].shape)
 
         # UP3
-        # print("before up3: ", h.data[0].shape, ap2.data[0].shape, torch.matmul(h, ap2).data[0].shape)
-        pre_up = torch.matmul(h, ap2)
+        # print("before up3: ", h.data[0].shape, ap2.data[0].shape, torch.mul(h, ap2).data[0].shape)
+        pre_up = torch.mul(h, ap2)
         # print("pre_pool debug up3",
         #       pre_pool.shape, h.mean(dim=(-3, -2, -1)).unsqueeze(2).unsqueeze(3).unsqueeze(4).shape)
         cse_out = self.cse_up2(h.mean(dim=(-3, -2, -1))).unsqueeze(2).unsqueeze(3).unsqueeze(4)
@@ -266,8 +273,8 @@ class UNetV3v1(nn.Module):
         # print("after up3: ", ap3.data[0].shape, h.data[0].shape)
 
         # FINAL
-        # print("before final: ", h.data[0].shape, ap3.data[0].shape, torch.matmul(h, ap3).data[0].shape)
-        pre_final = torch.matmul(h, ap3)
+        # print("before final: ", h.data[0].shape, ap3.data[0].shape, torch.mul(h, ap3).data[0].shape)
+        pre_final = torch.mul(h, ap3)
         # print("pre_pool debug final",
         #       pre_pool.shape, h.mean(dim=(-3, -2, -1)).unsqueeze(2).unsqueeze(3).unsqueeze(4).shape)
         cse_out = self.cse_up3(h.mean(dim=(-3, -2, -1))).unsqueeze(2).unsqueeze(3).unsqueeze(4)
@@ -277,19 +284,33 @@ class UNetV3v1(nn.Module):
 
         # print("DEBUG EPOCH AND STEP", self.actual_epoch, self.actual_step)
         if self.tensorboard_writer and self.actual_step == 0:
-            print(f"DEBUG: Writing to tensorboard epoch {self.actual_epoch}, step {self.actual_step}")
+            print(f"DEBUG: Writing to tensorboard after epoch {self.is_train},  {self.actual_epoch}, step {self.actual_step}")
             single_index = 60
-            tmp = ap3.data[0].detach().cpu().numpy()
-            tmp = tmp.transpose(1, 0, 2, 3)
-            # print('ATTENTION LAYER', np.min(tmp), np.max(tmp), tmp.shape)
-            self.tensorboard_writer.add_image('single_sam_img', tmp[single_index], self.actual_epoch, dataformats="CHW")
-            self.tensorboard_writer.add_images('batch_sam_img', tmp, self.actual_epoch, dataformats="NCHW")
-
-            tmp = h.data[0].detach().cpu().numpy()
-            tmp = tmp.transpose(1, 0, 2, 3)
-            # print('OUTPUT', np.min(tmp), np.max(tmp), tmp.shape)
-            self.tensorboard_writer.add_image('single_output_img', tmp[single_index], self.actual_epoch,
-                                              dataformats="CHW")
-            self.tensorboard_writer.add_images('batch_output_img', tmp, self.actual_epoch, dataformats="NCHW")
+            self.save_layer_output(ap3, 'sam', single_index)
+            self.save_layer_output(h, 'output', single_index)
 
         return h
+
+    def save_layer_output(self, layer_output, layer_name, single_index):
+        img_np = layer_output.data[0].detach().cpu().numpy()
+        img_np = img_np.transpose(1, 0, 2, 3)
+
+        train_text = 'train' if self.is_train else 'eval'
+
+        # print('SAVED LAYER', np.min(img_np), np.max(img_np), img_np.shape)
+        # self.tensorboard_writer.add_image(f'single_{layer_name}_img', img_np[single_index], self.actual_epoch,
+        #                                   dataformats="CHW")
+        self.tensorboard_writer.add_images(f'batch_{train_text}_{layer_name}_img', img_np, self.actual_epoch, dataformats="NCHW")
+
+
+if __name__ == "__main__":
+    # [2, 16, 72, 192, 168]) torch.Size([2, 1, 72, 192, 168])
+    # multiplication proof
+
+    tmp = torch.ones((2, 4, 5))
+    tmp2 = torch.zeros((2, 1, 5))
+
+    tmp2[0, 0, 0] = 1
+    tmp2[1, 0, 0] = 4
+
+    print(torch.mul(tmp, tmp2), tmp, tmp2)
