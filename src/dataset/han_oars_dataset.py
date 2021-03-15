@@ -59,7 +59,8 @@ class HaNOarsDataset(Dataset):
 
     def get_raw_item_with_label_filter(self, idx):
         """
-        outpu_label can be int, array, or dict
+        output_label can be int, array, or dict
+        if int, return only label with selected id
         if list, it will merge labels to one
         if dict it will create channel per item
         """
@@ -71,8 +72,11 @@ class HaNOarsDataset(Dataset):
         if self.output_label is not None:
             type_output_label = type(output_label)
             if type_output_label is list:
+                # merging to one label
                 item_label = reduce(lambda a, b: a | (item_label == b), output_label, False) * 1
+
             if type_output_label is dict:
+                # creating channel per class in dict
                 len_output_label = len(output_label)
                 output_label_items = list(output_label.items())
 
@@ -82,6 +86,7 @@ class HaNOarsDataset(Dataset):
                     new_item_label[i] = ((item_label == OAR_VALUE) * 1).astype(np.int8)
                 item_label = new_item_label
             else:
+                # selected label only
                 item_label = (item_label == output_label) * 1
             item_label = item_label.astype(np.int8)
 
@@ -172,28 +177,6 @@ class HaNOarsDataset(Dataset):
             self.label_list[i] = shrink_filter.Execute(label, shrink_size)
 
         return self
-
-    # __DEPRECATED__
-    # def data_normalize__deprecated__(self):
-    #
-    #     print('normalizing dataset')
-    #
-    #     def normalize(data, index):
-    #         USE_NUMPY = True
-    #         if USE_NUMPY:
-    #             data_np = sitk.GetArrayFromImage(data)
-    #             data_np = (data_np - data_np.mean()) / data_np.std()
-    #             # data_np = (data_np - data_np.min()) / (data_np.max() - data_np.min())
-    #             self.data_list[index] = sitk.GetImageFromArray(data_np)
-    #         else:  # simple itk
-    #             norm_filter = sitk.NormalizeImageFilter()
-    #             self.data_list[index] = norm_filter.Execute(data)
-    #
-    #     with concurrent.futures.ThreadPoolExecutor(max_workers=CPU_COUNT) as executor:
-    #         [executor.submit(normalize, self.data_list[i], i) for i in range(self.size)]
-    #     print("normalizing done")
-    #
-    #     return self
 
     def dilatate_labels(self, repeat=1):
         print(f'dilatating {repeat}x dataset')

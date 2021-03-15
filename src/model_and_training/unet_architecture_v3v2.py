@@ -42,7 +42,7 @@ def cse_block(channels):
         nn.Sigmoid())
 
 
-class UNetV3v1(nn.Module):
+class UNetV3v2(nn.Module):
     """ source https://github.com/milesial/Pytorch-UNet/blob/master/unet/unet_model.py """
 
     def __init__(self, in_channels=16,
@@ -67,6 +67,7 @@ class UNetV3v1(nn.Module):
         self.cse_down1 = cse_block(double_out_channels)
         # sSE
         self.dconv_atten1 = attention_block(in_channels=double_out_channels)
+        self.dconv_merge_atten1 = attention_block(in_channels=2)
 
         out_channels *= 2
         self.pool1 = nn.MaxPool3d(2, stride=2, ceil_mode=True)  # 1/2
@@ -160,19 +161,23 @@ class UNetV3v1(nn.Module):
         self.sigmoid = nn.Sigmoid()
 
     def forward(self, x):
-        h = x
-        # print("init: ", x.data[0].shape)
+        # print("input1: ", x.data.shape)
+        h = x[:, [0]]
+        h_atten = x[:, [1]]
+        # print("input2: ", h.data.shape, h_atten.data.shape)
 
         # DOWN1
         h = d1 = self.dconv_down1(h)
         p1 = self.dconv_atten1(d1)
+        p1 = torch.cat((p1, h_atten), dim=1)
+        p1 = self.dconv_merge_atten1(p1)
 
         # print("DEBUG EPOCH AND STEP", self.actual_epoch, self.actual_step)
         if not self.disable_tensorboard_writing and self.tensorboard_writer and self.actual_step == 0:
             print(f"DEBUG: Writing to tensorboard before epoch {self.is_train}, {self.actual_epoch}, step {self.actual_step}")
             self.save_layer_output(p1, 'sam_first', single_index=60)
 
-        # print("inside pool2: ", h.data[0].shape, p1.data[0].shape, torch.mul(h, p1).data[0].shape)
+        # print("inside pool2: ", h.data.shape, p1.data.shape, torch.mul(h, p1).data.shape)
         pre_pool = torch.mul(h, p1)
         # print("pre_pool debug 1",
         #       pre_pool.shape, h.mean(dim=(-3, -2, -1)).unsqueeze(2).unsqueeze(3).unsqueeze(4).shape)
@@ -308,10 +313,8 @@ if __name__ == "__main__":
     # [2, 16, 72, 192, 168]) torch.Size([2, 1, 72, 192, 168])
     # multiplication proof
 
-    tmp = torch.ones((2, 4, 5))
-    tmp2 = torch.zeros((2, 1, 5))
+    tmp = torch.ones((2, 2, 4, 4, 4))
+    tmp2 = torch.zeros((2, 2, 4, 4, 4))
+    print(tmp[:, [0]].shape, tmp[:, [1]].shape)
 
-    tmp2[0, 0, 0] = 1
-    tmp2[1, 0, 0] = 4
 
-    print(torch.mul(tmp, tmp2), tmp, tmp2)
