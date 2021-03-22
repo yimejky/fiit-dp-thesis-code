@@ -1,7 +1,6 @@
 import torch
 
 from src.consts import IN_COLAB
-from src.dataset.get_dataset_transform import get_dataset_transform
 from src.dataset.han_oars_dataset import HaNOarsDataset
 
 
@@ -28,9 +27,6 @@ def get_dataset(dataset_size=50,
         print(f'CPU using {dataset_shrink}x dataset')
         dataset = HaNOarsDataset(
             f'./data/{dataset_folder_name}_shrink{dataset_shrink}x_padded160', dataset_size)
-
-    # setting transform
-    dataset.transform = get_dataset_transform()
 
     # processing
     if filter_labels is not None:

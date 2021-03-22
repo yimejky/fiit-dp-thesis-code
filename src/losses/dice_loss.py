@@ -1,7 +1,7 @@
 import logging
 
 from torch import nn
-from src.helpers.calc_dsc import calc_dsc
+from src.losses.calc_dsc import calc_dsc
 
 
 class DiceLoss(nn.Module):

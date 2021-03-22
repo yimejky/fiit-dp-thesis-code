@@ -9,7 +9,7 @@ from src.model_and_training.getters.get_model import get_model
 from src.model_and_training.getters.get_model_params import get_model_params
 from src.model_and_training.getters.get_optimizer import get_optimizer
 from src.model_and_training.getters.get_tensorboard_writer import get_tensorboard_writer
-from src.model_and_training.unet_architecture_v2 import UNetV2
+from src.model_and_training.architectures.unet_architecture_v2 import UNetV2
 
 
 def load_checkpoint_model_info(model_name, epoch,

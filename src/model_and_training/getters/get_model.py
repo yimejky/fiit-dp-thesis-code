@@ -1,4 +1,4 @@
-from src.model_and_training.unet_architecture_v2 import UNetV2
+from src.model_and_training.architectures.unet_architecture_v2 import UNetV2
 
 
 def get_model(device, model_params, model_class=UNetV2):

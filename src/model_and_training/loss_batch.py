@@ -1,6 +1,6 @@
 import logging
 
-from src.helpers.calc_dsc import calc_dsc
+from src.losses.calc_dsc import calc_dsc
 
 
 def loss_batch(model, optimizer, loss_func, model_input, true_output, calc_backward=False):

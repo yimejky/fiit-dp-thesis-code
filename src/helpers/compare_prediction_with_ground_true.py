@@ -5,9 +5,9 @@ import torch
 from IPython.display import display
 from ipywidgets import widgets
 
-from src.dataset.get_norm_transform import get_norm_transform
+from src.dataset.dataset_transforms import get_norm_transform
 from src.dataset.transform_input import transform_input
-from src.helpers.calc_dsc import calc_dsc
+from src.losses.calc_dsc import calc_dsc
 
 
 def compare_one_prediction_with_ground_true(raw_data,

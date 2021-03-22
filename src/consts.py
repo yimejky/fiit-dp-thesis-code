@@ -1,7 +1,7 @@
 import sys
 from os import cpu_count
 
-from src.helpers.get_bounding_box import get_dividable_bounding_box
+from src.helpers import get_dividable_bounding_box
 
 MAX_PADDING_SLICES = 160
 DATASET_MAX_BOUNDING_BOX = [56, 177, 156]

@@ -7,10 +7,10 @@ import matplotlib.pyplot as plt
 from ipywidgets import widgets
 from IPython.display import display
 from src.consts import MAX_PADDING_SLICES
-from src.model_and_training.loss_batch import loss_batch
+from src.model_and_training import loss_batch
 
 
-def show_model_dataset_pred_preview(model_info,
+def preview_model_dataset_pred(model_info,
                                     dataset,
                                     dataset_index=None,
                                     figfile=None,

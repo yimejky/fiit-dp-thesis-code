@@ -18,8 +18,6 @@ from torch.utils.data import Dataset
 from pathlib import Path
 from functools import reduce
 
-from src.dataset.transform_input import transform_input
-
 
 class HaNOarsDataset(Dataset):
     """ source https://pytorch.org/tutorials/beginner/data_loading_tutorial.html """
@@ -28,8 +26,7 @@ class HaNOarsDataset(Dataset):
                  root_dir,
                  size,
                  shrink_factor=1,
-                 load_images=True,
-                 transform=None):
+                 load_images=True):
         """
         Args:
             root_dir (string): Directory with all the images.
@@ -37,7 +34,6 @@ class HaNOarsDataset(Dataset):
         self.root_dir_path = Path(root_dir)
         self.size = size
         self.shrink_factor = shrink_factor
-        self.transform = transform
 
         self.is_numpy = False
         self.output_label = None
@@ -50,12 +46,7 @@ class HaNOarsDataset(Dataset):
         return self.size
 
     def __getitem__(self, idx):
-        item_data, item_label = self.get_raw_item_with_label_filter(idx)
-        # torchio data augmentation and transforms
-        if self.transform is not None:
-            item_data, item_label = transform_input(item_data, item_label, self.transform)
-
-        return item_data, item_label
+        return self.get_raw_item_with_label_filter(idx)
 
     def get_raw_item_with_label_filter(self, idx):
         """
@@ -101,8 +92,7 @@ class HaNOarsDataset(Dataset):
             root_dir=str(self.root_dir_path),
             size=self.size,
             shrink_factor=self.shrink_factor,
-            load_images=False,
-            transform=self.transform)
+            load_images=False)
 
         # coping inner attributes
         copy_dataset.is_numpy = self.is_numpy
@@ -245,7 +235,7 @@ if __name__ == "__main__":
         ZNormalization()
     ])
 
-    dataset = HaNOarsDataset(f'./data/{"HaN_OAR"}_shrink{2}x_padded160', 10, transform=tmp_transform)
+    dataset = HaNOarsDataset(f'./data/{"HaN_OAR"}_shrink{2}x_padded160', 10)
     dataset.filter_labels([OARS_LABELS.EYE_L, OARS_LABELS.EYE_R, OARS_LABELS.LENS_L, OARS_LABELS.LENS_R], False)
     dataset.to_numpy()
 

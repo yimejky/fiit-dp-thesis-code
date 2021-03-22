@@ -4,10 +4,10 @@ import numpy as np
 import pandas as pd
 import torch
 
-from src.dataset.get_norm_transform import get_norm_transform
-from src.dataset.transform_input import transform_input
-from src.helpers.calc_dsc import calc_dsc
-from src.helpers.get_rescaled_pred import get_rescaled_preds
+from src.dataset import get_norm_transform
+from src.dataset import transform_input
+from src.losses import calc_dsc
+from src.helpers import get_rescaled_preds
 
 
 def get_dataset_threshold_info(dataset,

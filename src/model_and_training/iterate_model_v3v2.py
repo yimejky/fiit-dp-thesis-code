@@ -6,14 +6,14 @@ import torch
 from contextlib import nullcontext
 
 from src.dataset.dataset_transforms import get_norm_transform, get_dataset_transform
-from src.dataset.transform_input import transform_input
-from src.model_and_training import loss_batch
+from src.dataset.transform_input import transform_input_with_registration
+from src.model_and_training.loss_batch import loss_batch
 
 norm_trans = get_norm_transform()
 dataset_trans = get_dataset_transform()
 
 
-def iterate_model(dataloader, model, optimizer, loss_func, device, is_eval=False):
+def iterate_model_v3v2(dataloader, model, optimizer, loss_func, device, is_eval=False):
     model.is_train = not is_eval
 
     if is_eval:
@@ -33,8 +33,18 @@ def iterate_model(dataloader, model, optimizer, loss_func, device, is_eval=False
 
             # torch.io data augmentation and transforms
             inputs, labels = data
+            log_msg = f'iterate_model_v3v2_0: {inputs.shape}, {labels.shape}'
+            # print(log_msg)
+            logging.debug(log_msg)
+
             transform = norm_trans if is_eval else dataset_trans
-            inputs, labels = transform_input(inputs, labels, transform)
+            for i in range(inputs.shape[0]):
+                tmp_inputs, tmp_labels = transform_input_with_registration(inputs[i], labels[i], transform)
+                log_msg = f'iterate_model_v3v2_1: {tmp_inputs.shape}, {tmp_labels.shape}'
+                # print(log_msg)
+                logging.debug(log_msg)
+                inputs[i] = torch.tensor(tmp_inputs)
+                labels[i] = torch.tensor(tmp_labels)
 
             # converting to float
             inputs = inputs.to(device).float()
@@ -60,9 +70,12 @@ def iterate_model(dataloader, model, optimizer, loss_func, device, is_eval=False
             del item_dsc
             torch.cuda.empty_cache()
 
-        model.tensorboard_writer.add_text('epoch_items_dsc', str(dices), model.actual_epoch)
-        model.tensorboard_writer.add_text('epoch_items_nums', str(nums), model.actual_epoch)
-        model.tensorboard_writer.add_text('epoch_items_dataloaders', str(dataloader.dataset.indices), model.actual_epoch)
+        tmp_dices = list(map(lambda x: round(x.item(), 5), dices))
+        tmp_dict_dices = dict(zip(dataloader.dataset.indices, tmp_dices))
+        tmp_sorted_dict_dices = dict(sorted(tmp_dict_dices.items(), key=lambda item: item[0]))
+
+        tmp_text = 'eval' if is_eval else 'train'
+        model.tensorboard_writer.add_text(f'epoch_items_dsc_{tmp_text}', str(tmp_sorted_dict_dices), model.actual_epoch)
 
         num_sums = np.sum(nums)
         final_loss = np.sum(np.multiply(losses, nums)) / num_sums

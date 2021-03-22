@@ -6,14 +6,14 @@ from IPython.display import display
 from ipywidgets import widgets
 
 
-def preview_3d_image(img):
+def preview_3d_image(img, figsize=(16, 16)):
     if type(img) is sitk.SimpleITK.Image:
         img = sitk.GetArrayFromImage(img)
 
     max_slices = img.shape[0]
 
     def f(slice_index):
-        plt.figure(figsize=(16, 16))
+        plt.figure(figsize=figsize)
         plt.imshow(img[slice_index])
         plt.show()
         print(f"debug: {img.min()}, {img.max()}")

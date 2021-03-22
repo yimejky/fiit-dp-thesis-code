@@ -3,11 +3,12 @@ from datetime import timedelta
 from operator import itemgetter
 from time import time
 
-from src.model_and_training.checkpoint_model import checkpoint_model
-from src.model_and_training.iterate_model import iterate_model
+from src.model_and_training import checkpoint_model
+from src.model_and_training import iterate_model
 
 
-def train_loop(model_info):
+
+def train_loop(model_info, iterate_model_fn=iterate_model):
     model, model_name, optimizer, criterion = itemgetter('model', 'model_name', 'optimizer', 'criterion')(model_info)
     epochs, device, tensorboard_writer = itemgetter('epochs', 'device', 'tensorboard_writer')(model_info)
     train_dataloader, valid_dataloader, test_dataloader = itemgetter('train_dataloader',
@@ -19,9 +20,9 @@ def train_loop(model_info):
 
     for epoch_i in range(epochs):
         model.actual_epoch = epoch_i
-        train_loss, train_dsc = iterate_model(train_dataloader, model, optimizer, criterion, device, is_eval=False)
+        train_loss, train_dsc = iterate_model_fn(train_dataloader, model, optimizer, criterion, device, is_eval=False)
         print('Epoch [%d] train done' % (epoch_i + 1))
-        valid_loss, valid_dsc = iterate_model(valid_dataloader, model, optimizer, criterion, device, is_eval=True)
+        valid_loss, valid_dsc = iterate_model_fn(valid_dataloader, model, optimizer, criterion, device, is_eval=True)
         print('Epoch [%d] valid done' % (epoch_i + 1))
 
         delta_start_time = time() - start_time

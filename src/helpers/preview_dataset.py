@@ -3,12 +3,16 @@ import matplotlib.pyplot as plt
 from IPython.display import display
 from ipywidgets import widgets
 
+from src.dataset.dataset_transforms import get_dataset_transform
+from src.dataset.transform_input import transform_input
+
 
 def preview_dataset(dataset, preview_index=0, show_hist=False, use_transform=False):
+    data, label = dataset.get_raw_item_with_label_filter(preview_index)  # equivalent dataset[preview_index]
     if use_transform:
-        data, label = dataset[preview_index]
-    else:
-        data, label = dataset.get_raw_item_with_label_filter(preview_index)
+        transform = get_dataset_transform()
+        data, label = transform_input(data, label, transform)
+
     max_channels = label.shape[0]
     max_slices = label.shape[1]
 

@@ -1,6 +1,8 @@
-from torchio import RandomAffine, Compose
+from torchio import ZNormalization, RandomAffine, Compose
 
-from src.dataset.get_norm_transform import get_norm_transform
+
+def get_norm_transform():
+    return ZNormalization()
 
 
 def get_dataset_transform():
@@ -17,4 +19,3 @@ def get_dataset_transform():
     ])
 
     return transform
-
