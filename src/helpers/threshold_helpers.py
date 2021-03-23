@@ -18,9 +18,10 @@ def get_dataset_threshold_info(dataset,
                                is_train=False,
                                is_valid=False,
                                is_test=False,
-                               step=0.01):
+                               step=0.01,
+                               transform_input_fn=transform_input):
     raw_data, raw_label = dataset.get_raw_item_with_label_filter(index)
-    norm_data, norm_label = transform_input(raw_data, raw_label, get_norm_transform())
+    norm_data, norm_label = transform_input_fn(raw_data, raw_label, get_norm_transform())
     prediction = preds[index]
     rescaled_pred = rescaled_preds[index]
 
@@ -50,9 +51,11 @@ def get_threshold_info_df(model,
                           train_indices,
                           valid_indices,
                           test_indices,
-                          step=0.01):
+                          step=0.01,
+                          transform_input_fn=transform_input):
     logging.debug('get_threshold_info_df0 calculating all predictions')
-    preds, rescaled_preds = get_rescaled_preds(model, dataset, device)
+    preds, rescaled_preds = get_rescaled_preds(model, dataset, device,
+                                               transform_input_fn=transform_input_fn)
     info_list = []
 
     # get table with dsc, rescaled dsc and treshold dsc with some steps, with subset info
@@ -60,17 +63,20 @@ def get_threshold_info_df(model,
     for index in list(sorted(train_indices)):
         info_list = get_dataset_threshold_info(dataset, preds, rescaled_preds, index, info_list,
                                                is_train=True,
-                                               step=step)
+                                               step=step,
+                                               transform_input_fn=transform_input_fn)
     logging.debug('get_threshold_info_df2 done train')
     for index in list(sorted(valid_indices)):
         info_list = get_dataset_threshold_info(dataset, preds, rescaled_preds, index, info_list,
                                                is_valid=True,
-                                               step=step)
+                                               step=step,
+                                               transform_input_fn=transform_input_fn)
     logging.debug('get_threshold_info_df3 done valid')
     for index in list(sorted(test_indices)):
         info_list = get_dataset_threshold_info(dataset, preds, rescaled_preds, index, info_list,
                                                is_test=True,
-                                               step=step)
+                                               step=step,
+                                               transform_input_fn=transform_input_fn)
     logging.debug('get_threshold_info_df4 done test')
     info_df = pd.DataFrame(info_list).set_index('index')
 

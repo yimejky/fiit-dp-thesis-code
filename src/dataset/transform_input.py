@@ -31,6 +31,10 @@ def get_torchio_registration_subject(item_data, item_label):
     logging.debug(log_msg)
 
     # converting to inputs to torchio img
+    if not torch.is_tensor(item_data):
+        item_data = torch.tensor(item_data)
+        item_label = torch.tensor(item_label)
+
     t1_input = torch.unsqueeze(item_data[0], 0)
     t2_input = torch.unsqueeze(item_data[1], 0)
     # print(f"{t1_input.shape}", {t2_input.shape})
