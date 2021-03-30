@@ -7,7 +7,6 @@ from src.model_and_training import checkpoint_model
 from src.model_and_training import iterate_model
 
 
-
 def train_loop(model_info, iterate_model_fn=iterate_model):
     model, model_name, optimizer, criterion = itemgetter('model', 'model_name', 'optimizer', 'criterion')(model_info)
     epochs, device, tensorboard_writer = itemgetter('epochs', 'device', 'tensorboard_writer')(model_info)
@@ -20,8 +19,11 @@ def train_loop(model_info, iterate_model_fn=iterate_model):
 
     for epoch_i in range(epochs):
         model.actual_epoch = epoch_i
+
+        # training dsc and loss are calculated during training per batch, that means it is approximation!!
         train_loss, train_dsc = iterate_model_fn(train_dataloader, model, optimizer, criterion, device, is_eval=False)
         print('Epoch [%d] train done' % (epoch_i + 1))
+
         valid_loss, valid_dsc = iterate_model_fn(valid_dataloader, model, optimizer, criterion, device, is_eval=True)
         print('Epoch [%d] valid done' % (epoch_i + 1))
 
