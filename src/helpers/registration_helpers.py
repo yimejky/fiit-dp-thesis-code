@@ -22,6 +22,7 @@ def preview_reg_transform(fixed, moving, output_transform, figsize=(16, 16)):
 def get_registration_transform_non_rigid_sitk(fixed, moving,
                                               numberOfIterations=100,
                                               show=True,
+                                              show_eval=True,
                                               preview=True,
                                               figsize=(16, 16)):
     """https://simpleitk.readthedocs.io/en/master/link_ImageRegistrationMethodBSpline1_docs.html"""
@@ -70,16 +71,13 @@ def get_registration_transform_non_rigid_sitk(fixed, moving,
     R.AddCommand(sitk.sitkIterationEvent, lambda: command_iteration(R, tx))
     R.AddCommand(sitk.sitkMultiResolutionIterationEvent, lambda: command_multi_iteration(R))
 
-    print(fixed.GetPixelIDTypeAsString(), moving.GetPixelIDTypeAsString())
+    # print('Debug', fixed.GetPixelIDTypeAsString(), moving.GetPixelIDTypeAsString())
     output_transform = R.Execute(fixed, moving)
 
-    if show:
-        print("-------")
-        print(tx)
-        print(output_transform)
+    if show_eval:
         print(f"Optimizer stop condition: {R.GetOptimizerStopConditionDescription()}")
-        print(f" Iteration: {R.GetOptimizerIteration()}")
-        print(f" Metric value: {R.GetMetricValue()}")
+        print(f"  Iteration: {R.GetOptimizerIteration()}")
+        print(f"  Metric value: {R.GetMetricValue()}")
 
     if preview:
         preview_reg_transform(fixed, moving, output_transform, figsize=figsize)
@@ -87,7 +85,11 @@ def get_registration_transform_non_rigid_sitk(fixed, moving,
     return output_transform
 
 
-def get_registration_transform_rigid_sitk(fixed, moving, numberOfIterations=500, show=True, preview=True,
+def get_registration_transform_rigid_sitk(fixed, moving,
+                                          numberOfIterations=500,
+                                          show=True,
+                                          show_eval=True,
+                                          preview=True,
                                           figsize=(16, 16)):
     """https://simpleitk.readthedocs.io/en/master/link_ImageRegistrationMethod3_docs.html"""
 
@@ -106,6 +108,9 @@ def get_registration_transform_rigid_sitk(fixed, moving, numberOfIterations=500,
                                                numberOfIterations=numberOfIterations,
                                                gradientMagnitudeTolerance=1e-6)
     R.SetOptimizerScalesFromIndexShift()
+    # print(f"debug {fixed.GetPixelIDTypeAsString()}, {moving.GetPixelIDTypeAsString()}")
+    # print(f"debug {fixed.GetDimension()}, {moving.GetDimension()}")
+
     tx = sitk.CenteredTransformInitializer(fixed, moving, sitk.Similarity3DTransform())
     R.SetInitialTransform(tx)
     R.SetInterpolator(sitk.sitkLinear)
@@ -113,12 +118,10 @@ def get_registration_transform_rigid_sitk(fixed, moving, numberOfIterations=500,
 
     output_transform = R.Execute(fixed, moving)
 
-    if show:
-        print("-------")
-        print(output_transform)
-        print("Optimizer stop condition: {0}".format(R.GetOptimizerStopConditionDescription()))
-        print(" Iteration: {0}".format(R.GetOptimizerIteration()))
-        print(" Metric value: {0}".format(R.GetMetricValue()))
+    if show_eval:
+        print(f"Optimizer stop condition: {R.GetOptimizerStopConditionDescription()}")
+        print(f"  Iteration: {R.GetOptimizerIteration()}")
+        print(f"  Metric value: {R.GetMetricValue()}")
 
     if preview:
         preview_reg_transform(fixed, moving, output_transform, figsize=figsize)
@@ -139,6 +142,7 @@ def transform_sitk(fixed, moving, transform):
 def get_registration_transform_np(fixed_np, moving_np,
                                   numberOfIterations=500,
                                   show=False,
+                                  show_eval=True,
                                   preview=False,
                                   figsize=(16, 16),
                                   get_reg_trans_sitk=get_registration_transform_rigid_sitk):
@@ -161,6 +165,7 @@ def get_registration_transform_np(fixed_np, moving_np,
                                           moving_data_sitk,
                                           numberOfIterations=numberOfIterations,
                                           show=show,
+                                          show_eval=show_eval,
                                           preview=preview,
                                           figsize=figsize)
 
@@ -184,6 +189,7 @@ def create_registration_list(dataset,
                                                    atlas_input,
                                                    numberOfIterations=numberOfIterations,
                                                    show=False,
+                                                   show_eval=True,
                                                    preview=False,
                                                    get_reg_trans_sitk=get_reg_trans_sitk)
         reg_output = reg_output.astype(np.float32)

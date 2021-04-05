@@ -1,4 +1,5 @@
 import concurrent.futures
+import pickle
 
 import SimpleITK as sitk
 import numpy as np
@@ -37,6 +38,7 @@ class HaNOarsDataset(Dataset):
 
         self.is_numpy = False
         self.output_label = None
+        self.spacing_list = []
         self.data_list = []
         self.label_list = []
         if load_images:
@@ -99,6 +101,7 @@ class HaNOarsDataset(Dataset):
         copy_dataset.output_label = self.output_label
 
         # coping data and labels
+        copy_dataset.spacing_list = self.spacing_list
         copy_dataset.data_list = [None] * self.size
         copy_dataset.label_list = [None] * self.size
         if copy_lists:
@@ -129,6 +132,7 @@ class HaNOarsDataset(Dataset):
             data = sitk.ReadImage(str(data_filepath))
             label = sitk.ReadImage(str(label_filepath))
 
+            self.spacing_list.append(data.GetSpacing())
             self.data_list.append(data)
             self.label_list.append(label)
 
@@ -195,7 +199,9 @@ class HaNOarsDataset(Dataset):
             label_np = self.label_list[i].astype(np.int8)
 
             self.data_list[i] = sitk.GetImageFromArray(data_np[0])
+            self.data_list[i].SetSpacing(self.spacing_list[i])
             self.label_list[i] = sitk.GetImageFromArray(label_np[0])
+            self.data_list[i].SetSpacing(self.spacing_list[i])
 
         return self
 
@@ -219,6 +225,72 @@ class HaNOarsDataset(Dataset):
         print("numpy parsing done")
 
         return self
+
+    def save_to_file(self, path):
+        filepath = Path(path)
+        filepath.mkdir(parents=True, exist_ok=True)
+
+        with open(Path.joinpath(filepath, "./config.pickle"), "wb") as f:
+            config = {
+                "root_dir_path": self.root_dir_path,
+                "size": self.size,
+                "shrink_factor": self.shrink_factor,
+                "is_numpy": self.is_numpy,
+                "output_label": self.output_label,
+                "spacing_list": self.spacing_list,
+            }
+
+            ser_config = pickle.dumps(config)
+            f.write(ser_config)
+
+        for i in range(self.size):
+            data = self.data_list[i]
+            label = self.label_list[i]
+
+            image_dir_path = Path.joinpath(filepath, f'{i + 1}')
+            image_dir_path.mkdir(parents=True, exist_ok=True)
+
+            if self.is_numpy:
+                data = sitk.GetImageFromArray(data)
+                label = sitk.GetImageFromArray(label)
+
+            writer = sitk.ImageFileWriter()
+            writer.SetFileName(str(Path.joinpath(image_dir_path, 'data.nii.gz')))
+            writer.Execute(data)
+            writer.SetFileName(str(Path.joinpath(image_dir_path, 'label.nii.gz')))
+            writer.Execute(label)
+
+    def load_from_file(self, path):
+        filepath = Path(path)
+
+        with open(Path.joinpath(filepath, "./config.pickle"), "rb") as f:
+            ser_config = f.read()
+            config = pickle.loads(ser_config)
+
+            self.root_dir_path = config["root_dir_path"]
+            self.size = config["size"]
+            self.shrink_factor = config["shrink_factor"]
+            self.is_numpy = config["is_numpy"]
+            self.output_label = config["output_label"]
+            self.spacing_list = config["spacing_list"]
+
+        for i in range(self.size):
+            data_filepath = Path.joinpath(filepath, f'{i + 1}', 'data.nii.gz')
+            label_filepath = Path.joinpath(filepath, f'{i + 1}', 'label.nii.gz')
+
+            data = sitk.ReadImage(str(data_filepath))
+            label = sitk.ReadImage(str(label_filepath))
+
+            if self.is_numpy:
+                data = sitk.GetArrayFromImage(data)
+                label = sitk.GetArrayFromImage(label)
+
+                if len(data.shape) <= 3:
+                    data = np.expand_dims(data, axis=0)
+                    label = np.expand_dims(label, axis=0)
+
+            self.data_list.append(data)
+            self.label_list.append(label)
 
 
 if __name__ == "__main__":
