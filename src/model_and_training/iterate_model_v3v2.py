@@ -70,7 +70,7 @@ def iterate_model_v3v2(dataloader, model, optimizer, loss_func, device, is_eval=
             del item_dsc
             torch.cuda.empty_cache()
 
-        tmp_dices = list(map(lambda x: round(x.item(), 5), dices))
+        tmp_dices = list(map(lambda x: round(x, 5), dices))
         tmp_dict_dices = dict(zip(dataloader.dataset.indices, tmp_dices))
         tmp_sorted_dict_dices = dict(sorted(tmp_dict_dices.items(), key=lambda item: item[0]))
 
