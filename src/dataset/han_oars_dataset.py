@@ -287,6 +287,7 @@ class HaNOarsDataset(Dataset):
 
                 if len(data.shape) <= 3:
                     data = np.expand_dims(data, axis=0)
+                if len(label.shape) <= 3:
                     label = np.expand_dims(label, axis=0)
 
             self.data_list.append(data)
