@@ -78,6 +78,6 @@ def iterate_model_v3v2(dataloader, model, optimizer, loss_func, device, is_eval=
         model.tensorboard_writer.add_text(f'epoch_items_dsc_{tmp_text}', str(tmp_sorted_dict_dices), model.actual_epoch)
 
         num_sums = np.sum(nums)
-        final_loss = torch.sum(torch.multiply(losses, nums)) / num_sums
-        final_dice = torch.sum(torch.multiply(dices, nums)) / num_sums
+        final_loss = np.sum(np.multiply(losses, nums)) / num_sums
+        final_dice = np.sum(np.multiply(dices, nums)) / num_sums
         return final_loss, final_dice
