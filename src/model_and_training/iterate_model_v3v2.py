@@ -53,7 +53,7 @@ def iterate_model_v3v2(dataloader, model, optimizer, loss_func, device, is_eval=
             item_loss, item_dsc, inputs_len = loss_batch(model, optimizer, loss_func, inputs, labels,
                                                          calc_backward=not is_eval)
             losses.append(item_loss)
-            dices.append(item_dsc)
+            dices.append(item_dsc.item())
             nums.append(inputs_len)
 
             # batch done
@@ -77,10 +77,13 @@ def iterate_model_v3v2(dataloader, model, optimizer, loss_func, device, is_eval=
         tmp_text = 'eval' if is_eval else 'train'
         model.tensorboard_writer.add_text(f'epoch_items_dsc_{tmp_text}', str(tmp_sorted_dict_dices), model.actual_epoch)
 
+        # converting list of tensors to tensor
+        # tmp_dices = torch.tensor(dices, device = 'cpu')
         print(nums)
         print(losses)
         print(dices)
+
         num_sums = np.sum(nums)
         final_loss = np.sum(np.multiply(losses, nums)) / num_sums
-        final_dice = np.sum(np.multiply(dices.cpu(), nums)) / num_sums
+        final_dice = np.sum(np.multiply(dices, nums)) / num_sums
         return final_loss, final_dice
