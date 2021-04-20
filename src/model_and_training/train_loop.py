@@ -7,7 +7,8 @@ from src.model_and_training import checkpoint_model
 from src.model_and_training import iterate_model
 
 
-def train_loop(model_info, iterate_model_fn=iterate_model):
+def train_loop(model_info, iterate_model_fn=iterate_model, start_epoch=0):
+    # extracting object from model info
     model, model_name, optimizer, criterion = itemgetter('model', 'model_name', 'optimizer', 'criterion')(model_info)
     epochs, device, tensorboard_writer = itemgetter('epochs', 'device', 'tensorboard_writer')(model_info)
     train_dataloader, valid_dataloader, test_dataloader = itemgetter('train_dataloader',
@@ -17,7 +18,7 @@ def train_loop(model_info, iterate_model_fn=iterate_model):
     print('Running training loop')
     start_time = last_time = time()
 
-    for epoch_i in range(epochs):
+    for epoch_i in range(start_epoch, epochs):
         model.actual_epoch = epoch_i
 
         # training dsc and loss are calculated during training per batch, that means it is approximation!!
@@ -36,6 +37,7 @@ def train_loop(model_info, iterate_model_fn=iterate_model):
         logging.debug(f'train_loop1 optimizer {optimizer}')
         last_time = time()
 
+        # Saving model and writing epoch info to tensorboard
         checkpoint_model(epoch_i + 1, model_info)
         tensorboard_step_value = (epoch_i + 1) * len(train_dataloader) * train_dataloader.batch_size
         tensorboard_writer.add_scalars('loss', {"train": train_loss, "valid": valid_loss}, tensorboard_step_value)
