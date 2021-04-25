@@ -1,5 +1,7 @@
 from operator import itemgetter
 
+import torch
+
 from src.model_and_training.getters.get_loaders import get_loaders
 
 
@@ -19,7 +21,7 @@ def write_model_info_to_tensorboard(model_info,  train_dataset, valid_dataset, t
     train_dataloader, valid_dataloader, test_dataloader = get_loaders(train_batch_size,
                                                                       train_dataset, valid_dataset, test_dataset)
     images, labels = iter(train_dataloader).next()
-    tensorboard_writer.add_graph(model, images.to(model_info['device']))
+    tensorboard_writer.add_graph(model, images.to(model_info['device'], dtype=torch.float))
 
     tensorboard_writer.add_text('model', str(type(model).__name__))
     tensorboard_writer.add_text('model_params', str(model_params))

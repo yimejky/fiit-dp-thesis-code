@@ -7,7 +7,7 @@ from contextlib import nullcontext
 
 from src.dataset.dataset_transforms import get_norm_transform, get_dataset_transform
 from src.dataset.transform_input import transform_input
-from src.model_and_training import loss_batch
+from src.model_and_training.loss_batch import loss_batch
 
 norm_trans = get_norm_transform()
 dataset_trans = get_dataset_transform()
@@ -34,7 +34,14 @@ def iterate_model(dataloader, model, optimizer, loss_func, device, is_eval=False
             # torch.io data augmentation and transforms
             inputs, labels = data
             transform = norm_trans if is_eval else dataset_trans
-            inputs, labels = transform_input(inputs, labels, transform)
+
+            for i in range(inputs.shape[0]):
+                tmp_inputs, tmp_labels = transform_input(inputs[i], labels[i], transform)
+                log_msg = f'iterate_model_v3v1_1: {tmp_inputs.shape}, {tmp_labels.shape}'
+                # print(log_msg)
+                logging.debug(log_msg)
+                inputs[i] = torch.tensor(tmp_inputs)
+                labels[i] = torch.tensor(tmp_labels)
 
             # converting to float
             inputs = inputs.to(device).float()
