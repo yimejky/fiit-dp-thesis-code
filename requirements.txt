@@ -86,7 +86,7 @@ paramiko==2.6.0
 parso==0.7.1
 pexpect==4.8.0
 pickleshare==0.7.5
-Pillow==8.0.1
+Pillow==8.2.0
 prometheus-client==0.8.0
 prompt-toolkit==3.0.7
 protobuf==3.13.0
